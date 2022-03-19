@@ -1,0 +1,233 @@
+[
+  {
+    "tabText": "排列  |  Array",
+    "title": "chapter.13597-doc.1121",
+    "href": "/developer/chapter/13597",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13597",
+    "url": "https://cloud.tencent.com/developer/chapter/13597"
+  },
+  {
+    "tabText": "数列缓冲  |  ArrayBuffer",
+    "title": "chapter.13598-doc.1121",
+    "href": "/developer/chapter/13598",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13598",
+    "url": "https://cloud.tencent.com/developer/chapter/13598"
+  },
+  {
+    "tabText": "Atomics",
+    "title": "chapter.13599-doc.1121",
+    "href": "/developer/chapter/13599",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13599",
+    "url": "https://cloud.tencent.com/developer/chapter/13599"
+  },
+  {
+    "tabText": "布尔型  |  Boolean",
+    "title": "chapter.13600-doc.1121",
+    "href": "/developer/chapter/13600",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13600",
+    "url": "https://cloud.tencent.com/developer/chapter/13600"
+  },
+  {
+    "tabText": "类  |  Classes",
+    "title": "chapter.13601-doc.1121",
+    "href": "/developer/chapter/13601",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13601",
+    "url": "https://cloud.tencent.com/developer/chapter/13601"
+  },
+  {
+    "tabText": "数据  |  DataView",
+    "title": "chapter.13602-doc.1121",
+    "href": "/developer/chapter/13602",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13602",
+    "url": "https://cloud.tencent.com/developer/chapter/13602"
+  },
+  {
+    "tabText": "日期  |  Date",
+    "title": "chapter.13603-doc.1121",
+    "href": "/developer/chapter/13603",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13603",
+    "url": "https://cloud.tencent.com/developer/chapter/13603"
+  },
+  {
+    "tabText": "错误  |  Errors",
+    "title": "chapter.13604-doc.1121",
+    "href": "/developer/chapter/13604",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13604",
+    "url": "https://cloud.tencent.com/developer/chapter/13604"
+  },
+  {
+    "tabText": "函数  |  Function",
+    "title": "chapter.13605-doc.1121",
+    "href": "/developer/chapter/13605",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13605",
+    "url": "https://cloud.tencent.com/developer/chapter/13605"
+  },
+  {
+    "tabText": "发生器  |  Generator",
+    "title": "chapter.13606-doc.1121",
+    "href": "/developer/chapter/13606",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13606",
+    "url": "https://cloud.tencent.com/developer/chapter/13606"
+  },
+  {
+    "tabText": "全球对象  |  Global Objects",
+    "title": "chapter.13607-doc.1121",
+    "href": "/developer/chapter/13607",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13607",
+    "url": "https://cloud.tencent.com/developer/chapter/13607"
+  },
+  {
+    "tabText": "Intl",
+    "title": "chapter.13608-doc.1121",
+    "href": "/developer/chapter/13608",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13608",
+    "url": "https://cloud.tencent.com/developer/chapter/13608"
+  },
+  {
+    "tabText": "JSON",
+    "title": "chapter.13609-doc.1121",
+    "href": "/developer/chapter/13609",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13609",
+    "url": "https://cloud.tencent.com/developer/chapter/13609"
+  },
+  {
+    "tabText": "Map",
+    "title": "chapter.13610-doc.1121",
+    "href": "/developer/chapter/13610",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13610",
+    "url": "https://cloud.tencent.com/developer/chapter/13610"
+  },
+  {
+    "tabText": "Math",
+    "title": "chapter.13611-doc.1121",
+    "href": "/developer/chapter/13611",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13611",
+    "url": "https://cloud.tencent.com/developer/chapter/13611"
+  },
+  {
+    "tabText": "其他  |  Miscellaneous",
+    "title": "chapter.13612-doc.1121",
+    "href": "/developer/chapter/13612",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13612",
+    "url": "https://cloud.tencent.com/developer/chapter/13612"
+  },
+  {
+    "tabText": "Number",
+    "title": "chapter.13613-doc.1121",
+    "href": "/developer/chapter/13613",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13613",
+    "url": "https://cloud.tencent.com/developer/chapter/13613"
+  },
+  {
+    "tabText": "对象  |  Object",
+    "title": "chapter.13614-doc.1121",
+    "href": "/developer/chapter/13614",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13614",
+    "url": "https://cloud.tencent.com/developer/chapter/13614"
+  },
+  {
+    "tabText": "Operators",
+    "title": "chapter.13615-doc.1121",
+    "href": "/developer/chapter/13615",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13615",
+    "url": "https://cloud.tencent.com/developer/chapter/13615"
+  },
+  {
+    "tabText": "Promise",
+    "title": "chapter.13616-doc.1121",
+    "href": "/developer/chapter/13616",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13616",
+    "url": "https://cloud.tencent.com/developer/chapter/13616"
+  },
+  {
+    "tabText": "Proxy",
+    "title": "chapter.13617-doc.1121",
+    "href": "/developer/chapter/13617",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13617",
+    "url": "https://cloud.tencent.com/developer/chapter/13617"
+  },
+  {
+    "tabText": "Reflect",
+    "title": "chapter.13618-doc.1121",
+    "href": "/developer/chapter/13618",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13618",
+    "url": "https://cloud.tencent.com/developer/chapter/13618"
+  },
+  {
+    "tabText": "RegExp",
+    "title": "chapter.13619-doc.1121",
+    "href": "/developer/chapter/13619",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13619",
+    "url": "https://cloud.tencent.com/developer/chapter/13619"
+  },
+  {
+    "tabText": "Set",
+    "title": "chapter.13620-doc.1121",
+    "href": "/developer/chapter/13620",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13620",
+    "url": "https://cloud.tencent.com/developer/chapter/13620"
+  },
+  {
+    "tabText": "SharedArrayBuffer",
+    "title": "chapter.13621-doc.1121",
+    "href": "/developer/chapter/13621",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13621",
+    "url": "https://cloud.tencent.com/developer/chapter/13621"
+  },
+  {
+    "tabText": "SIMD",
+    "title": "chapter.13622-doc.1121",
+    "href": "/developer/chapter/13622",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13622",
+    "url": "https://cloud.tencent.com/developer/chapter/13622"
+  },
+  {
+    "tabText": "声明  |  Statements",
+    "title": "chapter.13623-doc.1121",
+    "href": "/developer/chapter/13623",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13623",
+    "url": "https://cloud.tencent.com/developer/chapter/13623"
+  },
+  {
+    "tabText": "字符串  |  String",
+    "title": "chapter.13624-doc.1121",
+    "href": "/developer/chapter/13624",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13624",
+    "url": "https://cloud.tencent.com/developer/chapter/13624"
+  },
+  {
+    "tabText": "符号  |  Symbol",
+    "title": "chapter.13625-doc.1121",
+    "href": "/developer/chapter/13625",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13625",
+    "url": "https://cloud.tencent.com/developer/chapter/13625"
+  },
+  {
+    "tabText": "TypedArray",
+    "title": "chapter.13626-doc.1121",
+    "href": "/developer/chapter/13626",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13626",
+    "url": "https://cloud.tencent.com/developer/chapter/13626"
+  },
+  {
+    "tabText": "WeakMap",
+    "title": "chapter.13627-doc.1121",
+    "href": "/developer/chapter/13627",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13627",
+    "url": "https://cloud.tencent.com/developer/chapter/13627"
+  },
+  {
+    "tabText": "WeakSet",
+    "title": "chapter.13628-doc.1121",
+    "href": "/developer/chapter/13628",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13628",
+    "url": "https://cloud.tencent.com/developer/chapter/13628"
+  },
+  {
+    "tabText": "WebAssembly",
+    "title": "chapter.13629-doc.1121",
+    "href": "/developer/chapter/13629",
+    "htmlName": "./rjhy/html5-community/developer/chapter/13629",
+    "url": "https://cloud.tencent.com/developer/chapter/13629"
+  }
+]

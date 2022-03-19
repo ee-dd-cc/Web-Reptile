@@ -1,0 +1,450 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML5 <span class="color_h1">Canvas</span>
+</h1>
+<hr>
+<p class="intro">&lt;canvas&gt; 标签定义图形，比如图表和其他图像，您必须使用脚本来绘制图形。</p>
+<p class="intro">在画布上（Canvas）画一个红色矩形，渐变矩形，彩色矩形，和一些彩色的文字。</p>
+<canvas id="myCanvas" width="270" height="160" style="border:1px solid #c3c3c3;">
+你的浏览器不支持 HTML5 的 &lt;canvas&gt; 元素.
+</canvas>
+<script>
+var c=document.getElementById("myCanvas");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+	{
+	var ctx=c.getContext("2d");
+	ctx.fillStyle="#FF0000";
+	ctx.fillRect(20,20,100,50);
+	
+	var grd=ctx.createLinearGradient(140,20,240,70);
+    grd.addColorStop(0,"black");
+    grd.addColorStop(1,"white");
+    ctx.fillStyle=grd;
+    ctx.fillRect(140,20,100,50);
+    
+    var grd2=ctx.createLinearGradient(20,90,120,90);
+    grd2.addColorStop(0,"black");
+    grd2.addColorStop("0.3","magenta");
+    grd2.addColorStop("0.5","blue");
+    grd2.addColorStop("0.6","green");
+    grd2.addColorStop("0.8","yellow");
+    grd2.addColorStop(1,"red");
+    ctx.fillStyle=grd2;
+    ctx.fillRect(20,90,100,50);
+    
+    ctx.font="30px Verdana";
+    var grd3=ctx.createLinearGradient(140,20,240,90);
+    grd3.addColorStop(0,"black");
+    grd3.addColorStop("0.3","magenta");
+    grd3.addColorStop("0.6","blue");
+    grd3.addColorStop("0.8","green");
+    grd3.addColorStop(1,"red");
+    ctx.strokeStyle=grd3;
+    ctx.strokeText("Smile!",140,120); 
+	}
+	</script>
+<br><hr>
+<h2>什么是 canvas?</h2>
+<p> HTML5 &lt;canvas&gt; 元素用于图形的绘制，通过脚本 (通常是JavaScript)来完成.</p>
+<p>&lt;canvas&gt; 标签只是图形容器，您必须使用脚本来绘制图形。</p>
+<p>你可以通过多种方法使用 canvas 绘制路径,盒、圆、字符以及添加图像。</p>
+<hr>
+<h2>浏览器支持</h2>
+<p>表格中的数字表示支持  &lt;canvas&gt; 元素的第一个浏览器版本号。</p>
+<table class="browserref">
+  <tbody><tr>
+    <th style="width:20%;font-size:16px;text-align:left;">元素</th>
+    <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:16%;" class="bsIE" title="Internet Explorer"></th>
+    <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:16%;" class="bsSafari" title="Safari"></th>
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left;">&lt;canvas&gt;</td>
+    <td>4.0</td>
+    <td>9.0</td>
+    <td>2.0</td>
+    <td>3.1</td>
+    <td>9.0</td>
+  </tr>
+</tbody></table>
+<hr>
+<h2>创建一个画布（Canvas）</h2>
+<p>一个画布在网页中是一个矩形框，通过 &lt;canvas&gt; 元素来绘制.</p>
+<p><b>注意:</b> 默认情况下 &lt;canvas&gt; 元素没有边框和内容。</p>
+
+<p>&lt;canvas&gt;简单实例如下:</p>
+<div class="code notranslate"><div>
+&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+</div></div>
+
+<p><b>注意:</b> 标签通常需要指定一个id属性 (脚本中经常引用), 
+width 和 height 属性定义的画布的大小.</p>
+<p><b>提示:</b>你可以在HTML页面中使用多个  &lt;canvas&gt; 元素.</p>
+
+<p>使用 style 属性来添加边框:</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">canvas</span><span class="hl-code"> </span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">width</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">200</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">height</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">100</span><span class="hl-quotes">"</span><span class="hl-code">
+</span><span class="hl-var">style</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">border:1px solid #000000;</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">canvas</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml5_canvas_empty" class="tryitbtn">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>使用 JavaScript 来绘制图像</h2>
+<p>canvas 元素本身是没有绘图能力的。所有的绘制工作必须在 JavaScript 内部完成：</p><p>
+</p><div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">ctx</span><span class="hl-code">=</span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">getContext</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2d</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">fillStyle</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">#FF0000</span><span class="hl-quotes">"</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">fillRect</span><span class="hl-brackets">(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">150</span><span class="hl-code">,</span><span class="hl-number">75</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml5_canvas_first" class="tryitbtn">尝试一下 »</a>
+</div>
+
+<p><b>实例解析:</b></p>
+<p>首先，找到 &lt;canvas&gt; 元素:</p>
+<div class="code"><div>
+var c=document.getElementById("myCanvas");
+</div></div>
+
+<p>然后，创建 context 对象：</p>
+<div class="code"><div>
+var ctx=c.getContext("2d");
+</div></div>
+
+<p>getContext("2d") 对象是内建的 HTML5 对象，拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。
+</p>
+<p>下面的两行代码绘制一个红色的矩形：</p>
+<div class="code"><div>
+ctx.fillStyle="#FF0000";<br>
+ctx.fillRect(0,0,150,75);
+</div></div>
+
+<p>设置fillStyle属性可以是CSS颜色，渐变，或图案。fillStyle
+默认设置是#000000（黑色）。</p>
+<p> fillRect(<i>x,y,width,height</i>) 方法定义了矩形当前的填充方式。</p>
+<hr>
+<h2>Canvas 坐标</h2>
+<p>canvas 是一个二维网格。</p>
+<p>canvas 的左上角坐标为 (0,0)</p>
+<p>上面的 fillRect 方法拥有参数 (0,0,150,75)。</p>
+<p>意思是：在画布上绘制 150x75 的矩形，从左上角开始 (0,0)。</p>
+<p><b>坐标实例</b></p>
+<p>如下图所示，画布的 X 和 Y 坐标用于在画布上对绘画进行定位。鼠标移动的矩形框上，显示定位坐标。</p>
+<div>
+<div style="width:230px;height:20px;text-align:center;clear:both">X</div>
+<div style="width:20px;padding-top:40px;float:left">Y</div>
+<div style="width:402px;float:left">
+<iframe src="/try/demo_source/tryhtml5_canvas_coordinates.htm" frameborder="0" style="border:0;overflow:hidden;width:400px;height:120px;"></iframe>
+</div>
+
+
+</div>
+
+<hr>
+<h2>Canvas - 路径</h2>
+<p>在Canvas上画线，我们将使用以下两种方法：</p>
+<ul>
+<li>moveTo(<i>x,y</i>) 定义线条开始坐标</li>
+	<li>lineTo(<i>x,y</i>) 定义线条结束坐标</li>
+</ul>
+<p>绘制线条我们必须使用到 "ink" 的方法，就像stroke().</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<p>定义开始坐标(0,0), 和结束坐标 (200,100)。然后使用 stroke() 方法来绘制线条:</p>
+
+<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;background:#ffffff;">
+你的浏览器不支持 HTML5 的 &lt;canvas&gt; 元素.
+</canvas>
+
+<script>
+var c=document.getElementById("myCanvas2");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+	{
+	var ctx=c.getContext("2d");
+	ctx.moveTo(0,0);
+	ctx.lineTo(200,100);
+	ctx.stroke();
+	}
+</script> 
+<p>JavaScript:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">ctx</span><span class="hl-code">=</span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">getContext</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2d</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">moveTo</span><span class="hl-brackets">(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">lineTo</span><span class="hl-brackets">(</span><span class="hl-number">200</span><span class="hl-code">,</span><span class="hl-number">100</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">stroke</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_canvas_tut_path" target="_blank">尝试一下 »</a>
+</div>
+
+<p>在canvas中绘制圆形, 我们将使用以下方法:</p>
+<pre>arc(x,y,r,start,stop)</pre>
+<p>实际上我们在绘制圆形时使用了 "ink" 的方法, 比如 stroke() 或者 fill().</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<p>使用 arc() 方法 绘制一个圆:</p>
+<canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;background:#ffffff;">
+你的浏览器不支持 HTML5 的 &lt;canvas&gt; 元素.
+</canvas>
+<script>
+var c=document.getElementById("myCanvas3");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+	{
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(95,50,40,0,2*Math.PI);
+	ctx.stroke();
+	}
+</script>
+<p>JavaScript:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">ctx</span><span class="hl-code">=</span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">getContext</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2d</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">beginPath</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">arc</span><span class="hl-brackets">(</span><span class="hl-number">95</span><span class="hl-code">,</span><span class="hl-number">50</span><span class="hl-code">,</span><span class="hl-number">40</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">2</span><span class="hl-code">*</span><span class="hl-builtin">Math</span><span class="hl-code">.</span><span class="hl-identifier">PI</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">stroke</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_canvas_tut_path2" target="_blank">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>Canvas - 文本</h2>
+<p>使用 canvas 绘制文本，重要的属性和方法如下：</p>
+<ul>
+<li>font - 定义字体</li>
+	<li>fillText(<i>text,x,y</i>) - 在 canvas 上绘制实心的文本</li>
+	<li>strokeText(<i>text,x,y</i>) - 在 canvas 上绘制空心的文本</li>
+</ul>
+<p>使用 fillText():</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<p>使用 "Arial" 字体在画布上绘制一个高 30px 的文字（实心）：</p>
+<canvas id="myCanvas4" width="200" height="100" style="border:1px solid #d3d3d3;background:#ffffff;">
+你的浏览器不支持 HTML5 的 &lt;canvas&gt; 元素.
+</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas4");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+	{
+    var ctx=c.getContext("2d");
+    ctx.font="30px Arial";
+    ctx.fillText("Hello World",10,50);
+	}
+	</script>
+<p>JavaScript:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">ctx</span><span class="hl-code">=</span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">getContext</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2d</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">font</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">30px Arial</span><span class="hl-quotes">"</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">fillText</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Hello World</span><span class="hl-quotes">"</span><span class="hl-code">,</span><span class="hl-number">10</span><span class="hl-code">,</span><span class="hl-number">50</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_canvas_tut_text" target="_blank">尝试一下 »</a>
+</div>
+
+<p>使用 strokeText():</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<p>使用 "Arial" 字体在画布上绘制一个高 30px 的文字（空心）：</p>
+<canvas id="myCanvas5" width="200" height="100" style="border:1px solid #d3d3d3;background:#ffffff;">
+你的浏览器不支持 HTML5 的 &lt;canvas&gt; 元素.
+</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas5");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+	{
+    var ctx=c.getContext("2d");
+    ctx.font="30px Arial";
+    ctx.strokeText("Hello World",10,50);
+	}
+	</script>
+<p>JavaScript:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">ctx</span><span class="hl-code">=</span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">getContext</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2d</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">font</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">30px Arial</span><span class="hl-quotes">"</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">strokeText</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Hello World</span><span class="hl-quotes">"</span><span class="hl-code">,</span><span class="hl-number">10</span><span class="hl-code">,</span><span class="hl-number">50</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_canvas_tut_text2" target="_blank">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>Canvas -  渐变</h2>
+<p> 渐变可以填充在矩形, 圆形, 线条, 文本等等, 各种形状可以自己定义不同的颜色。</p>
+<p>以下有两种不同的方式来设置Canvas渐变：</p>
+<ul>
+<li>createLinearGradient(<i>x,y,x1,y1</i>) - 创建线条渐变</li>
+	<li>createRadialGradient(<i>x,y,r,x1,y1,r1</i>) - 创建一个径向/圆渐变</li>
+</ul>
+<p>当我们使用渐变对象，必须使用两种或两种以上的停止颜色。</p>
+<p> addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是0至1.</p>
+<p>使用渐变，设置fillStyle或strokeStyle的值为
+渐变，然后绘制形状，如矩形，文本，或一条线。</p>
+<p>使用 createLinearGradient():</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<p>创建一个线性渐变。使用渐变填充矩形:</p>
+<canvas id="myCanvas6" width="200" height="100" style="border:1px solid #d3d3d3;background:#ffffff;">
+你的浏览器不支持 HTML5 的 &lt;canvas&gt; 元素.
+</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas6");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+	{
+    var ctx=c.getContext("2d");
+    var grd=ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    ctx.fillStyle=grd;
+    ctx.fillRect(10,10,150,80);
+	}
+	</script>
+<p>JavaScript:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">ctx</span><span class="hl-code">=</span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">getContext</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2d</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> 创建渐变</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">grd</span><span class="hl-code">=</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">createLinearGradient</span><span class="hl-brackets">(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-number">200</span><span class="hl-code">,</span><span class="hl-number">0</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">grd</span><span class="hl-code">.</span><span class="hl-identifier">addColorStop</span><span class="hl-brackets">(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-quotes">"</span><span class="hl-string">red</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">grd</span><span class="hl-code">.</span><span class="hl-identifier">addColorStop</span><span class="hl-brackets">(</span><span class="hl-number">1</span><span class="hl-code">,</span><span class="hl-quotes">"</span><span class="hl-string">white</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> 填充渐变</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">fillStyle</span><span class="hl-code">=</span><span class="hl-identifier">grd</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">fillRect</span><span class="hl-brackets">(</span><span class="hl-number">10</span><span class="hl-code">,</span><span class="hl-number">10</span><span class="hl-code">,</span><span class="hl-number">150</span><span class="hl-code">,</span><span class="hl-number">80</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_canvas_tut_grad" target="_blank">尝试一下 »</a>
+</div>
+
+<p>使用 createRadialGradient():</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<p>创建一个径向/圆渐变。使用渐变填充矩形：</p>
+<canvas id="myCanvas7" width="200" height="100" style="border:1px solid #d3d3d3;background:#ffffff;">
+你的浏览器不支持 HTML5 的 &lt;canvas&gt; 元素.
+</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas7");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+	{
+    var ctx=c.getContext("2d");
+    // Create gradient
+    var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    // Fill with gradient
+    ctx.fillStyle=grd;
+    ctx.fillRect(10,10,150,80);
+	}
+	</script>
+<p>JavaScript:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">ctx</span><span class="hl-code">=</span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">getContext</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2d</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> 创建渐变</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">grd</span><span class="hl-code">=</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">createRadialGradient</span><span class="hl-brackets">(</span><span class="hl-number">75</span><span class="hl-code">,</span><span class="hl-number">50</span><span class="hl-code">,</span><span class="hl-number">5</span><span class="hl-code">,</span><span class="hl-number">90</span><span class="hl-code">,</span><span class="hl-number">60</span><span class="hl-code">,</span><span class="hl-number">100</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">grd</span><span class="hl-code">.</span><span class="hl-identifier">addColorStop</span><span class="hl-brackets">(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-quotes">"</span><span class="hl-string">red</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">grd</span><span class="hl-code">.</span><span class="hl-identifier">addColorStop</span><span class="hl-brackets">(</span><span class="hl-number">1</span><span class="hl-code">,</span><span class="hl-quotes">"</span><span class="hl-string">white</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> 填充渐变</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">fillStyle</span><span class="hl-code">=</span><span class="hl-identifier">grd</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">fillRect</span><span class="hl-brackets">(</span><span class="hl-number">10</span><span class="hl-code">,</span><span class="hl-number">10</span><span class="hl-code">,</span><span class="hl-number">150</span><span class="hl-code">,</span><span class="hl-number">80</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_canvas_tut_grad2" target="_blank">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>Canvas - 图像</h2>
+<p>把一幅图像放置到画布上, 使用以下方法:</p>
+<ul>
+<li>drawImage(<i>image,x,y</i>)</li>
+</ul>
+<div class="example">
+<h2 class="example">使用图像:</h2>
+<p><img id="scream" src="/images/img_the_scream.jpg" alt="The Scream"></p>
+<h2 class="example">实例</h2>
+<p>把一幅图像放置到画布上:</p>
+<canvas id="myCanvas8" width="250" height="300" style="border:1px solid #d3d3d3;background:#ffffff;">
+你的浏览器不支持 HTML5 的 &lt;canvas&gt; 元素.
+</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas8");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+	{
+    var ctx=c.getContext("2d");
+    var img=document.getElementById("scream");
+    ctx.drawImage(img,10,10);
+	}
+	</script>
+<p>JavaScript:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">myCanvas</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">ctx</span><span class="hl-code">=</span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">getContext</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2d</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">img</span><span class="hl-code">=</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">scream</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-identifier">ctx</span><span class="hl-code">.</span><span class="hl-identifier">drawImage</span><span class="hl-brackets">(</span><span class="hl-identifier">img</span><span class="hl-code">,</span><span class="hl-number">10</span><span class="hl-code">,</span><span class="hl-number">10</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_canvas_tut_img" target="_blank">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML Canvas 参考手册</h2>
+<p>标签的完整属性可以参考<a href="/tags/ref-canvas.html">Canvas 参考手册.</a></p>
+<h2>HTML &lt;canvas&gt; 标签</h2>
+<table class="reference notranslate">
+<tbody><tr>
+<th align="left" width="150">Tag</th>
+<th align="left">描述</th>
+</tr>
+<tr>
+<td><a href="/tags/tag-canvas.html">&lt;canvas&gt;</a></td>
+<td>HTML5 的 canvas 元素使用 JavaScript 在网页上绘制图像。</td>
+</tr>
+</tbody></table>
+
+
+<blockquote><p>更多内容可参考：<a href="//www.runoob.com/w3cnote/html5-canvas-intro.html" rel="noopener" target="_blank">学习 HTML5 Canvas 这一篇文章就够了</a></p></blockquote>
+
+			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

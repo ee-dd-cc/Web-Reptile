@@ -1,0 +1,276 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h2>HTML5 新的 Input 类型</h2>
+<p>HTML5 拥有多个新的表单输入类型。这些新特性提供了更好的输入控制和验证。</p>
+<p>本章全面介绍这些新的输入类型：</p>
+<ul>
+	<li>color</li>
+	<li>date</li>
+	<li>datetime</li>
+	<li>datetime-local</li>
+	<li>email</li>
+	<li>month</li>
+	<li>number</li>
+	<li>range</li>
+	<li>search</li>
+	<li>tel</li>
+	<li>time</li>
+	<li>url</li>
+	<li>week</li>
+</ul>
+<p><b>注意:</b>并不是所有的主流浏览器都支持新的input类型，不过您已经可以在所有主流的浏览器中使用它们了。即使不被支持，仍然可以显示为常规的文本域。</p>
+<hr>
+
+<h2>Input 类型: color</h2>
+<p>color 类型用在input字段主要用于选取颜色，如下所示：</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20">
+<img loading="lazy" style="float:right;" src="/images/incompatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20">
+<img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20">
+<img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20">
+<img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20">
+
+<h2 class="example">实例</h2>
+<p class="example">从拾色器中选择一个颜色:</p>
+<div class="example_code notranslate">
+	选择你喜欢的颜色: &lt;input type="color" name="favcolor"&gt;</div>
+<br>
+<a class="tryitbtn" href="/try/try.php?filename=tryhtml5_input_type_color" target="_blank">尝试一下 »</a>
+</div>
+<br>
+<hr>
+
+<h2>Input 类型: date</h2>
+<p>date 类型允许你从一个日期选择器选择一个日期。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20">
+<img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20">
+<img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20">
+<img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20">
+<img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20">
+
+<h2 class="example">实例</h2>
+<p>定义一个时间控制器:</p>
+<div class="example_code notranslate">
+	生日: &lt;input type="date" name="bday"&gt;</div>
+<br>
+<a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_input_type_date">尝试一下 »</a> 
+</div>
+<br>
+<hr>
+
+<h2>Input 类型: datetime</h2>
+<p> datetime 类型允许你选择一个日期（UTC 时间）。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p>定义一个日期和时间控制器（本地时间）:</p>
+<div class="example_code notranslate">
+	生日 (日期和时间): &lt;input type="datetime" name="bdaytime"&gt;</div>
+<br>
+<a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_input_type_datetime">尝试一下 »</a> 
+</div>
+<br>
+<hr>
+
+<h2>Input 类型: datetime-local</h2>
+<p>datetime-local 类型允许你选择一个日期和时间 (无时区).</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p>定义一个日期和时间 (无时区):</p>
+<div class="example_code notranslate">
+	生日 (日期和时间): &lt;input type="datetime-local" name="bdaytime"&gt;</div>
+<br>
+<a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_input_type_datetime-local">尝试一下 »</a> 
+</div>
+<br>
+<hr>
+
+<h2>Input 类型: email</h2>
+<p>email 类型用于应该包含 e-mail 地址的输入域。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p>在提交表单时，会自动验证 email 域的值是否合法有效:</p>
+<div class="example_code notranslate">
+	E-mail: &lt;input type="email" name="email"&gt;</div>
+<br>
+<a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_input_type_email">尝试一下 »</a> 
+</div>
+<p><b>提示:</b> iPhone 中的 Safari 浏览器支持 email 输入类型，并通过改变触摸屏键盘来配合它（添加 @ 和 .com 选项）。</p>
+<hr>
+
+<h2>Input 类型: month</h2>
+<p> month 类型允许你选择一个月份。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p>定义月与年 (无时区):</p>
+<div class="example_code notranslate">
+	生日 (月和年): &lt;input type="month" name="bdaymonth"&gt;</div>
+<br>
+<a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_input_type_month">尝试一下 »</a> 
+</div>
+<br>
+<hr>
+
+<h2>Input 类型: number</h2>
+<p>number 类型用于应该包含数值的输入域。</p>
+<p>您还能够设定对所接受的数字的限定：</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p class="example">定义一个数值输入域(限定):</p>
+<div class="example_code notranslate">
+	数量 ( 1 到 5 之间 ): &lt;input type="number" name="quantity" min="1" 
+	max="5"&gt;</div>
+<br>
+	<a class="tryitbtn" href="/try/try.php?filename=tryhtml5_input_type_number" target="_blank">尝试一下 »</a>
+</div>
+
+<p>使用下面的属性来规定对数字类型的限定：</p>
+<table class="reference">
+<tbody><tr>
+<th style="width:20%">属性</th>
+<th>描述</th>
+</tr>
+<tr>
+<td>disabled</td>
+<td>规定输入字段是禁用的</td>
+</tr>
+<tr>
+<td class="html5badge">max</td>
+<td>规定允许的最大值</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>规定输入字段的最大字符长度</td>
+</tr>
+<tr>
+<td class="html5badge">min</td>
+<td>规定允许的最小值</td>
+</tr>
+<tr>
+<td class="html5badge">pattern</td>
+<td>规定用于验证输入字段的模式</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>规定输入字段的值无法修改</td>
+</tr>
+<tr>
+<td class="html5badge">required</td>
+<td>规定输入字段的值是必需的</td>
+</tr>
+<tr>
+<td>size</td>
+<td>规定输入字段中的可见字符数</td>
+</tr>
+<tr>
+<td class="html5badge">step</td>
+<td>规定输入字段的合法数字间隔</td>
+</tr>
+<tr>
+<td>value</td>
+<td>规定输入字段的默认值</td>
+</tr>
+</tbody></table>
+<p>尝试一下带有所有限定属性的例子 <a href="/try/try.php?filename=tryhtml5_form_number_adv" target="_blank">尝试一下 </a></p>
+<hr>
+
+<h2>Input 类型: range</h2>
+<p>range 类型用于应该包含一定范围内数字值的输入域。</p>
+<p>range 类型显示为滑动条。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p class="example">定义一个不需要非常精确的数值（类似于滑块控制）:</p>
+<div class="example_code notranslate">
+    &lt;input type="range" name="points" min="1" max="10"&gt;</div>
+<br>
+<a class="tryitbtn" href="/try/try.php?filename=tryhtml5_input_type_range" target="_blank">尝试一下 »</a>
+</div>
+<p>请使用下面的属性来规定对数字类型的限定：</p>
+<ul>
+	<li>max - 规定允许的最大值</li>
+	<li>min - 规定允许的最小值</li>
+	<li>step - 规定合法的数字间隔</li>
+	<li>value - 规定默认值</li>
+</ul>
+<hr>
+
+<h2>Input 类型: search</h2>
+<p>search 类型用于搜索域，比如站点搜索或 Google 搜索。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/incompatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p class="example">定义一个搜索字段 (类似站点搜索或者Google搜索):</p>
+<div class="example_code notranslate">
+	Search Google: &lt;input type="search" name="googlesearch"&gt;</div>
+<br>
+<a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_input_type_search">尝试一下 »</a> 
+</div>
+<br>
+<hr>
+
+<h2>Input 类型: tel</h2>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/incompatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p class="example">定义输入电话号码字段:</p>
+<div class="example_code notranslate">
+    电话号码: &lt;input type="tel" name="usrtel"&gt;</div>
+<br>
+<a class="tryitbtn" href="/try/try.php?filename=tryhtml5_input_type_tel" target="_blank">尝试一下 »</a>
+</div>
+<br>
+<hr>
+
+<h2>Input 类型: time</h2>
+<p> time 类型允许你选择一个时间。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p>定义可输入时间控制器（无时区）：</p>
+<div class="example_code notranslate">
+	选择时间: &lt;input type="time" name="usr_time"&gt;</div>
+<br>
+<a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_input_type_time">尝试一下 »</a> 
+</div>
+<br>
+<hr>
+
+<h2>Input 类型: url</h2>
+<p>url 类型用于应该包含 URL 地址的输入域。</p>
+<p>在提交表单时，会自动验证 url 域的值。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p class="example">定义输入URL字段:</p>
+<div class="example_code notranslate">
+	添加您的主页: &lt;input type="url" name="homepage"&gt;</div>
+<br>
+<a class="tryitbtn" href="/try/try.php?filename=tryhtml5_input_type_url" target="_blank">尝试一下 »</a>
+</div>
+<p><b>提示:</b> iPhone 中的 Safari 浏览器支持 url 输入类型，并通过改变触摸屏键盘来配合它（添加 .com 选项）。</p>
+<hr>
+
+<h2>Input 类型: week</h2>
+<p> week 类型允许你选择周和年。</p>
+<div class="example">
+<img loading="lazy" style="float:right;" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right;" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p>定义周和年 (无时区):</p>
+<div class="example_code notranslate">
+	选择周: &lt;input type="week" name="week_year"&gt;</div>
+<br>
+<a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_input_type_week">尝试一下 »</a> 
+</div>
+<br>
+<hr>
+
+<h2>HTML5 &lt;input&gt; 标签</h2>
+<table class="reference notranslate">
+<tbody><tr>
+<th width="20%">标签</th>
+<th width="80%">描述</th>
+</tr>
+<tr>
+<td><a href="/tags/tag-input.html">&lt;input&gt;</a></td>
+<td>描述input输入器</td>
+</tr>
+</tbody></table>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

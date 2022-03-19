@@ -1,0 +1,119 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML5 <span class="color_h1">Audio(音频)</span>
+</h1>
+<hr>
+<p class="intro">HTML5 提供了播放音频文件的标准。</p>
+<hr>
+<h2>互联网上的音频</h2>
+<p>直到现在，仍然不存在一项旨在网页上播放音频的标准。</p>
+<p>今天，大多数音频是通过插件（比如 Flash）来播放的。然而，并非所有浏览器都拥有同样的插件。</p>
+<p>HTML5 规定了在网页上嵌入音频元素的标准，即使用 &lt;audio&gt; 元素。</p>
+<hr>
+<h2>浏览器支持</h2>
+<p>
+<img loading="lazy" src="/images/compatible_ie.gif" width="31" height="30" alt="Internet Explorer" title="Internet Explorer"><img loading="lazy" src="/images/compatible_firefox.gif" width="31" height="30" alt="Firefox" title="Firefox"><img loading="lazy" src="/images/compatible_opera.gif" width="28" height="30" alt="Opera" title="Opera"><img loading="lazy" src="/images/compatible_chrome.gif" width="31" height="30" alt="Google Chrome" title="Google Chrome"><img loading="lazy" src="/images/compatible_safari.gif" width="28" height="30" alt="Safari" title="Safari"></p>
+<p>Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 都支持 &lt;audio&gt; 元素.</p>
+<p><b>注意:</b> Internet Explorer 8 及更早IE版本不支持 &lt;audio&gt; 元素.</p>
+<hr>
+<h2>HTML5 Audio - 如何工作</h2>
+<p>如需在 HTML5 中播放音频，你需要使用以下代码：</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">audio</span><span class="hl-code"> </span><span class="hl-var">controls</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">source</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">horse.ogg</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">audio/ogg</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">source</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">horse.mp3</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">audio/mpeg</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+您的浏览器不支持 audio 元素。
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">audio</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_audio_all" target="_blank">尝试一下  »</a>
+</div>
+
+<p>control 属性供添加播放、暂停和音量控件。</p>
+<p>在&lt;audio&gt; 与 &lt;/audio&gt; 之间你需要插入浏览器不支持的&lt;audio&gt;元素的提示文本 。</p>
+<p> &lt;audio&gt; 元素允许使用多个 &lt;source&gt; 元素. &lt;source&gt; 元素可以链接不同的音频文件，浏览器将使用第一个支持的音频文件</p>
+<hr>
+<h2>音频格式及浏览器支持</h2>
+<p>目前, &lt;audio&gt;元素支持三种音频格式文件: MP3, Wav, 和 Ogg:</p>
+<table class="reference notranslate">
+<tbody><tr>
+<th width="25%" align="left">浏览器</th>
+<th width="25%" align="left">MP3</th>
+<th width="25%" align="left">Wav</th>
+<th width="25%" align="left">Ogg</th>
+</tr>
+<tr>
+<td>Internet Explorer 9+</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Chrome 6+</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Firefox 3.6+</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Safari 5+</td>
+<td>YES</td>
+<td>YES</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Opera 10+</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+</tbody></table>
+<br><hr>
+<h2>音频格式的MIME类型</h2>
+<table class="reference notranslate">
+<tbody><tr>
+<th width="50%" align="left">Format</th>
+<th width="50%" align="left">MIME-type</th>
+</tr>
+<tr>
+<td>MP3</td>
+<td>audio/mpeg</td>
+</tr>
+<tr>
+<td>Ogg</td>
+<td>audio/ogg</td>
+</tr>
+<tr>
+<td>Wav</td>
+<td>audio/wav</td>
+</tr>
+</tbody></table>
+<br><hr>
+<h2>HTML5 Audio 标签</h2>
+
+<table class="reference">
+<tbody><tr>
+<th align="left" width="150">标签</th>
+<th align="left">描述</th>
+</tr>
+<tr>
+<td><a href="/tags/tag-audio.html">&lt;audio&gt;</a></td>
+<td>定义了声音内容</td>
+</tr>
+<tr>
+<td><a href="/tags/tag-source.html">&lt;source&gt;</a></td>
+<td>规定了多媒体资源, 可以是多个，在 &lt;video&gt; 与 
+&lt;audio&gt;标签中使用</td>
+</tr>
+</tbody></table>
+			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

@@ -1,0 +1,14 @@
+{
+  "name": "Reptile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^3.2.3",
+    "cheerio": "^1.0.0-rc.10",
+    "dateformat": "^5.0.1",
+    "fs": "^0.0.1-security",
+    "node-xlsx": "^0.17.2",
+    "request": "^2.88.2"
+  }
+}

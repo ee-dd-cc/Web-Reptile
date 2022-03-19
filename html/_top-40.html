@@ -1,0 +1,92 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML5 <span class="color_h1">表单元素</span>
+</h1>
+<hr>
+<h2>HTML5 新的表单元素</h2>
+<p>HTML5 有以下新的表单元素:</p>
+<ul>
+<li>&lt;datalist&gt;</li>
+	<li>&lt;keygen&gt;</li>
+	<li>&lt;output&gt;</li>
+</ul>
+<p><b>注意:</b>不是所有的浏览器都支持HTML5 新的表单元素，但是你可以在使用它们，即使浏览器不支持表单属性，仍然可以显示为常规的表单元素。</p>
+<hr>
+<h2>HTML5 &lt;datalist&gt; 元素</h2>
+<p>&lt;datalist&gt; 元素规定输入域的选项列表。 </p>
+<p>&lt;datalist&gt;  属性规定 form 或 input 域应该拥有自动完成功能。当用户在自动完成域中开始输入时，浏览器应该在该域中显示填写的选项：</p>
+<p>使用 &lt;input&gt; 元素的列表属性与 &lt;datalist&gt; 元素绑定.</p>
+<div class="example">
+<img loading="lazy" style="float:right" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right" src="/images/incompatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p class="example">&lt;input&gt; 元素使用&lt;datalist&gt;预定义值:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">list</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">browsers</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">datalist</span><span class="hl-code"> </span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">browsers</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">option</span><span class="hl-code"> </span><span class="hl-var">value</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">Internet Explorer</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">option</span><span class="hl-code"> </span><span class="hl-var">value</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">Firefox</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">option</span><span class="hl-code"> </span><span class="hl-var">value</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">Chrome</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">option</span><span class="hl-code"> </span><span class="hl-var">value</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">Opera</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">option</span><span class="hl-code"> </span><span class="hl-var">value</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">Safari</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">datalist</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_datalist">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 &lt;keygen&gt; 元素</h2>
+<p>&lt;keygen&gt; 元素的作用是提供一种验证用户的可靠方法。 </p>
+<p>&lt;keygen&gt;标签规定用于表单的密钥对生成器字段。</p>
+<p>当提交表单时，会生成两个键，一个是私钥，一个公钥。</p>
+<p>私钥（private key）存储于客户端，公钥（public key）则被发送到服务器。公钥可用于之后验证用户的客户端证书（client certificate）。</p>
+<div class="example">
+<img loading="lazy" style="float:right" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p class="example">带有keygen字段的表单:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">form</span><span class="hl-code"> </span><span class="hl-var">action</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">demo_keygen.asp</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">method</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">get</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+用户名: </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">text</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">name</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">usr_name</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+加密: </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">keygen</span><span class="hl-code"> </span><span class="hl-var">name</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">security</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">submit</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">form</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_keygen">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 &lt;output&gt; 元素</h2>
+<p>&lt;output&gt;  元素用于不同类型的输出，比如计算或脚本输出：</p>
+<div class="example">
+<img loading="lazy" style="float:right" src="/images/compatible_opera2020.gif" align="middle" title="Opera" alt="Opera" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_safari2020.gif" align="middle" title="Safari" alt="Safari" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_chrome2020.gif" align="middle" title="Chrome" alt="Chrome" width="20" height="20"><img loading="lazy" style="float:right" src="/images/compatible_firefox2020.gif" align="middle" title="Firefox" alt="Firefox" width="20" height="20"><img loading="lazy" style="float:right" src="/images/incompatible_ie2020.gif" align="middle" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h2 class="example">实例</h2>
+<p class="example">将计算结果显示在 &lt;output&gt; 元素:</p>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">form</span><span class="hl-code"> </span><span class="hl-var">oninput</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">x.value=parseInt(a.value)+parseInt(b.value)</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">0
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">range</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">a</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">value</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">50</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">100 +
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">number</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">b</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">value</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">50</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">=
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">output</span><span class="hl-code"> </span><span class="hl-var">name</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">x</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">for</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">a b</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">output</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">form</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a class="tryitbtn" target="_blank" href="/try/try.php?filename=tryhtml5_output">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 新表单元素</h2>
+
+<table class="reference notranslate">
+<tbody><tr>
+<th width="20%">标签</th>
+<th width="80%">描述</th>
+</tr>
+<tr>
+<td><a href="/tags/tag-datalist.html">&lt;datalist&gt;</a></td>
+<td>  &lt;input&gt;标签定义选项列表。请与 input 元素配合使用该元素，来定义 input 可能的值。</td>
+</tr>
+<tr>
+<td><a href="/tags/tag-keygen.html">&lt;keygen&gt;</a></td>
+<td>&lt;keygen&gt; 标签规定用于表单的密钥对生成器字段。</td>
+</tr>
+<tr>
+<td><a href="/tags/tag-output.html">&lt;output&gt;</a></td>
+<td>&lt;output&gt; 标签定义不同类型的输出，比如脚本的输出。</td>
+</tr>
+</tbody></table>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

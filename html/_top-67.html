@@ -1,0 +1,624 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML <span class="color_h1">ISO-8859-1</span> 参考手册 </h1>
+
+<hr>
+<p>现代的浏览器支持的字符集：</p>
+<ul>
+	<li><a href="/tags/html-ascii.html">ASCII 字符集</a></li>
+	<li><a href="/tags/ref-charactersets.html">标准 ISO 字符集</a></li>
+	<li><a href="/tags/html-symbols.html">数学符号、希腊字母、其他符号</a></li>
+</ul>
+<hr>
+<h2>ISO-8859-1</h2>
+<p>ISO-8859-1 是大多数浏览器默认的字符集。</p>
+<p>ISO-8859-1 的较低部分（从 1 到 127 之间的代码）是最初的 ASCII 字符集（0-9 的数字，大写和小写英文字母表，以及一些特殊字符）。</p>
+<p>ISO-8859-1 的较高部分（从 160 到 255 之间的代码）包含了一些西欧国家使用的字符和一些被广泛使用的特殊字符，它们全都有实体名称。 
+</p>
+<p>这些符号中的大多数都可以在不进行实体引用的情况下使用，但是实体名称或实体编号为那些不容易通过键盘键入的符号提供了表达的方法。</p>
+
+<hr>
+
+<h2>HTML 预留字符</h2>
+<p>HTML and XHTML 预留了一些字符。比如，您不能使用包含这些字符的文本，因为浏览器可能会误以为是 HTML 标签。</p>
+<p>HTML and XHTML 中央处理器必须识别以下表格所列举的五种特殊字符：</p>
+
+<table class="reference">
+<tbody><tr>
+<th style="width:15%">字符</th>
+<th style="width:15%">实体编号</th>
+<th style="width:15%">实体名称</th>
+<th>描述</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&amp;#160;</td>
+<td>&amp;nbsp;</td>
+<td>非间断空格（non-breaking space）</td>
+</tr>
+<tr>
+<td>¡</td>
+<td>&amp;#161;</td>
+<td>&amp;iexcl;</td>
+<td>倒置感叹号（inverted exclamation mark）</td>
+</tr>
+<tr>
+<td>¢</td>
+<td>&amp;#162;</td>
+<td>&amp;cent;</td>
+<td>美分符号（cent）</td>
+</tr>
+<tr>
+<td>£</td>
+<td>&amp;#163;</td>
+<td>&amp;pound;</td>
+<td>英镑符号（pound）</td>
+</tr>
+<tr>
+<td>¤</td>
+<td>&amp;#164;</td>
+<td>&amp;curren;</td>
+<td>货币符号（currency）</td>
+</tr>
+<tr>
+<td>¥</td>
+<td>&amp;#165;</td>
+<td>&amp;yen;</td>
+<td>人民币/日元符号（yen）</td>
+</tr>
+<tr>
+<td>¦</td>
+<td>&amp;#166;</td>
+<td>&amp;brvbar;</td>
+<td>间断的竖杠（broken vertical bar）</td>
+</tr>
+<tr>
+<td>§</td>
+<td>&amp;#167;</td>
+<td>&amp;sect;</td>
+<td>小节号（section）</td>
+</tr>
+<tr>
+<td>¨</td>
+<td>&amp;#168;</td>
+<td>&amp;uml;</td>
+<td>分音符号（spacing diaeresis）</td>
+</tr>
+<tr>
+<td>©</td>
+<td>&amp;#169;</td>
+<td>&amp;copy;</td>
+<td>版权所有（copyright）</td>
+</tr>
+<tr>
+<td>ª</td>
+<td>&amp;#170;</td>
+<td>&amp;ordf;</td>
+<td>阴性序数记号（feminine ordinal indicator）</td>
+</tr>
+<tr>
+<td>«</td>
+<td>&amp;#171;</td>
+<td>&amp;laquo;</td>
+<td>左双角引号（angle quotation mark (left)）</td>
+</tr>
+<tr>
+<td>¬</td>
+<td>&amp;#172;</td>
+<td>&amp;not;</td>
+<td>否定符号（negation）</td>
+</tr>
+<tr>
+<td>­</td>
+<td>&amp;#173;</td>
+<td>&amp;shy;</td>
+<td>软连字符（soft hyphen）</td>
+</tr>
+<tr>
+<td>®</td>
+<td>&amp;#174;</td>
+<td>&amp;reg;</td>
+<td>注册商标（registered trademark)</td>
+</tr>
+<tr>
+<td>¯</td>
+<td>&amp;#175;</td>
+<td>&amp;macr;</td>
+<td>长音符号（spacing macron）</td>
+</tr>
+<tr>
+<td>°</td>
+<td>&amp;#176;</td>
+<td>&amp;deg;</td>
+<td>度符号（degree）</td>
+</tr>
+<tr>
+<td>±</td>
+<td>&amp;#177;</td>
+<td>&amp;plusmn;</td>
+<td>加减号/正负号（plus-or-minus）</td>
+</tr>
+<tr>
+<td>²</td>
+<td>&amp;#178;</td>
+<td>&amp;sup2;</td>
+<td>上标 2（superscript 2）</td>
+</tr>
+<tr>
+<td>³</td>
+<td>&amp;#179;</td>
+<td>&amp;sup3;</td>
+<td>上标 3（superscript 3）</td>
+</tr>
+<tr>
+<td>´</td>
+<td>&amp;#180;</td>
+<td>&amp;acute;</td>
+<td>尖音符号（spacing acute）</td>
+</tr>
+<tr>
+<td>µ</td>
+<td>&amp;#181;</td>
+<td>&amp;micro;</td>
+<td>微米符号（micro）</td>
+</tr>
+<tr>
+<td>¶</td>
+<td>&amp;#182;</td>
+<td>&amp;para;</td>
+<td>段落符号（paragraph）</td>
+</tr>
+<tr>
+<td>·</td>
+<td>&amp;#183;</td>
+<td>&amp;middot;</td>
+<td>中间点（middle dot）</td>
+</tr>
+<tr>
+<td>¸</td>
+<td>&amp;#184;</td>
+<td>&amp;cedil;</td>
+<td>变音符号（spacing cedilla）</td>
+</tr>
+<tr>
+<td>¹</td>
+<td>&amp;#185;</td>
+<td>&amp;sup1;</td>
+<td>上标 1（superscript 1）</td>
+</tr>
+<tr>
+<td>º</td>
+<td>&amp;#186;</td>
+<td>&amp;ordm;</td>
+<td>阳性序数记号（masculine ordinal indicator）</td>
+</tr>
+<tr>
+<td>»</td>
+<td>&amp;#187;</td>
+<td>&amp;raquo;</td>
+<td>右双角引号（angle quotation mark (right)）</td>
+</tr>
+<tr>
+<td>¼</td>
+<td>&amp;#188;</td>
+<td>&amp;frac14;</td>
+<td>1/4 分数（fraction 1/4）</td>
+</tr>
+<tr>
+<td>½</td>
+<td>&amp;#189;</td>
+<td>&amp;frac12;</td>
+<td>1/2 分数（fraction 1/2）</td>
+</tr>
+<tr>
+<td>¾</td>
+<td>&amp;#190;</td>
+<td>&amp;frac34;</td>
+<td>3/4 分数（fraction 3/4）</td>
+</tr>
+<tr>
+<td>¿</td>
+<td>&amp;#191;</td>
+<td>&amp;iquest;</td>
+<td>倒置问号（inverted question mark）</td>
+</tr>
+</tbody></table>
+<h2>ISO 8859-1 字符实体</h2>
+
+<table class="reference">
+<tbody><tr>
+<th style="width:15%">字符</th>
+<th style="width:15%">实体编号</th>
+<th style="width:15%">实体名称</th>
+<th>描述</th>
+</tr>
+<tr>
+<td>À</td>
+<td>&amp;#192;</td>
+<td>&amp;Agrave;</td>
+<td>大写字母 A，重音（grave accent）</td>
+</tr>
+<tr>
+<td>Á</td>
+<td>&amp;#193;</td>
+<td>&amp;Aacute;</td>
+<td>大写字母 A，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>Â</td>
+<td>&amp;#194;</td>
+<td>&amp;Acirc;</td>
+<td>大写字母 A，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>Ã</td>
+<td>&amp;#195;</td>
+<td>&amp;Atilde;</td>
+<td>大写字母 A，腭化（tilde）</td>
+</tr>
+<tr>
+<td>Ä</td>
+<td>&amp;#196;</td>
+<td>&amp;Auml;</td>
+<td>大写字母 A，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>Å</td>
+<td>&amp;#197;</td>
+<td>&amp;Aring;</td>
+<td>大写字母 A，带有上圆圈（ring）</td>
+</tr>
+<tr>
+<td>Æ</td>
+<td>&amp;#198;</td>
+<td>&amp;AElig;</td>
+<td>大写字母 AE</td>
+</tr>
+<tr>
+<td>Ç</td>
+<td>&amp;#199;</td>
+<td>&amp;Ccedil;</td>
+<td>大写字母 C，变音（cedilla）</td>
+</tr>
+<tr>
+<td>È</td>
+<td>&amp;#200;</td>
+<td>&amp;Egrave;</td>
+<td>大写字母 E，重音（grave accent）</td>
+</tr>
+<tr>
+<td>É</td>
+<td>&amp;#201;</td>
+<td>&amp;Eacute;</td>
+<td>大写字母 E，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>Ê</td>
+<td>&amp;#202;</td>
+<td>&amp;Ecirc;</td>
+<td>大写字母 E，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>Ë</td>
+<td>&amp;#203;</td>
+<td>&amp;Euml;</td>
+<td>大写字母 E，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>Ì</td>
+<td>&amp;#204;</td>
+<td>&amp;Igrave;</td>
+<td>大写字母 I，重音（grave accent）</td>
+</tr>
+<tr>
+<td>Í</td>
+<td>&amp;#205;</td>
+<td>&amp;Iacute;</td>
+<td>大写字母 I，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>Î</td>
+<td>&amp;#206;</td>
+<td>&amp;Icirc;</td>
+<td>大写字母 I，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>Ï</td>
+<td>&amp;#207;</td>
+<td>&amp;Iuml;</td>
+<td>大写字母 I，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>Ð</td>
+<td>&amp;#208;</td>
+<td>&amp;ETH;</td>
+<td>冰岛语大写字母 eth</td>
+</tr>
+<tr>
+<td>Ñ</td>
+<td>&amp;#209;</td>
+<td>&amp;Ntilde;</td>
+<td>大写字母 N，腭化（tilde）</td>
+</tr>
+<tr>
+<td>Ò</td>
+<td>&amp;#210;</td>
+<td>&amp;Ograve;</td>
+<td>大写字母 O，重音（grave accent）</td>
+</tr>
+<tr>
+<td>Ó</td>
+<td>&amp;#211;</td>
+<td>&amp;Oacute;</td>
+<td>大写字母 O，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>Ô</td>
+<td>&amp;#212;</td>
+<td>&amp;Ocirc;</td>
+<td>大写字母 O，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>Õ</td>
+<td>&amp;#213;</td>
+<td>&amp;Otilde;</td>
+<td>大写字母 O，腭化（tilde）</td>
+</tr>
+<tr>
+<td>Ö</td>
+<td>&amp;#214;</td>
+<td>&amp;Ouml;</td>
+<td>大写字母 O，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>×</td>
+<td>&amp;#215;</td>
+<td>&amp;times;</td>
+<td>乘号（multiplication）</td>
+</tr>
+<tr>
+<td>Ø</td>
+<td>&amp;#216;</td>
+<td>&amp;Oslash;</td>
+<td>大写字母 O，带有斜线（slash）</td>
+</tr>
+<tr>
+<td>Ù</td>
+<td>&amp;#217;</td>
+<td>&amp;Ugrave;</td>
+<td>大写字母 U，重音（grave accent）</td>
+</tr>
+<tr>
+<td>Ú</td>
+<td>&amp;#218;</td>
+<td>&amp;Uacute;</td>
+<td>大写字母 U，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>Û</td>
+<td>&amp;#219;</td>
+<td>&amp;Ucirc;</td>
+<td>大写字母 U，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>Ü</td>
+<td>&amp;#220;</td>
+<td>&amp;Uuml;</td>
+<td>大写字母 U，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>Ý</td>
+<td>&amp;#221;</td>
+<td>&amp;Yacute;</td>
+<td>大写字母 Y，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>Þ</td>
+<td>&amp;#222;</td>
+<td>&amp;THORN;</td>
+<td>冰岛语大写字母 THORN</td>
+</tr>
+<tr>
+<td>ß</td>
+<td>&amp;#223;</td>
+<td>&amp;szlig;</td>
+<td>德语小写字母 sharp s</td>
+</tr>
+<tr>
+<td>à</td>
+<td>&amp;#224;</td>
+<td>&amp;agrave;</td>
+<td>小写字母 a，重音（grave accent）</td>
+</tr>
+<tr>
+<td>á</td>
+<td>&amp;#225;</td>
+<td>&amp;aacute;</td>
+<td>小写字母 a，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>â</td>
+<td>&amp;#226;</td>
+<td>&amp;acirc;</td>
+<td>小写字母 a，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>ã</td>
+<td>&amp;#227;</td>
+<td>&amp;atilde;</td>
+<td>小写字母 a，腭化（tilde）</td>
+</tr>
+<tr>
+<td>ä</td>
+<td>&amp;#228;</td>
+<td>&amp;auml;</td>
+<td>小写字母 a，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>å</td>
+<td>&amp;#229;</td>
+<td>&amp;aring;</td>
+<td>小写字母 a，带有上圆圈（ring）</td>
+</tr>
+<tr>
+<td>æ</td>
+<td>&amp;#230;</td>
+<td>&amp;aelig;</td>
+<td>小写字母 ae</td>
+</tr>
+<tr>
+<td>ç</td>
+<td>&amp;#231;</td>
+<td>&amp;ccedil;</td>
+<td>小写字母 c，变音（cedilla）</td>
+</tr>
+<tr>
+<td>è</td>
+<td>&amp;#232;</td>
+<td>&amp;egrave;</td>
+<td>小写字母 e，重音（grave accent）</td>
+</tr>
+<tr>
+<td>é</td>
+<td>&amp;#233;</td>
+<td>&amp;eacute;</td>
+<td>小写字母 e，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>ê</td>
+<td>&amp;#234;</td>
+<td>&amp;ecirc;</td>
+<td>小写字母 e，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>ë</td>
+<td>&amp;#235;</td>
+<td>&amp;euml;</td>
+<td>小写字母 e，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>ì</td>
+<td>&amp;#236;</td>
+<td>&amp;igrave;</td>
+<td>小写字母 i，重音（grave accent）</td>
+</tr>
+<tr>
+<td>í</td>
+<td>&amp;#237;</td>
+<td>&amp;iacute;</td>
+<td>小写字母 i，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>î</td>
+<td>&amp;#238;</td>
+<td>&amp;icirc;</td>
+<td>小写字母 i，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>ï</td>
+<td>&amp;#239;</td>
+<td>&amp;iuml;</td>
+<td>小写字母 i，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>ð</td>
+<td>&amp;#240;</td>
+<td>&amp;eth;</td>
+<td>冰岛语小写字母 eth</td>
+</tr>
+<tr>
+<td>ñ</td>
+<td>&amp;#241;</td>
+<td>&amp;ntilde;</td>
+<td>小写字母 n，腭化（tilde）</td>
+</tr>
+<tr>
+<td>ò</td>
+<td>&amp;#242;</td>
+<td>&amp;ograve;</td>
+<td>小写字母 o，重音（grave accent）</td>
+</tr>
+<tr>
+<td>ó</td>
+<td>&amp;#243;</td>
+<td>&amp;oacute;</td>
+<td>小写字母 o，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>ô</td>
+<td>&amp;#244;</td>
+<td>&amp;ocirc;</td>
+<td>小写字母 o，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>õ</td>
+<td>&amp;#245;</td>
+<td>&amp;otilde;</td>
+<td>小写字母 o，腭化（tilde）</td>
+</tr>
+<tr>
+<td>ö</td>
+<td>&amp;#246;</td>
+<td>&amp;ouml;</td>
+<td>小写字母 o，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>÷</td>
+<td>&amp;#247;</td>
+<td>&amp;divide;</td>
+<td>除号（division）</td>
+</tr>
+<tr>
+<td>ø</td>
+<td>&amp;#248;</td>
+<td>&amp;oslash;</td>
+<td>小写字母 o，带有斜线（slash）</td>
+</tr>
+<tr>
+<td>ù</td>
+<td>&amp;#249;</td>
+<td>&amp;ugrave;</td>
+<td>小写字母 u，重音（grave accent）</td>
+</tr>
+<tr>
+<td>ú</td>
+<td>&amp;#250;</td>
+<td>&amp;uacute;</td>
+<td>小写字母 u，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>û</td>
+<td>&amp;#251;</td>
+<td>&amp;ucirc;</td>
+<td>小写字母 u，抑扬音（circumflex accent）</td>
+</tr>
+<tr>
+<td>ü</td>
+<td>&amp;#252;</td>
+<td>&amp;uuml;</td>
+<td>小写字母 u，带有变音符号标记（umlaut mark）</td>
+</tr>
+<tr>
+<td>ý</td>
+<td>&amp;#253;</td>
+<td>&amp;yacute;</td>
+<td>小写字母 y，尖音（acute accent）</td>
+</tr>
+<tr>
+<td>þ</td>
+<td>&amp;#254;</td>
+<td>&amp;thorn;</td>
+<td>冰岛语小写字母 thorn</td>
+</tr>
+<tr>
+<td>ÿ</td>
+<td>&amp;#255;</td>
+<td>&amp;yuml;</td>
+<td>小写字母 y，带有变音符号标记（umlaut mark）</td>
+</tr>
+</tbody></table>
+			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

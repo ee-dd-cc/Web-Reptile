@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=false, viewport-fit=cover">
+  <title>前端社区</title>
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/global-201911291451.css?max_age=31536000" type="text/css" media="all">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/base/base-202108201021.css?max_age=31536000">
+  
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/AskDialog/AskDialog-202004291717.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/Column/Column-202108241855.css?max_age=31536000">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/Packs/Packs-202101051447.css?max_age=31536000">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community/portal/css/markdown-201810241044.css?max_age=31536000">
+  <link rel="stylesheet" href="https://imgcache.qq.com/qcloud/draft-master/dist/draft-master-v1.4.6.d4s2ddo9sb.css?max_age=31536000">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+    .c-nav-wrap {
+      height: 54px;
+    }
+
+    .pg-2-article {
+      margin-top: 74px;
+    }
+    .J-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .pg-3-index {
+      padding-top: 54px;
+      min-height: 100%;
+    }
+    .layout-main .com-2-panel {
+      display: none;
+    }
+    .layout-side .com-2-section {
+      position: fixed;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="J-header c-nav-wrap c-nav com-2-nav">
+    <div class="c-nav-mod c-nav-mod-pc c-nav-white">
+      <div class="J-headerBottom c-nav-bottom responsive">
+        <a href="/rjhy/html5-community/developer/index.html" class="c-nav-project-logo"
+          hotrep="community.header.logo.community">
+          <i class="c-nav-project-bg-logo">云+社区</i>
+        </a>
+        <div class="c-nav-bm-categories">
+          <ul class="c-nav-list">
+            <li class="presentation" id="developer">
+              <a href="/rjhy/html5-community/developer/index.html" role="button"
+                hotrep="community.header.nav.devdocs">开发者手册</a>
+            </li>
+            <li class="presentation" id="article">
+              <a href="/rjhy/html5-community/article/index.html" role="button"
+                hotrep="community.header.nav.devdocs">资讯专栏</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="J-body col-body pg-2-article">
+    <div class="com-3-layout">
+      <div class="layout-main"></div>
+      <div class="layout-side">
+        <section class="com-2-section theme2 ">
+          <header class="com-2-section-hd">
+            <h2 class="com-2-section-title without-icon"><span><em>推荐</em>文章</span></h2>
+            <div class="com-2-section-hd-extra">
+              <!-- <a class="com-arrow-link gray" href="/developer/specials" target="_blank">更多</a> -->
+            </div>
+          </header>
+          <div class="com-2-section-bd">
+            <ul class="com-2-side-topics without-margin">
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="J-footer com-2-footer">
+    <div class="com-2-footer-copyright-cnt">
+      <div class="com-2-footer-inner">
+        <p>Copyright © 2021 前端云社区 版权所有
+          <!-- <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020287" hotrep="community.footer.link.beian" target="_blank">京公网安备 11010802017518 </a> -->
+          <!-- <a href="http://beian.miit.gov.cn" target="_blank" hotrep="community.footer.link.miitbeian">粤B2-20090059-1</a> -->
+        </p>
+        <p>
+          yuankun.gu@yintech.cn
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    const initHeader = () => {
+      const wUrl = window.location.href
+      if (wUrl.indexOf('developer') > -1) {
+        console.log('wUrl')
+        document.getElementById('developer').setAttribute('class', 'presentation curr')
+      }
+      if (wUrl.indexOf('article') > -1) {
+        console.log('wUrl')
+        document.getElementById('article').setAttribute('class', 'presentation curr')
+      }
+    }
+    const initContent = () => {
+      document.querySelector('.com-markdown-collpase .col-2-article-source').style.display = 'none'
+      document.querySelector('.col-2-article-tags').style.display = 'none'
+      document.querySelector('.col-2-article-opts').style.display = 'none'
+      document.querySelector('.group-comments').style.display = 'none'
+      document.querySelector('.com-2-panel').style.display = 'none'
+      const comPanel = document.querySelectorAll('.layout-main .com-2-panel')
+      comPanel[0].style.display = 'block'
+    }
+    initHeader()
+    initContent()
+  </script>
+</body>
+
+</html>

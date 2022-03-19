@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=false, viewport-fit=cover">
+  <title>前端社区</title>
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/global-201911291451.css?max_age=31536000" type="text/css" media="all">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community/portal/css/documents/documents-20189191454.css?max_age=31536000" type="text/css" media="all">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/base/base-202108201021.css?max_age=31536000">
+  <link rel="stylesheet" href="https://imgcache.qq.com/qcloud/draft-master/dist/draft-master-v1.4.6.d4s2ddo9sb.css?max_age=31536000">
+  <style>
+    .c-nav-wrap {
+      height: 54px;
+    }
+    .doc-layout {
+      top: 55px;
+    }
+  </style>
+</head>
+<body>
+  <div class="J-header c-nav-wrap c-nav com-2-nav">
+    <div class="c-nav-mod c-nav-mod-pc c-nav-white">
+      <div class="J-headerBottom c-nav-bottom responsive">
+        <a href="/rjhy/html5-community/developer/index.html" class="c-nav-project-logo" hotrep="community.header.logo.community">
+          <i class="c-nav-project-bg-logo">云+社区</i>
+        </a>
+        <div class="c-nav-bm-categories">
+          <ul class="c-nav-list">
+            <li class="presentation" id="developer">
+              <a href="/rjhy/html5-community/developer/index.html" role="button" hotrep="community.header.nav.devdocs">开发者手册</a>
+            </li>
+            <li class="presentation" id="article">
+              <a href="/rjhy/html5-community/article/index.html" role="button" hotrep="community.header.nav.devdocs">资讯专栏</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="J-body" style="min-height: 765px;">
+    <section class="doc-layout">
+      <aside class="J-doc-aside-menu doc-aside">
+
+      </aside>
+      <div class="doc-main">
+      </div>
+    </section>
+  </div>
+  <script>
+    const menu = document.querySelectorAll('.J-doc-aside-menu .doc-aside-inner .c-tree-level1 > li')
+    menu.forEach((item, index) => {
+      const id = item.getAttribute('id')
+      if (id != 'doc.1052' && id != 'doc.1116' && id != 'doc.1121') {
+        item.style.display = 'none'
+      }
+    })
+    const initHeader = () => {
+      const wUrl = window.location.href
+      if (wUrl.indexOf('developer') > -1) {
+        console.log('wUrl')
+        document.getElementById('developer').setAttribute('class', 'presentation curr')
+      }
+      if (wUrl.indexOf('article') > -1) {
+        console.log('wUrl')
+        document.getElementById('article').setAttribute('class', 'presentation curr')
+      }
+    }
+    initHeader()
+  </script>
+</body>
+</html>

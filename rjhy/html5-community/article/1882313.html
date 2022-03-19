@@ -1,0 +1,323 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=false, viewport-fit=cover">
+  <title>前端社区</title>
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/global-201911291451.css?max_age=31536000" type="text/css" media="all">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/base/base-202108201021.css?max_age=31536000">
+  
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/AskDialog/AskDialog-202004291717.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/Column/Column-202108241855.css?max_age=31536000">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community-pc/build/Packs/Packs-202101051447.css?max_age=31536000">
+  <link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/community/portal/css/markdown-201810241044.css?max_age=31536000">
+  <link rel="stylesheet" href="https://imgcache.qq.com/qcloud/draft-master/dist/draft-master-v1.4.6.d4s2ddo9sb.css?max_age=31536000">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+    .c-nav-wrap {
+      height: 54px;
+    }
+
+    .pg-2-article {
+      margin-top: 74px;
+    }
+    .J-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .pg-3-index {
+      padding-top: 54px;
+      min-height: 100%;
+    }
+    .layout-main .com-2-panel {
+      display: none;
+    }
+    .layout-side .com-2-section {
+      position: fixed;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="J-header c-nav-wrap c-nav com-2-nav">
+    <div class="c-nav-mod c-nav-mod-pc c-nav-white">
+      <div class="J-headerBottom c-nav-bottom responsive">
+        <a href="/rjhy/html5-community/developer/index.html" class="c-nav-project-logo" hotrep="community.header.logo.community">
+          <i class="c-nav-project-bg-logo">云+社区</i>
+        </a>
+        <div class="c-nav-bm-categories">
+          <ul class="c-nav-list">
+            <li class="presentation" id="developer">
+              <a href="/rjhy/html5-community/developer/index.html" role="button" hotrep="community.header.nav.devdocs">开发者手册</a>
+            </li>
+            <li class="presentation" id="article">
+              <a href="/rjhy/html5-community/article/index.html" role="button" hotrep="community.header.nav.devdocs">资讯专栏</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="J-body col-body pg-2-article">
+    <div class="com-3-layout">
+      <div class="layout-main"><div class="com-widget-operations2 theme2 J-sharingBar" style="visibility:hidden"><div class="main-cnt"><a href="javascript:;" class="com-opt-link link-add is-actived"><i class="com-i-add"></i></a><a href="javascript:;" class="com-opt-link link-like"><i class="com-i-like"></i><span class="text">19</span></a><a href="javascript:;" class="com-opt-link link-bookmark"><i class="com-i-bookmark"></i><span class="text">0</span></a><div><a href="javascript:;" class="com-opt-link link-share"><i class="com-i-share"></i></a><div class="extra-cnt" style="visibility:hidden"><span class="com-opt-text share-text">分享</span><ul class="com-share-options"><li><div class="c-bubble-trigger"><a href="javascript:;" class="opt-item"><i class="opt-icon wechat"></i></a><div class="c-bubble c-bubble-right "><div class="c-bubble-inner"><div class="qr-img"></div><p class="qr-txt">分享文章到朋友圈</p></div></div></div></li><li><div class="c-bubble-trigger"><a href="javascript:;" class="opt-item"><i class="opt-icon qq"></i></a><div class="c-bubble c-bubble-right "><div class="c-bubble-inner"><span>分享文章到 QQ</span></div></div></div></li><li><div class="c-bubble-trigger"><a href="javascript:;" class="opt-item"><i class="opt-icon weibo"></i></a><div class="c-bubble c-bubble-right "><div class="c-bubble-inner"><span>分享文章到微博</span></div></div></div></li><li><div class="c-bubble-trigger"><a class="opt-item" href="javascript:;"><i class="opt-icon copy"></i></a><div class="c-bubble c-bubble-right "><div class="c-bubble-inner"><span>复制文章链接到剪贴板</span></div></div></div></li></ul><div class="c-bubble-trigger com-widget-poster"><button class="scan-btn">海报分享</button><div class="c-bubble c-bubble-right "><div class="c-bubble-inner"><div class="qr-img"></div><p class="qr-txt">海报分享</p></div></div></div></div></div></div></div><section class="com-2-panel col-2-article J-articlePanel"><span class="com-2-mark-triangle article-mark"><span class="mark-cnt">原创</span></span><div class="col-2-article-header"><h1 class="article-title J-articleTitle"><span>基于 faas、http 的 tcp 隧道</span></h1><div class="article-infos-wrap"><div class="article-infos"><span class="article-info"><time datetime="2021-09-25 21:37:03" title="2021-09-25 21:37:03">2021-8-27 9:36</time></span><span class="article-info">阅读 <!-- -->518</span>0</div><div class="article-infos-extra"></div></div></div><div class="com-markdown-collpase"><div class="com-markdown-collpase-main"><div class="rno-markdown J-articleContent"><h1 id="%E8%83%8C%E6%99%AF" name="%E8%83%8C%E6%99%AF">背景</h1><p>tcp 隧道我们见得比较多了，在 <a data-from="3346" href="https://cloud.tencent.com/developer/article/1857738?from=3346" target="_blank">这篇文章</a> 就给了一些来例子，其中有一些 tcp 隧道是用来穿越防火墙，或者 "科学上网"; 但是如果去看这些隧道的实现，本质上都是基于 http 的 connect 方法，具体区别可以看这个 <a data-from="3346" href="https://en.wikipedia.org/wiki/HTTP_tunnel" target="_blank" rel="nofollow noopener noreferrer">wiki</a>, 即实现其实是使用 http 的连接方法，然后 reuse http 底层的 conncetion，比如 websocket 等也是基于类似的实现</p><pre class="prism-token token language-js">Example negotiation
+The client connects to the proxy server and requests tunneling by specifying the port and the host computer to which it would like to connect. The port is used to indicate the protocol being requested.[3]
+
+CONNECT streamline.t-mobile.com:22 HTTP/1.1
+Proxy-Authorization: Basic encoded-credentials
+If the connection was allowed and the proxy has connected to the specified host then the proxy will return a 2XX success response.[3]
+
+HTTP/1.1 200 OK</pre><p>但是很多时候 http 底层的 connection 我们都不能使用，即无法基于 connect 实现，只能只用 put, get, delete, post 方法，甚至，如果我们使用 faas 实现，比如腾讯云上的 scf，我们甚至连这几种方法都没有，我们只能假设所有的方法都是 post.</p><p>如果是这种情况，我们该如何实现呢。</p><h1 id="%E5%AE%9E%E7%8E%B0" name="%E5%AE%9E%E7%8E%B0">实现</h1><blockquote><p>注意：本实现仅仅是 poc（prove of concept）并没有考虑性能优化，实际上，很多点性能可以大幅优化</p></blockquote><ol class="ol-level-0"><li>首先我们要实现一个 client, 一个 server，client 监听本地的 sock5 端口，转发 tcp 请求到 server 端，这时候 tcp 请求被转化为 http 请求；</li><li>server 端收到请求之后代替 client 像远端建立 tcp 连接，将 tcp 连接中的数据返回到 client </li><li>client 使用 http 请求模拟一个 tcp 连接，因此，我们要有三种请求 "connect", "write", "read"</li><li>server 端需要保持对远端的 连接，即一个 conncetion，这点很重要，如果用 faas 实现，那么 faas 的实例数量要限制为 1（即使用单实例并发，这点 腾讯云的 scf 还没有支持，阿里云已经支持）</li></ol><pre class="prism-token token language-js">sequenceDiagram
+local-&gt;&gt;client: tcp 代理本地的请求
+client-&gt;&gt;server: http 请求，类型: connect 
+server-&gt;&gt;remote: tcp 连接到远端, 读写数据
+client-&gt;&gt;server: http 请求，类型: write 
+client-&gt;&gt;server: http 请求，类型: read 
+client-&gt;&gt;local: tcp 请求返回</pre><p>为了快速开始，我们 fork 了一个基础的项目: <a data-from="3346" href="https://github.com/jarvisgally/v2simple" target="_blank" rel="nofollow noopener noreferrer">https://github.com/jarvisgally/v2simple</a>, 这个项目实现了一套基础设施（即协议），我们在这上面实现基于 http/faas 的两套实现【再一次声明，这套 http 实现没有使用 connect 方法】</p><p>其中 http 的实现主体部分如下（faas 的实现也是类似的，注意代码里面省略了很多，仅仅演示了核心的部分）</p><pre class="prism-token token language-js">const Name = "http"
+
+
+type HttpClient struct {
+	client *resty.Client
+	addr   string
+}
+
+func NewHttpClient(url *url.URL) (proxy.Client, error) {
+	return &amp;HttpClient{
+		client: resty.New(),
+		addr:   url.String(),
+	}, nil
+}
+
+func (c *HttpClient) Handshake(_ net.Conn, target string) (io.ReadWriter, error) {
+	conn := &amp;httpConnection{
+		client:       c,
+		target:       target,
+		connectionId: RandStringRunes(8),
+	}
+	return conn, conn.Connect()
+}
+
+func (c *HttpClient) post(r *TunnelRequest) (*TunnelResponse, error) {
+	ret := &amp;TunnelResponse{}
+	_, err := c.client.NewRequest().SetResult(ret).SetBody(r).SetHeader("Content-Type", "application/json").Post(c.addr)
+	return ret, err
+}
+
+type TunnelRequest struct {
+	Target       string
+	Action       string // create, read, write
+	Data         []byte
+	ConnectionId string
+}
+
+type TunnelResponse struct {
+	Target       string
+	Action       string
+	Data         []byte
+	ConnectionId string
+	Eof          bool
+	Code         int
+	Message      string
+}
+
+type httpConnection struct {
+	client       *HttpClient
+	target       string
+	readBuffer   []byte
+	writeBuffer  []byte
+	connectionId string
+	eof          bool
+	lastWrite    time.Time
+}
+
+func (c *httpConnection) Connect() (err error) {
+	_, err = c.client.post(&amp;TunnelRequest{
+		Target:       c.target,
+		Action:       "connect",
+		ConnectionId: c.connectionId,
+	})
+	return err
+}
+
+func (c *httpConnection) Read(p []byte) (n int, err error) {
+	if c.eof {
+		return 0, io.EOF
+	}
+	if len(c.readBuffer) == 0 {
+		resp, err := c.client.post(&amp;TunnelRequest{
+			Target:       c.target,
+			Action:       "read",
+			ConnectionId: c.connectionId,
+		})
+		if err != nil {
+			return 0, err
+		}
+		c.readBuffer = append(c.readBuffer, resp.Data...)
+		if resp.Eof {
+			c.eof = true
+		}
+	}
+
+	n = copy(p, c.readBuffer)
+	c.readBuffer = c.readBuffer[:len(c.readBuffer)-n]
+	return n, nil
+}
+
+func (c *httpConnection) Write(p []byte) (n int, err error) {
+	c.writeBuffer = append(c.writeBuffer, p...)
+	if len(c.writeBuffer) &gt; 1024 || time.Now().Sub(c.lastWrite) &gt; time.Millisecond*100 {
+		resp, err := c.client.post(&amp;TunnelRequest{
+			Target:       c.target,
+			Action:       "write",
+			Data:         c.writeBuffer,
+			ConnectionId: c.connectionId,
+		})
+		if err != nil {
+			return 0, err
+		}
+		_ = resp
+		c.writeBuffer = c.writeBuffer[:0]
+	}
+	return len(p), nil
+}</pre><h1 id="%E9%83%A8%E7%BD%B2" name="%E9%83%A8%E7%BD%B2">部署</h1><p>由于 scf 暂时不支持单实例并发，我们暂时只部署 http 版本，但是 faas 版本我们有理由相信他是 work 的</p><ol class="ol-level-0"><li>部署 server 端代码到一台云主机并启动</li><li>启动 client，并且 client 设置对 google.com 走 http tunnel</li><li>设置本地代理走 sock5, 以我的 macos 为例，设置 网络&gt;wifi&gt;高级&gt;代理&gt;socks代理【填写 client 监听 ip】</li></ol><h1 id="%E6%BC%94%E7%A4%BA" name="%E6%BC%94%E7%A4%BA">演示</h1><pre class="prism-token token language-js"># client 端启动
+➜ go build -o main .
+v2simple/cmd/client on  master by 🐹 v1.16 ☪️  21:29:49
+➜ ./main -f client.example.http.json
+V2Simple 0.1.0 (V2Simple, a simple implementation of V2Ray 4.25.0), go1.16 darwin amd64
+2021/09/25 21:30:02 using /Users/leiwang/Work/go-librarys/src/github.com/u2takey/v2simple/cmd/client/client.example.http.json
+2021/09/25 21:30:02 using /Users/leiwang/Work/go-librarys/src/github.com/u2takey/v2simple/cmd/client/blacklist
+2021/09/25 21:30:02 socks5 listening TCP on 127.0.0.1:1081</pre><pre class="prism-token token language-js"># server 端启动
+ubuntu@VM-0-7-ubuntu:~$ ./main
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /                         --&gt; main.main.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8081</pre><p>打开 google.com, 连接成功, tcp 隧道实现之后可以在上面做更多复杂的功能，接下来就可以发挥想象力了.</p><figure><div class="image-block"><span class="lazy-image-holder" dataurl="https://ask.qcloudimg.com/http-save/1319879/343ec2b6a27c0612de865f0fefff94d7.png"></span></div></figure><p>完整的代码在<a data-from="3346" href="https://github.com/u2takey/v2simple" target="_blank" rel="nofollow noopener noreferrer">这里</a></p></div><div class="col-2-article-source"><p>原创声明，本文系作者授权云+社区发表，未经许可，不得转载。</p><p>如有侵权，请联系 <!-- -->yunjia_community@tencent.com<!-- --> 删除。</p></div></div><div class="com-markdown-collpase-toggle"><a href="javascript:;" class="toggle-link">展开阅读全文</a></div></div><div class="col-2-article-tags"><nav class="col-tags"><a href="/developer/tag/10174?entry=article" class="col-tag">Go</a></nav><div class="extra-part"><div class="com-operations"><a href="javascript:;" class="com-opt-link link-warn"><i class="com-i-warn"></i>举报</a></div></div></div><div class="col-2-article-opts"><button type="button" class="c-btn"><span class="text"><i class="opt-icon like"></i>点赞 19</span></button><button type="button" class="c-btn c-btn-weak"><span class="text"><i class="opt-icon share"></i>分享</span></button></div><section class="group-comments"><div class="com-comment-single-edit theme2"><header class="edit-hd"><h3 class="edit-title"><i class="edit-icon"></i>我来说两句</h3><div class="edit-count"><span class="edit-count-num">0</span> 条评论</div></header><div class="edit-body"><div class="edit-textarea"></div><div class="edit-tip"><a href="javascript:;">登录</a> 后参与评论</div></div></div><section class="com-comment-popup"><div class="popup-bd"></div></section></section></section><section class="com-2-panel"><header class="com-2-panel-hd"><h3 class="com-2-panel-title">相关文章</h3></header><ul class="com-3-article-panels without-padding-top"><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1039626?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">用不到 100 行的 Golang 代码实现 HTTP 代理</h3><p class="com-3-article-panel-desc">我们的目标是实现一个能处理 HTTP 和 HTTPS 的代理服务器。代理 HTTP 请求的过程其实就是一个解析请求、将该请求转发到目的服务器、读取目的服务器响应...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/1008345" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/avatar/1008345/jgi0jv8w7i.jpeg?imageView2/2/w/64)"></span></span>企鹅号小编</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-1008345/fcfbm5k16u.jpeg?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1631109?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">简单了解 HTTP 协议</h3><p class="com-3-article-panel-desc">最初，HTTP 协议的出现主要是为了解决文本传输的难题，由于协议本身非常简单，于是在此基础上设想了很多应用方法并投入了实际使用。现在 HTTP 协议已经超出了 ...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/1160209" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/avatar/1160209/gg078bbje0.png?imageView2/2/w/64)"></span></span>JMCui</a></div></div></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1354218?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">consul的service mesh功能初体验</h3><p class="com-3-article-panel-desc"> |作者简介 ? consul之前一直被当成一个服务发现、分布式KV服务、服务健康检查服务等，但此前发布的1.2版本，宣称其实现了Service Mesh方案。...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/1013467" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-1013467/rie82ja91t.jpeg?imageView2/2/w/64)"></span></span>腾讯云TStack</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/1013467/oirtkhuk5z.jpeg?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1171293?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">研究consul的service mesh功能</h3><p class="com-3-article-panel-desc">来源：https://jeremy-xu.oschina.io/2018/07/%E7%A0%94%E7%A9%B6consul%E7%9A%84service...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/1258501" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-1258501/z1mijwd5ld.jpeg?imageView2/2/w/64)"></span></span>程序猿DD</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-1258501/qex26iqrao.jpeg?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1806135?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">内网基础-隐藏通信隧道技术</h3><p class="com-3-article-panel-desc">        当我们在外网打下一个点，通过arp，netstat，以及ifconifg（ipconfig）等信息收集，发现此点为dmz，可通内网，那么这时候我...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/8119233" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-8119233/9ellxnppr6.jpeg?imageView2/2/w/64)"></span></span>Gamma实验室</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-8119233/q5lsltd9w6.png?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1199027?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">OKHttp源码解析(二)："前戏"——HTTP的那些事</h3><p class="com-3-article-panel-desc">本篇文章为OkHttp的"前戏"篇，主要讲解关于http协议的一些基础知识。主要内容如下：</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/2957818" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/avatar/2957818/gj29e6r1z.png?imageView2/2/w/64)"></span></span>隔壁老李头</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-2957818/x3bagjjyjw.png?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1176299?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">你不知道的  HTTPS中间人攻击</h3><p class="com-3-article-panel-desc">研究生毕业了，好好给自己放了个假期，休息了两周，文章博客都没有更新。从大学开始基本上没过暑假，匆匆忙忙的。再过两天，就要去腾讯工作了，做了自己喜欢的网络安全，重...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/1068778" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/avatar/1068778/xfi45o191p.png?imageView2/2/w/64)"></span></span>七夜安全博客</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-1068778/s2z32xyv5m.jpeg?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1186893?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">你不知道的  HTTPS中间人攻击</h3><p class="com-3-article-panel-desc">研究生毕业了，好好给自己放了个假期，休息了两周，文章博客都没有更新。从大学开始基本上没过暑假，匆匆忙忙的。再过两天，就要去腾讯工作了，做了自己喜欢的网络安全，重...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/1068778" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/avatar/1068778/xfi45o191p.png?imageView2/2/w/64)"></span></span>七夜安全博客</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-1068778/tjssecu7mb.jpeg?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1694075?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">最好用的内网穿透工具合集</h3><p class="com-3-article-panel-desc">在渗透过程中，我们需要快速实现内网穿透，从而绕过网络访问限制，直接从外网来访问内网。今天，我们来推荐几款非常好用的内网穿透工具，如有其它推荐，欢迎补充和指正。
+</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/5767423" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/random-avatar/5767423/6hnf1zncdf.png)"></span></span>Bypass</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-5767423/2fxmr25z80.png?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1448487?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">天天给 App 抓包，还不懂 HTTP 代理吗？ | 实用 HTTP</h3><p class="com-3-article-panel-desc">在 HTTP 协议中，最基础的就是请求和响应的报文，而报文又由报文头和报文实体组成。大多数 HTTP 协议的使用场景，都是依赖设置不同的 HTTP 请求/响应 ...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/4918971" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-4918971/o0oh2dd9tr.jpeg?imageView2/2/w/64)"></span></span>Android技术干货分享</a></div></div></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1509140?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">NPS详情</h3><p class="com-3-article-panel-desc">由于传播、利用此文所提供的信息而造成的任何直接或者间接的后果及损失，均由使用者本人负责，雷神众测以及文章作者不为此承担任何责任。
+
+雷神众测拥有对此文章的修改和...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/1291653" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/avatar/1291653/s370fawdoi.png?imageView2/2/w/64)"></span></span>安恒网络空间安全讲武堂</a></div></div></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1474634?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">内网全局代理工具及特征分析</h3><p class="com-3-article-panel-desc">端口转发是点对点的方式，代理是点对面的方式，如果我们只需要访问主机的特定的端口，使用端口转发就够了，但通常在渗透进内网之后，我们还需要对整个内网进行横向渗透，这...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/1268449" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/avatar/1268449/flvc0hl3bd.jpeg?imageView2/2/w/64)"></span></span>FB客服</a></div></div></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1789787?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">简单的HTTP协议</h3><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/5783412" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/custom-avatar/5783412/ivo8qakf26.jpg)"></span></span>李才哥</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-5783412/9vm5dyk6rt.png?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1825290?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">内网渗透基石篇-- 隐藏通信隧道技术（上）</h3><p class="com-3-article-panel-desc">在实际的网络中，通常会通过各种边界设备、软/硬件防火墙甚至入侵检测系统来检查对外连接情况，如果发现异样，就会对通信进行阻断。那么什么是隧道呢？这里的隧道，就是一...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/6517667" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/random-avatar/6517667/dnoszynw6g.png)"></span></span>小老鼠</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-6517667/h4v6pj9vnw.jpeg?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1712226?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">深入浅出FaaS的两种进程模型</h3><p class="com-3-article-panel-desc">上一篇我们通过一个 Node.js 纯 FaaS 的 Serverless 应用，给你介绍了 Serverless 引擎盖下的运作机制，总结来说，FaaS 依赖...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/5395074" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-5395074/3yd06knnr6.jpeg?imageView2/2/w/64)"></span></span>码农架构</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/5395074/awgv2sgrjm.webp?imageView2/2/w/240/format/jpg)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1730121?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">深入浅出FaaS的两种进程模型</h3><p class="com-3-article-panel-desc">上一篇我们通过一个 Node.js 纯 FaaS 的 Serverless 应用，给你介绍了 Serverless 引擎盖下的运作机制，总结来说，FaaS 依赖...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/5395074" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-5395074/3yd06knnr6.jpeg?imageView2/2/w/64)"></span></span>码农架构</a></div></div></div><div class="com-3-article-panel-object"><span class="com-thumbnail com-3-article-panel-thumbnail" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-5395074/9jii38fhf9.png?imageView2/2/w/240)"></span></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1840388?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">SuperEdge 云边隧道新特性：从云端SSH运维边缘节点</h3><p class="com-3-article-panel-desc"> 李腾飞，腾讯容器技术研发工程师，腾讯云TKE后台研发，SuperEdge核心开发成员。
+ 王冬，腾讯云TKE后台研发工程师，专注容器云原生领域，SuperEd...</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/6886083" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/raw/yehe-b3360f6a89f75/954bmyl9qg.png?imageView2/2/w/64)"></span></span>腾讯云原生</a></div></div></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1853362?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">内网隧道工具SPP尝鲜</h3><p class="com-3-article-panel-desc">
+
+通过一个工具基本可以满足演练过程中打隧道的要求（可惜不支持dns协议）。这篇文章主要是自己研究该工具如何使用的过程
+
+
+0x02 工具简介
+</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/8098995" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/http-save/yehe-8098995/sj719hv2mp.jpeg?imageView2/2/w/64)"></span></span>潇湘信安</a></div></div></div></div></div></li><li class="panel-cell"><div class="com-3-article-panel theme2"><a href="/developer/article/1855185?from=article.detail.1882313" target="_blank" class="panel-link" hotrep=""></a><div class="com-3-article-panel-media"><div class="com-3-article-panel-body"><h3 class="com-3-article-panel-title">TCP/IP 协议</h3><p class="com-3-article-panel-desc">TCP/IP 是基于 TCP 和 IP 这两个最初的协议之上的不同的通信协议的大集合。</p><div class="com-3-article-panel-infos"><div class="com-3-article-panel-source"><a href="/developer/user/8647142" target="_blank" class="item author"><span class="com-2-avatar"><span class="com-2-avatar-inner" style="background-image:url(https://ask.qcloudimg.com/random-avatar/8647142/ggmmp3jdjw.png)"></span></span>用户8647142</a></div></div></div></div></div></li></ul><div class="com-list-enter"><a href="/developer/column" class="com-arrow-link">更多文章</a></div></section></div>
+      <div class="layout-side">
+        <section class="com-2-section theme2 ">
+          <header class="com-2-section-hd">
+            <h2 class="com-2-section-title without-icon"><span><em>推荐</em>文章</span></h2>
+            <div class="com-2-section-hd-extra">
+              <!-- <a class="com-arrow-link gray" href="/developer/specials" target="_blank">更多</a> -->
+            </div>
+          </header>
+          <div class="com-2-section-bd">
+            <ul class="com-2-side-topics without-margin">
+            
+      <li>
+        <a href="../article/1882312.html" target="_blank" class="com-media com-side-topic" title="基于 curl 和 cos 的粘贴板">
+          <div class="com-media-body">
+            <h3 class="com-side-activity-title">
+              <p class="com-side-activity-title-main">基于 curl 和 cos 的粘贴板</p>
+              <p class="com-side-activity-title-special">很多时候，我们需要一个临时的粘贴板，有时候我们可以使用聊天工具作为粘贴板，或者在互联网上找到类似的服务做粘贴使用. 不过这么做显然是有很多限制的，除了不够 ge...</p>
+            </h3>
+          </div>
+        </a>
+      </li>
+    
+      <li>
+        <a href="../article/1881854.html" target="_blank" class="com-media com-side-topic" title="itest work敏捷测试管理平台介绍">
+          <div class="com-media-body">
+            <h3 class="com-side-activity-title">
+              <p class="com-side-activity-title-main">itest work敏捷测试管理平台介绍</p>
+              <p class="com-side-activity-title-special">itest work 开源敏捷测试管理，包含极简的任务管理，测试管理，缺陷管理，测试环境管理，接口测试，接口Mock，还有压测 ，又有丰富的统计分析，8合1工作...</p>
+            </h3>
+          </div>
+        </a>
+      </li>
+    
+      <li>
+        <a href="../article/1875755.html" target="_blank" class="com-media com-side-topic" title="Android数据存储方式之SharedPreferences">
+          <div class="com-media-body">
+            <h3 class="com-side-activity-title">
+              <p class="com-side-activity-title-main">Android数据存储方式之SharedPreferences</p>
+              <p class="com-side-activity-title-special">不同于文件的存储方式，SharedPreferences提供了一种K-V键值对的数据存储方式。</p>
+            </h3>
+          </div>
+        </a>
+      </li>
+    
+      <li>
+        <a href="../article/1882313.html" target="_blank" class="com-media com-side-topic" title="基于 faas、http 的 tcp 隧道">
+          <div class="com-media-body">
+            <h3 class="com-side-activity-title">
+              <p class="com-side-activity-title-main">基于 faas、http 的 tcp 隧道</p>
+              <p class="com-side-activity-title-special">tcp 隧道我们见得比较多了，在 这篇文章 就给了一些来例子，其中有一些 tcp 隧道是用来穿越防火墙，或者 "科学上网"; 但是如果去看这些隧道的实现，本质上...</p>
+            </h3>
+          </div>
+        </a>
+      </li>
+    
+      <li>
+        <a href="../article/1879008.html" target="_blank" class="com-media com-side-topic" title="【磁力搜索】2021年最实用的30多个磁力搜索网站，给你整理好了！">
+          <div class="com-media-body">
+            <h3 class="com-side-activity-title">
+              <p class="com-side-activity-title-main">【磁力搜索】2021年最实用的30多个磁力搜索网站，给你整理好了！</p>
+              <p class="com-side-activity-title-special">众所周知，磁力搜索网站最大的缺点就是经常失效。昨天还用的好好的，今天突然就访问不了。那种感觉，只能用2个字形容：难顶！</p>
+            </h3>
+          </div>
+        </a>
+      </li>
+    </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="J-footer com-2-footer">
+    <div class="com-2-footer-copyright-cnt">
+      <div class="com-2-footer-inner">
+        <p>Copyright © 2021 前端云社区 版权所有
+          <!-- <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020287" hotrep="community.footer.link.beian" target="_blank">京公网安备 11010802017518 </a> -->
+          <!-- <a href="http://beian.miit.gov.cn" target="_blank" hotrep="community.footer.link.miitbeian">粤B2-20090059-1</a> -->
+        </p>
+        <p>
+          yuankun.gu@yintech.cn
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    const initHeader = () => {
+      const wUrl = window.location.href
+      if (wUrl.indexOf('developer') > -1) {
+        console.log('wUrl')
+        document.getElementById('developer').setAttribute('class', 'presentation curr')
+      }
+      if (wUrl.indexOf('article') > -1) {
+        console.log('wUrl')
+        document.getElementById('article').setAttribute('class', 'presentation curr')
+      }
+    }
+    const initContent = () => {
+      document.querySelector('.com-markdown-collpase .col-2-article-source').style.display = 'none'
+      document.querySelector('.col-2-article-tags').style.display = 'none'
+      document.querySelector('.col-2-article-opts').style.display = 'none'
+      document.querySelector('.group-comments').style.display = 'none'
+      document.querySelector('.com-2-panel').style.display = 'none'
+      const comPanel = document.querySelectorAll('.layout-main .com-2-panel')
+      comPanel[0].style.display = 'block'
+    }
+    initHeader()
+    initContent()
+  </script>
+
+
+</body></html>

@@ -1,0 +1,135 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+						
+<h1>HTML <span class="color_h1">样式- CSS</span></h1>
+
+<hr>
+<p class="intro">CSS (Cascading Style Sheets) 用于渲染HTML元素标签的样式。</p>
+<div style="position:relative;">
+	<div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF"></div>
+	<div style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:200px;background-color:#8AC007"></div>
+	<div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+		<h1>Look! Styles and colors</h1>
+		<div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:10px;">Manipulate Text</div>
+		<div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:20px;">Colors, <span style="background-color:#B4009E;color:#ffffff;">&nbsp;Boxes</span></div>
+		<div style="color:#000000;letter-spacing:-1px;font-size:15px;position:relative;top:15px;">and more...</div>
+	</div>
+</div>
+<br><br>
+<p><a class="tryitbtn" href="/try/try.php?filename=tryhtml_styles" target="_blank" rel="noopener noreferrer">尝试一下 »</a></p>
+
+<hr>
+
+<div class="tryit_ex">
+<img loading="lazy" src="/images/tryitimg.gif" width="40" height="46px" alt="实例"><h2>尝试一下 - 实例</h2>
+</div>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_style" rel="noopener noreferrer">HTML使用样式</a><br>
+本例演示如何使用添加到 &lt;head&gt; 部分的样式信息对 HTML 进行格式化。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_linknoline" rel="noopener noreferrer">本例演示如何使用样式属性做一个没有下划线的链接。</a><br>
+如何使用 style 属性制作一个没有下划线的链接。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_link" rel="noopener noreferrer">链接到一个外部样式表</a><br>
+本例演示如何 <link> 标签链接到一个外部样式表。</p>
+<hr>
+
+<h2>如何使用CSS</h2>
+<p>CSS 是在 HTML 4 开始使用的,是为了更好的渲染HTML元素而引入的.</p>
+<p>CSS 可以通过以下方式添加到HTML中:</p>
+<ul>
+	<li>内联样式- 在HTML元素中使用"style"<strong> 属性</strong> </li>
+	<li>内部样式表 -在HTML文档头部 &lt;head&gt; 区域使用&lt;style&gt;<strong> 元素</strong> 来包含CSS</li>
+	<li>外部引用 - 使用外部 CSS<strong> 文件</strong></li>
+</ul>
+<p>最好的方式是通过外部引用CSS文件.</p>
+<p>在本站的HTML教程中我们使用了内联CSS样式来介绍实例，这是为了简化的例子，也使得你能更容易在线编辑代码并在线运行实例。 </p>
+
+<p>你可以通过本站的 <a href="/css/css-tutorial.html">CSS 教程</a> 学习更多的 CSS 知识。</p>
+
+<hr><h2>内联样式</h2>
+<p>当特殊的样式需要应用到个别元素时，就可以使用内联样式。 使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何 CSS 属性。以下实例显示出如何改变段落的颜色和左外边距。</p>
+<pre>&lt;p style="color:blue;margin-left:20px;"&gt;这是一个段落。&lt;/p&gt;</pre>
+<p>
+学习更多样式，请访问 <a href="/css/"> CSS 教程</a>.
+</p>
+
+<hr><h2>HTML样式实例 - 背景颜色</h2>
+<p>背景色属性（background-color）定义一个元素的背景颜色：</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code notranslate">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">body</span><span class="hl-code"> </span><span class="hl-var">style</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">background-color:yellow;</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">h2</span><span class="hl-code"> </span><span class="hl-var">style</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">background-color:red;</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个标题</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">h2</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-code"> </span><span class="hl-var">style</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">background-color:green;</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落。</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml_bodybgstyle" class="tryitbtn" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<p>早期背景色属性（background-color）是使用 bgcolor 属性定义。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_bodybgcol" rel="noopener noreferrer">尝试一下: 旧版HTML来设置背景方式</a></p>
+<hr><h2>HTML 样式实例 - 字体, 字体颜色 ，字体大小</h2>
+<p>我们可以使用font-family（字体），color（颜色），和font-size（字体大小）属性来定义字体的样式:</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code notranslate">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">h1</span><span class="hl-code"> </span><span class="hl-var">style</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">font-family:verdana;</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">一个标题</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-code"> </span><span class="hl-var">style</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">font-family:arial;color:red;font-size:20px;</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">一个段落。</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml_newfont" class="tryitbtn" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+
+<p>现在通常使用font-family（字体），color（颜色），和font-size（字体大小）属性来定义文本样式，而不是使用&lt;font&gt;标签。</p>
+<hr><h2>HTML 样式实例 - 文本对齐方式</h2>
+<p>使用 text-align（文字对齐）属性指定文本的水平与垂直对齐方式：</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code notranslate">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">h1</span><span class="hl-code"> </span><span class="hl-var">style</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">text-align:center;</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">居中对齐的标题</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落。</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml_headeralign" class="tryitbtn" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+
+<p>文本对齐属性 text-align取代了旧标签 &lt;center&gt; 。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_header" rel="noopener noreferrer">尝试一下 </a></p>
+<hr><h2>内部样式表</h2>
+<p>当单个文件需要特别样式时，就可以使用内部样式表。你可以在&lt;head&gt;  部分通过 &lt;style&gt;标签定义内部样式表:</p>
+<pre>&lt;head&gt;
+&lt;style type="text/css"&gt;
+body {background-color:yellow;}
+p {color:blue;}
+&lt;/style&gt;
+&lt;/head&gt;</pre>
+<br>
+<hr><h2>外部样式表</h2>
+<p>当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。</p>
+
+<pre>&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+&lt;/head&gt;</pre>
+<br>
+<hr><h2>HTML 样式标签</h2>
+<table class="reference notranslate">
+<tbody><tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+<tr>
+<td><a href="/tags/tag-style.html">&lt;style&gt;</a></td>
+<td>定义文本样式</td>
+</tr>
+<tr>
+<td><a href="/tags/tag-link.html">&lt;link&gt;</a></td>
+<td>定义资源引用地址 </td>
+</tr>
+</tbody></table>
+<br>
+
+<hr><h2>已弃用的标签和属性</h2>
+<p>在HTML 4, 原来支持定义HTML元素样式的标签和属性已被弃用。这些标签将不支持新版本的HTML标签。</p>
+<p>不建议使用的标签有: &lt;font&gt;, &lt;center&gt;, &lt;strike&gt;</p><p>不建议使用的属性: 
+color 和 bgcolor.</p>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

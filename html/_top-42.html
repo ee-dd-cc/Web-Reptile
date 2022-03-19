@@ -1,0 +1,181 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML5 <span class="color_h1">语义元素</span>
+</h1>
+<hr>
+<p class="intro">语义= 意义</p>
+<p class="intro">语义元素 = 有意义的元素</p>
+<hr>
+<h2>什么是语义元素?</h2>
+<p>一个语义元素能够清楚的描述其意义给浏览器和开发者。</p>
+<p><strong>无语义</strong> 元素实例: &lt;div&gt; 和 &lt;span&gt; - 无需考虑内容.</p>
+<p><strong>语义</strong>元素实例: &lt;form&gt;, &lt;table&gt;, and &lt;img&gt; - 清楚的定义了它的内容.</p>
+<hr>
+<h2>浏览器支持</h2>
+<p><img loading="lazy" src="/images/compatible_ie.gif" width="31" height="30" alt="Internet Explorer" title="Internet Explorer"><img loading="lazy" src="/images/compatible_firefox.gif" width="31" height="30" alt="Firefox" title="Firefox"><img loading="lazy" src="/images/compatible_opera.gif" width="28" height="30" alt="Opera" title="Opera"><img loading="lazy" src="/images/compatible_chrome.gif" width="31" height="30" alt="Google Chrome" title="Google Chrome"><img loading="lazy" src="/images/compatible_safari.gif" width="28" height="30" alt="Safari" title="Safari"></p>
+<p>Internet Explorer 9+, Firefox, Chrome, Safari 和 Opera 支持语义元素。</p>
+<p><strong>注意:</strong> Internet Explorer 8 及更早版本不支持该元素。 但是文章底部提供了兼容的解决方法.</p>
+<hr>
+<h2>HTML5中新的语义元素</h2>
+<p>许多现有网站都包含以下HTML代码：
+&lt;div id="nav"&gt;, &lt;div class="header"&gt;, 或者 &lt;div id="footer"&gt;, 
+来指明导航链接, 头部, 以及尾部.</p>
+
+<div style="width:374px;float:left">
+<p>HTML5 提供了新的语义元素来明确一个Web页面的不同部分:</p>
+<ul>
+<li>&lt;header&gt;</li>
+	<li>&lt;nav&gt;</li>
+	<li>&lt;section&gt;</li>
+	<li>&lt;article&gt;</li>
+	<li>&lt;aside&gt;</li>
+	<li>&lt;figcaption&gt;</li>
+	<li>&lt;figure&gt;</li>
+	<li>&lt;footer&gt;</li>
+</ul>
+</div>
+<div style="width:360px;float:left;margin-bottom:15px"><img title="HTML5 语义元素" src="/wp-content/uploads/2013/07/html5-layout.jpg"></div>
+<hr>
+<h2>HTML5 &lt;section&gt; 元素</h2>
+<p>&lt;section&gt; 标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。</p>
+<p>根据W3C HTML5文档:  section 包含了一组内容及其标题。</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">section</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">WWF</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">The World Wide Fund for Nature (WWF) is....</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">section</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml5_section" class="tryitbtn" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 &lt;article&gt; 元素</h2>
+<p> &lt;article&gt; 标签定义独立的内容。.</p>
+
+<p>&lt;article&gt; 元素使用实例:</p>
+<ul>
+<li>Forum post</li>
+	<li>Blog post</li>
+	<li>News story</li>
+	<li>Comment</li>
+</ul>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">article</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">Internet Explorer 9</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">Windows Internet Explorer 9(缩写为 IE9 )在2011年3月14日21:00 发布。</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">article</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryhtml5_article" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 &lt;nav&gt; 元素</h2>
+<p>&lt;nav&gt; 标签定义导航链接的部分。</p>
+<p>&lt;nav&gt; 元素用于定义页面的导航链接部分区域，但是，不是所有的链接都需要包含在 &lt;nav&gt; 元素中! </p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">nav</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+    </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">a</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">/html/</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">HTML</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">a</span><span class="hl-brackets">&gt;</span><span class="hl-code"> |
+    </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">a</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">/css/</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">CSS</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">a</span><span class="hl-brackets">&gt;</span><span class="hl-code"> |
+    </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">a</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">/js/</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">JavaScript</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">a</span><span class="hl-brackets">&gt;</span><span class="hl-code"> |
+    </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">a</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">/jquery/</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">jQuery</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">a</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">nav</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryhtml5_nav" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 &lt;aside&gt; 元素</h2>
+<p>&lt;aside&gt;  标签定义页面主区域内容之外的内容（比如侧边栏）。</p>
+<p>aside 标签的内容应与主区域的内容相关.</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">My family and I visited The Epcot center this summer.</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">aside</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">h4</span><span class="hl-brackets">&gt;</span><span class="hl-code">Epcot Center</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">h4</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">The Epcot Center is a theme park in Disney World, Florida.</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">aside</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryhtml5_aside" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 &lt;header&gt; 元素</h2>
+<p>&lt;header&gt;元素描述了文档的头部区域</p>
+<p> &lt;header&gt;元素主要用于定义内容的介绍展示区域.</p>
+<p>在页面中你可以使用多个&lt;header&gt; 元素.</p>
+<p>以下实例定义了文章的头部:</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">article</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">header</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+    </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">Internet Explorer 9</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+    </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">time</span><span class="hl-code"> </span><span class="hl-var">pubdate</span><span class="hl-code"> </span><span class="hl-var">datetime</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">2011-03-15</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">time</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">header</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">Windows Internet Explorer 9(缩写为 IE9 )是在2011年3月14日21:00发布的</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">article</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryhtml5_header" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 &lt;footer&gt; 元素</h2>
+<p>&lt;footer&gt; 元素描述了文档的底部区域.</p>
+<p> &lt;footer&gt; 元素应该包含它的包含元素</p>
+<p>一个页脚通常包含文档的作者，著作权信息，链接的使用条款，联系信息等</p>
+<p>文档中你可以使用多个 &lt;footer&gt;元素.</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">footer</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">Posted by: Hege Refsnes</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">time</span><span class="hl-code"> </span><span class="hl-var">pubdate</span><span class="hl-code"> </span><span class="hl-var">datetime</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">2012-03-01</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">time</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">footer</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryhtml5_footer" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>HTML5 &lt;figure&gt; 和 &lt;figcaption&gt; 元素</h2>
+<p>&lt;figure&gt;标签规定独立的流内容（图像、图表、照片、代码等等）。</p>
+<p>&lt;figure&gt; 元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响。</p>
+<p>&lt;figcaption&gt; 标签定义 &lt;figure&gt; 元素的标题.</p>
+<p>&lt;figcaption&gt;元素应该被置于 "figure" 元素的第一个或最后一个子元素的位置。</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">figure</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">img</span><span class="hl-code"> </span><span class="hl-var">loading</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">lazy</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">img_pulpit.jpg</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">alt</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">The Pulpit Rock</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">width</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">304</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">height</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">228</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">figcaption</span><span class="hl-brackets">&gt;</span><span class="hl-code">Fig1. - The Pulpit Pock, Norway.</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">figcaption</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">figure</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryhtml5_figcaption" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<br><hr>
+<h2>我们可以开始使用这些语义元素吗?</h2>
+<p>以上的元素都是块元素(除了&lt;figcaption&gt;).</p>
+<p>为了让这些块及元素在所有版本的浏览器中生效，你需要在样式表文件中设置一下属性 (以下样式代码可以让旧版本浏览器支持本章介绍的块级元素):</p>
+<div class="code"><div>
+header, section, footer, aside, nav, article, figure<br>
+{ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: block; <br>
+}
+</div></div>
+<h2> Internet Explorer 8 及更早IE版本中的问题</h2>
+<p>IE8 及更早IE版本无法在这些元素中渲染CSS效果，以至于你不能使用 &lt;header&gt;, &lt;section&gt;, &lt;footer&gt;, &lt;aside&gt;, &lt;nav&gt;, 
+&lt;article&gt;, &lt;figure&gt;, 或者其他的HTML5 elements.</p>
+<p><strong>解决办法:</strong> 你可以使用HTML5 Shiv Javascript脚本来解决IE的兼容问题。HTML5 Shiv下载地址：<a href="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js" target="_blank" rel="noopener noreferrer">https://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js</a></p>
+<p>下载后，将以下代码放入到网页中：</p>
+<div class="code">
+<div>
+&lt;!--[if lt IE 9]&gt;<br>&lt;script src="html5shiv.js"&gt;&lt;/script&gt;<br>
+&lt;![endif]--&gt; </div></div>
+<p>以上代码在浏览器小于IE9版本时会加载html5shiv.js文件.
+你必须将其放置于&lt;head&gt; 元素中，因为 IE浏览器需要在头部加载后渲染这些HTML5的新元素</p>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

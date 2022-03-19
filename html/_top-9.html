@@ -1,0 +1,122 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML <span class="color_h1">链接</span></h1>
+
+<hr><p class="intro">HTML 使用超级链接与网络上的另一个文档相连。几乎可以在所有的网页中找到链接。点击链接可以从一张页面跳转到另一张页面。</p>
+
+<hr><div class="tryit_ex">
+<img loading="lazy" src="/images/tryitimg.gif" width="40" height="46px" alt="Examples"><h2>尝试一下 - 实例</h2>
+</div>
+<p>
+<a target="_blank" href="/try/try.php?filename=tryhtml_links" rel="noopener noreferrer">HTML 链接</a><br>
+如何在HTML文档中创建链接。
+</p>
+
+<p>(可以在本页底端找到更多实例)</p>
+
+<hr><h2>HTML 超链接（链接）</h2>
+<p>HTML使用标签 &lt;a&gt;来设置超文本链接。</p>
+<p>超链接可以是一个字，一个词，或者一组词，也可以是一幅图像，您可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。</p>
+<p>当您把鼠标指针移动到网页中的某个链接上时，箭头会变为一只小手。</p>
+<p>在标签&lt;a&gt; 中使用了href属性来描述链接的地址。</p>
+<p>默认情况下，链接将以以下形式出现在浏览器中：</p>
+<ul>
+	<li>一个未访问过的链接显示为蓝色字体并带有下划线。</li>
+	<li>访问过的链接显示为紫色并带有下划线。</li>
+	<li>点击链接时，链接显示为红色并带有下划线。</li>
+</ul>
+
+
+<blockquote><p>注意：如果为这些超链接设置了 CSS 样式，展示样式会根据 CSS 的设定而显示。</p></blockquote>
+
+
+<hr><h2>HTML 链接语法</h2>
+
+<p>链接的 HTML 代码很简单。它类似这样：</p>
+
+<div class="code"><div>
+
+
+&lt;a href="<i>url</i>"&gt;<i>链接文本</i>&lt;/a&gt;
+
+
+</div></div>
+
+<p>href 属性描述了链接的目标。.</p>
+<h2>实例</h2>
+
+<div class="code"><div>
+
+
+&lt;a href="https://www.runoob.com/"&gt;访问古元坤教程&lt;/a&gt;
+
+
+</div></div>
+<p>上面这行代码显示为：<a href="https://www.runoob.com/">访问菜鸟教程</a></p>
+<p>点击这个超链接会把用户带到菜鸟教程的首页。</p>
+<p><b>提示:</b> <i>"链接文本"</i> 不必一定是文本。图片或其他 HTML 元素都可以成为链接。</p>
+<hr><h2>HTML 链接 - target 属性</h2>
+<p>使用 target 属性，你可以定义被链接的文档在何处显示。</p>
+<p>下面的这行会在新窗口打开文档：</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">a</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">https://www.runoob.com/</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">target</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">_blank</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">rel</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">noopener noreferrer</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">访问菜鸟教程!</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">a</span><span class="hl-brackets">&gt;</span></div>
+</div><br><a target="_blank" href="/try/try.php?filename=tryhtml_link_target" class="tryitbtn" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<br>
+<hr><h2>HTML 链接- id 属性</h2>
+<p>id 属性可用于创建一个 HTML 文档书签。</p>
+<p><b>提示:</b> 书签不会以任何特殊方式显示，即在 HTML 页面中是不显示的，所以对于读者来说是隐藏的。</p>
+<h2>实例</h2>
+<p>在HTML文档中插入ID:</p>
+<div class="code"><div>
+
+
+&lt;a id="tips"&gt;有用的提示部分&lt;/a&gt;
+
+</div></div>
+<p>在HTML文档中创建一个链接到"有用的提示部分(id="tips"）"：</p>
+<div class="code"><div>
+
+
+&lt;a href="#tips"&gt;访问有用的提示部分&lt;/a&gt;
+
+</div></div>
+<p>或者，从另一个页面创建一个链接到"有用的提示部分(id="tips"）"：</p>
+<div class="code"><div>
+
+
+&lt;a href="https://www.runoob.com/html/html-links.html#tips"&gt;<br>
+访问有用的提示部分&lt;/a&gt;
+</div></div>
+<br>
+<hr><h2>基本的注意事项 - 有用的提示</h2><p><b>注释：</b> 请始终将正斜杠添加到子文件夹。假如这样书写链接：href="https://www.runoob.com/html"，就会向服务器产生两次 HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，就像这样：href="https://www.runoob.com/html/"。 </p>
+
+<hr><div class="tryit_ex">
+<img loading="lazy" src="/images/tryitimg.gif" width="40" height="46px" alt="Examples"><h2>更多实例</h2>
+</div>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_imglink" rel="noopener noreferrer">图片链接</a><br>
+如何使用图片链接。
+</p>
+
+<p>
+<a target="_blank" href="/try/try.php?filename=tryhtml_link_locations&amp;basepath=0" rel="noopener noreferrer">在当前页面链接到指定位置</a><br>
+如何使用书签
+</p>
+
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_frame_getfree" rel="noopener noreferrer">跳出框架</a><br>
+本例演示如何跳出框架，假如你的页面被固定在框架之内。
+</p>
+
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_mailto" rel="noopener noreferrer">创建电子邮件链接</a><br>
+本例演示如何链接到一个邮件。（本例在安装邮件客户端程序后才能工作。）</p><p><a target="_blank" href="/try/try.php?filename=tryhtml_mailto2" rel="noopener noreferrer">创建电子邮件链接 2</a><br>
+本例演示更加复杂的邮件链接。</p><hr><h2>HTML 链接标签</h2><table class="reference">
+<tbody><tr>
+<th width="30%" align="left">标签</th><th align="left">描述</th></tr><tr>
+<td><a href="/tags/tag-a.html">&lt;a&gt;</a></td><td>定义一个超级链接</td></tr></tbody></table>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

@@ -1,0 +1,152 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<style type="text/css">
+#div1, #div2
+{float:left; width:100px; height:35px; margin:10px;padding:10px;border:1px solid #aaaaaa;}
+</style>
+<script>
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<h1>HTML5 <span class="color_h1">拖放（Drag 和 Drop）</span>
+</h1>
+<hr>
+<p class="intro">拖放（Drag 和 drop）是 HTML5 标准的组成部分。</p>
+<hr>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img loading="lazy" src="/images/logo.png" draggable="true" ondragstart="drag(event)" width="100" height="35" id="drag1"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p style="clear:both">将 <strong>RUNOOB.COM</strong> 图标拖动到矩形框中。</p>
+<hr>
+<h2>拖放</h2>
+<p>拖放是一种常见的特性，即抓取对象以后拖到另一个位置。</p>
+<p>在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。</p>
+<hr>
+<h2>浏览器支持</h2>
+<p>
+<img loading="lazy" src="/images/compatible_ie.gif" width="31" height="30" alt="Internet Explorer" title="Internet Explorer"><img loading="lazy" src="/images/compatible_firefox.gif" width="31" height="30" alt="Firefox" title="Firefox"><img loading="lazy" src="/images/compatible_opera.gif" width="28" height="30" alt="Opera" title="Opera"><img loading="lazy" src="/images/compatible_chrome.gif" width="31" height="30" alt="Google Chrome" title="Google Chrome"><img loading="lazy" src="/images/compatible_safari.gif" width="28" height="30" alt="Safari" title="Safari"></p>
+<p>Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 支持拖动。</p>
+<p><b>注意:</b>Safari 5.1.2不支持拖动.</p>
+<hr>
+<h2>HTML5 拖放实例</h2>
+<p>下面的例子是一个简单的拖放实例：</p>
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code notranslate">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-code">!</span><span class="hl-var">DOCTYPE</span><span class="hl-code"> </span><span class="hl-var">HTML</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">html</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">head</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">meta</span><span class="hl-code"> </span><span class="hl-var">charset</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">utf-8</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code"> 
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">title</span><span class="hl-brackets">&gt;</span><span class="hl-code">古元坤教程(runoob.com)</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">title</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">style</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">text/css</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+#div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">style</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+function allowDrop(ev)
+{
+    ev.preventDefault();
+}
+ 
+function drag(ev)
+{
+    ev.dataTransfer.setData("Text",ev.target.id);
+}
+ 
+function drop(ev)
+{
+    ev.preventDefault();
+    var data=ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">head</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">拖动 RUNOOB.COM 图片到矩形框中:</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">div</span><span class="hl-code"> </span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">div1</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">ondrop</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">drop(event)</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">ondragover</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">allowDrop(event)</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">div</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">br</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">img</span><span class="hl-code"> </span><span class="hl-var">loading</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">lazy</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">drag1</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">/images/logo.png</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">draggable</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">true</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">ondragstart</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">drag(event)</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">width</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">336</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">height</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">69</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">html</span><span class="hl-brackets">&gt;</span></div>	
+</div>
+<br><a class="tryitbtn" href="/try/try.php?filename=tryhtml5_draganddrop" target="_blank" rel="noopener noreferrer">尝试一下  »</a>
+</div>
+<p>它看上去也许有些复杂，不过我们可以分别研究拖放事件的不同部分。</p>
+<hr>
+<h2>设置元素为可拖放</h2>
+<p>首先，为了使元素可拖动，把 draggable 属性设置为 true ：</p>
+
+<div class="code notranslate"><div>
+	&lt;img draggable="true"&gt;</div></div>
+<br><hr>
+<h2>拖动什么 - ondragstart 和 setData()</h2>
+<p>然后，规定当元素被拖动时，会发生什么。</p>
+<p>在上面的例子中，ondragstart 属性调用了一个函数，drag(event)，它规定了被拖动的数据。</p>
+<p>dataTransfer.setData() 方法设置被拖数据的数据类型和值：</p>
+<div class="code notranslate">
+	<div>
+		function drag(ev)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;ev.dataTransfer.setData("Text",ev.target.id);<br>
+		}
+</div>
+</div>
+
+<p>
+Text 是一个 DOMString 表示要添加到 drag object 的拖动数据的类型。值是可拖动元素的 id ("drag1")。</p>
+<hr>
+<h2>放到何处 - ondragover</h2>
+<p>ondragover 事件规定在何处放置被拖动的数据。</p>
+<p>默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，我们必须阻止对元素的默认处理方式。
+</p>
+<p>这要通过调用 ondragover 事件的 event.preventDefault() 方法：</p>
+<div class="code notranslate">
+	<div>
+		<i>event</i>.preventDefault()</div>
+</div>
+<br><hr>
+<h2>进行放置 - ondrop</h2>
+<p>当放置被拖数据时，会发生 drop 事件。</p>
+<p>在上面的例子中，ondrop 属性调用了一个函数，drop(event)：</p>
+<div class="code notranslate">
+	<div>
+		function drop(ev)<br>
+	{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;ev.preventDefault();<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;var data=ev.dataTransfer.getData("Text");<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;ev.target.appendChild(document.getElementById(data));<br>
+	}</div>
+</div>
+<p>代码解释：</p>
+<ul>
+<li>调用 preventDefault() 来避免浏览器对数据的默认处理（drop 事件的默认行为是以链接形式打开）</li>
+<li>通过 dataTransfer.getData("Text") 方法获得被拖的数据。该方法将返回在 setData() 方法中设置为相同类型的任何数据。</li>
+<li>被拖数据是被拖元素的 id ("drag1")</li>
+<li>把被拖元素追加到放置元素（目标元素）中</li>
+</ul>
+<br><hr>
+<div class="tryit_ex">
+<img loading="lazy" src="/images/tryitimg.gif" width="40" height="46px" alt="Examples"><h2>更多实例</h2>
+</div>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml5_draganddrop2" rel="noopener noreferrer">来回拖放图片</a><br>
+如何在两个  &lt;div&gt;  元素之间拖放图像。</p>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

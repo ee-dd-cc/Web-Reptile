@@ -1,0 +1,237 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML <span class="color_h1">字符实体</span>
+</h1>
+<hr>
+<p class="intro">HTML 中的预留字符必须被替换为字符实体。</p>
+<p class="intro">一些在键盘上找不到的字符也可以使用字符实体来替换。</p>
+<hr>
+<h2>HTML 实体</h2>
+<p>在 HTML 中，某些字符是预留的。</p>
+<p>在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。</p>
+<p>如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。
+字符实体类似这样：</p>
+<div class="code notranslate"><div>
+
+
+&amp;<i>entity_name</i>;
+<p>或</p>
+&amp;#<i>entity_number</i>;
+
+</div></div>
+<p>如需显示小于号，我们必须这样写：<b>&amp;lt;</b> 或<b> &amp;#60;</b>
+或 <b>&amp;#060;</b>
+</p>
+
+<p><img border="0" src="/images/lamp.gif" alt="Remark"><b>提示：</b> 使用实体名而不是数字的好处是，名称易于记忆。不过坏处是，浏览器也许并不支持所有实体名称（对实体数字的支持却很好）。</p>
+
+<hr>
+<h2>不间断空格(Non-breaking Space)</h2>
+<p>HTML 中的常用字符实体是不间断空格(&amp;nbsp;)。</p>
+<p>浏览器总是会截短 HTML 页面中的空格。如果您在文本中写 10 个空格，在显示该页面之前，浏览器会删除它们中的 9 个。如需在页面中增加空格的数量，您需要使用 &amp;nbsp; 字符实体。</p>
+<hr><h2>结合音标符</h2>
+<p>发音符号是加到字母上的一个"glyph(字形)"。</p>
+<p>一些变音符号, 如 尖音符 (&nbsp; ̀) 和 抑音符 (&nbsp; ́) 。 </p>
+<p>变音符号可以出现字母的上面和下面，或者字母里面，或者两个字母间。</p>
+<p>变音符号可以与字母、数字字符的组合来使用。</p>
+<p>以下是一些实例:</p>
+<table class="reference notranslate" style="font-size:14px">
+<tbody><tr>
+<th style="width:15%">音标符</th>
+<th style="width:15%">字符</th>
+<th>Construct</th>
+<th style="width:15%">输出结果 </th>
+</tr>
+<tr>
+      <td> &nbsp;&nbsp;̀</td>
+      <td>a</td>
+      <td>a&amp;#768;</td>
+      <td>à</td>
+</tr>
+<tr>
+      <td> &nbsp;&nbsp;́</td>
+      <td>a</td>
+      <td>a&amp;#769;</td>
+      <td>á</td>
+</tr>
+<tr>
+      <td> ̂</td>
+      <td>a</td>
+      <td>a&amp;#770;</td>
+      <td>â</td>
+</tr>
+<tr>
+      <td> &nbsp;&nbsp;̃</td>
+      <td>a</td>
+      <td>a&amp;#771;</td>
+      <td>ã</td>
+</tr>
+<tr>
+      <td> &nbsp;&nbsp;̀</td>
+      <td>O</td>
+      <td>O&amp;#768;</td>
+      <td>Ò</td>
+</tr>
+<tr>
+      <td> &nbsp;&nbsp;́</td>
+      <td>O</td>
+      <td>O&amp;#769;</td>
+      <td>Ó</td>
+</tr>
+<tr>
+      <td> ̂</td>
+      <td>O</td>
+      <td>O&amp;#770;</td>
+      <td>Ô</td>
+</tr>
+<tr>
+      <td> &nbsp;&nbsp;̃</td>
+      <td>O</td>
+      <td>O&amp;#771;</td>
+      <td>Õ</td>
+</tr>
+
+</tbody></table>
+
+<br>
+<hr>
+
+<h2>HTML字符实体</h2>
+<table class="lamp"><tbody><tr>
+<th style="width:34px"><img src="/images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>
+<p>&nbsp;实体名称对大小写敏感！</p>
+</td>
+</tr></tbody></table>
+<br>
+<table class="reference">
+
+    <tbody><tr>
+      <th style="width:20%">显示结果</th>
+      <th style="width:20%">描述</th>
+      <th style="width:30%">实体名称</th>
+      <th style="width:30%">实体编号</th>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+      <td>空格</td>
+      <td>&amp;nbsp;</td>
+      <td>&amp;#160;</td>
+    </tr>
+
+    <tr>
+      <td>&lt;</td>
+      <td>小于号</td>
+      <td>&amp;lt;</td>
+      <td>&amp;#60;</td>
+    </tr>
+
+    <tr>
+      <td>&gt;</td>
+      <td>大于号</td>
+      <td>&amp;gt;</td>
+      <td>&amp;#62;</td>
+    </tr>
+
+    <tr>
+      <td>&amp;</td>
+      <td>和号</td>
+      <td>&amp;amp;</td>
+      <td>&amp;#38;</td>
+    </tr>
+
+    <tr>
+      <td>"</td>
+      <td>引号</td>
+      <td>&amp;quot;</td>
+      <td>&amp;#34;</td>
+    </tr>
+
+    <tr>
+      <td>'</td>
+      <td>撇号&nbsp;</td>
+      <td>&amp;apos; (IE不支持)</td>
+      <td>&amp;#39;</td>
+    </tr>
+
+    <tr>
+      <td>￠</td>
+      <td>分</td>
+      <td>&amp;cent;</td>
+      <td>&amp;#162;</td>
+    </tr>
+
+    <tr>
+      <td>£</td>
+      <td>镑</td>
+      <td>&amp;pound;</td>
+      <td>&amp;#163;</td>
+    </tr>
+
+    <tr>
+      <td>¥</td>
+      <td>人民币/日元</td>
+      <td>&amp;yen;</td>
+      <td>&amp;#165;</td>
+    </tr>
+
+    <tr>
+      <td>€</td>
+      <td>欧元</td>
+      <td>&amp;euro;</td>
+      <td>&amp;#8364;</td>
+    </tr>
+
+    <tr>
+      <td>§</td>
+      <td>小节</td>
+      <td>&amp;sect;</td>
+      <td>&amp;#167;</td>
+    </tr>
+
+    <tr>
+      <td>©</td>
+      <td>版权</td>
+      <td>&amp;copy;</td>
+      <td>&amp;#169;</td>
+    </tr>
+
+    <tr>
+      <td>®</td>
+      <td>注册商标</td>
+      <td>&amp;reg;</td>
+      <td>&amp;#174;</td>
+    </tr>
+
+    <tr>
+      <td>™</td>
+      <td>商标</td>
+      <td>&amp;trade;</td>
+      <td>&amp;#8482;</td>
+    </tr>
+
+    <tr>
+      <td>×</td>
+      <td>乘号</td>
+      <td>&amp;times;</td>
+      <td>&amp;#215;</td>
+    </tr>
+
+    <tr>
+      <td>÷</td>
+      <td>除号</td>
+      <td>&amp;divide;</td>
+      <td>&amp;#247;</td>
+    </tr>
+</tbody></table>
+<p>虽然 html 不区分大小写，但实体字符对大小写敏感。</p>
+<p>
+查看本站完整的HTML实体：请点击
+<a href="/tags/ref-entities.html">HTML
+实体参考手册</a>。
+</p>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

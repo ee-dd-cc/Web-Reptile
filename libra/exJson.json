@@ -1,0 +1,2974 @@
+[
+  {
+    "name": "用户分页列表",
+    "url": "/v1/manage/user/{token}/page/list"
+  },
+  {
+    "name": "新增用户",
+    "url": "/v1/manage/user/{token}/add"
+  },
+  {
+    "name": "修改用户",
+    "url": "/v1/manage/user/{token}/update"
+  },
+  {
+    "name": "禁用用户",
+    "url": "/v1/manage/user/{token}/del"
+  },
+  {
+    "name": "解禁用户",
+    "url": "/v1/manage/user/{token}/restore"
+  },
+  {
+    "name": "重置用户密码",
+    "url": "/v1/manage/user/{token}/reset/password"
+  },
+  {
+    "name": "新增角色",
+    "url": "/v1/manage/role/{token}/add"
+  },
+  {
+    "name": "修改角色",
+    "url": "/v1/manage/role/{token}/update"
+  },
+  {
+    "name": "删除角色",
+    "url": "/v1/manage/role/{token}/del"
+  },
+  {
+    "name": "角色分页列表",
+    "url": "/v1/manage/role/{token}/list"
+  },
+  {
+    "name": "检查角色名重复",
+    "url": "/v1/manage/role/check"
+  },
+  {
+    "name": "权限树",
+    "url": "/v1/manage/permission/{token}/tree"
+  },
+  {
+    "name": "所有权限",
+    "url": "/v1/manage/permission/{token}/all/list"
+  },
+  {
+    "name": "权限分页列表",
+    "url": "/v1/manage/permission/{token}/page/list"
+  },
+  {
+    "name": "新增权限",
+    "url": "/v1/manage/permission/{token}/add"
+  },
+  {
+    "name": "修改权限",
+    "url": "/v1/manage/permission/{token}/update"
+  },
+  {
+    "name": "删除权限",
+    "url": "/v1/manage/permission/{token}/del"
+  },
+  {
+    "name": "查询用户角色",
+    "url": "/v1/manage/user/role/{token}/list"
+  },
+  {
+    "name": "修改用户角色",
+    "url": "/v1/manage/user/role/{token}/operate"
+  },
+  {
+    "name": "查询角色权限",
+    "url": "/v1/manage/role/permission/{token}/list"
+  },
+  {
+    "name": "部门树",
+    "url": "/v1/manage/department/{token}/tree"
+  },
+  {
+    "name": "线下订单认领",
+    "url": "/v1/unpaid/order/{token}/claim"
+  },
+  {
+    "name": "前端投顾编辑",
+    "url": "/v1/order/manage/{token}/fore/edit"
+  },
+  {
+    "name": "前端流转权限",
+    "url": "/v1/order/manage/{token}/fore/circulate"
+  },
+  {
+    "name": "后端换课申请",
+    "url": "/v1/order/manage/{token}/exchange/back"
+  },
+  {
+    "name": "后端申请退款",
+    "url": "/v1/order/manage/{token}/refund/back"
+  },
+  {
+    "name": "财务线下订单明细",
+    "url": "/v1/order/manage/{token}/finance/unpaid/multiple/payment"
+  },
+  {
+    "name": "财务换课补款列表",
+    "url": "/v1/order/manage/{token}/finance/exchange/supplement/query"
+  },
+  {
+    "name": "财务换课审核通过",
+    "url": "/v1/order/manage/{token}/finance/exchange/supplement/audit"
+  },
+  {
+    "name": "财务换课审核不通过",
+    "url": "/v1/order/manage/{token}/finance/exchange/supplement/views"
+  },
+  {
+    "name": "财务退款审核",
+    "url": "/v1/order/manage/{token}/finance/refund/audit"
+  },
+  {
+    "name": "修改备注",
+    "url": "/v1/order/manage/{token}/exchange/hg/remark"
+  },
+  {
+    "name": "退款列表",
+    "url": "/v1/order/manage/{token}/lesson/refund/list"
+  },
+  {
+    "name": "开始处理",
+    "url": "/v1/order/manage/{token}/lesson/refund/deal"
+  },
+  {
+    "name": "总监驳回",
+    "url": "/v1/order/manage/{token}/refund/complain/reject"
+  },
+  {
+    "name": "合规必查",
+    "url": "/v1/order/manage/{token}/lesson/refund/compliance/list"
+  },
+  {
+    "name": "银如意订单列表",
+    "url": "/v1/order/manage/{token}/yry/order/list"
+  },
+  {
+    "name": "银如意退款列表",
+    "url": "/v1/order/manage/{token}/yry/refund/list"
+  },
+  {
+    "name": "银如意退款操作",
+    "url": "/v1/order/manage/{token}/yry/operate/refund"
+  },
+  {
+    "name": "添锡订单列表",
+    "url": "/v1/order/manage/{token}/tx/order/list"
+  },
+  {
+    "name": "添锡退款列表",
+    "url": "/v1/order/manage/{token}/tx/refund/list"
+  },
+  {
+    "name": "添锡退款操作",
+    "url": "/v1/order/manage/{token}/tx/operate/refund"
+  },
+  {
+    "name": "所有小组",
+    "url": "/v1/department/{token}/list"
+  },
+  {
+    "name": "所有支付方式",
+    "url": "/v1/payment/{token}/list"
+  },
+  {
+    "name": "查询支付方式",
+    "url": "/v1/payment/{token}/get"
+  },
+  {
+    "name": "新增支付方式",
+    "url": "/v1/payment/{token}/add"
+  },
+  {
+    "name": "修改支付方式",
+    "url": "/v1/payment/{token}/modify"
+  },
+  {
+    "name": "删除支付方式",
+    "url": "/v1/payment/{token}/delete"
+  },
+  {
+    "name": "所有产品",
+    "url": "/v1/{token}/product/all"
+  },
+  {
+    "name": "查询老师",
+    "url": "/v1/{token}/product/query/teacher"
+  },
+  {
+    "name": "老师列表",
+    "url": "/v1/{token}/product/teacher/information"
+  },
+  {
+    "name": "便捷按钮",
+    "url": "/v1/{token}/label/count"
+  },
+  {
+    "name": "用户登录",
+    "url": "/v1/user/login"
+  },
+  {
+    "name": "用户登出",
+    "url": "/v1/user/{token}/logout"
+  },
+  {
+    "name": "用户修改密码",
+    "url": "/v1/user/{token}/modify/password"
+  },
+  {
+    "name": "后端投顾降级申请",
+    "url": "/v1/order/manage/{token}/relegate/back"
+  },
+  {
+    "name": "合规-备注",
+    "url": "/v1/order/manage/{token}/lesson/relegate/compliance/remark"
+  },
+  {
+    "name": "查询退款信息",
+    "url": "/v1/order/manage/{token}/lesson/refund/commit/pop/get"
+  },
+  {
+    "name": "修改角色权限",
+    "url": "/v1/manage/role/permission/{token}/operate"
+  },
+  {
+    "name": "财务未完成主订单详情",
+    "url": "/v1/unfinishedorder/manage/{token}/page/list2"
+  },
+  {
+    "name": "财务未完成子订单明细",
+    "url": "/v1/finance/unfinishedorder/manage/{token}/order/subdetail/list"
+  },
+  {
+    "name": "财务未完成子订单导出",
+    "url": "/v1/finance/unfinishedorder/manage/{token}/order/export"
+  },
+  {
+    "name": "线下订单认领",
+    "url": "/v1/unpaid/order/{token}/claim"
+  },
+  {
+    "name": "未完成子订单",
+    "url": "/v1/unfinishedorder/manage/{token}/page/list"
+  },
+  {
+    "name": "未完成订单导出",
+    "url": "/v1/unfinishedorder/manage/{token}/order/export"
+  },
+  {
+    "name": "退款失败",
+    "url": "/v1/order/manage/{token}/finance/refund/pop/call"
+  },
+  {
+    "name": "未完成订单调价",
+    "url": "/v1/unfinishedorder/manage/{token}/order/adjust/price"
+  },
+  {
+    "name": "未完成子订单状态列表",
+    "url": "/v1/unfinishedorder/manage/{token}/status/page/list"
+  },
+  {
+    "name": "退款管理-报备查询",
+    "url": "/v1/order/manage/{token}/lesson/refund/report/list"
+  },
+  {
+    "name": "退款管理-退款",
+    "url": "/v1/order/manage/{token}/lesson/refund/tab/list"
+  },
+  {
+    "name": "退款管理-安抚成功",
+    "url": "/v1/order/manage/{token}/lesson/refund/placate/list"
+  },
+  {
+    "name": "未完成子订单退款-查看退款失败留痕",
+    "url": "/v1/order/manage/{token}/unfinished/fail/list"
+  },
+  {
+    "name": "应用消息投教列表",
+    "url": "/v1/{token}/enterPriseAppRecords/wxInfo"
+  },
+  {
+    "name": "应用消息投教好友列表",
+    "url": "/v1/{token}/enterPriseAppRecords/wxFriendsList"
+  },
+  {
+    "name": "应用消息投教聊天记录",
+    "url": "/v1/{token}/enterPriseAppRecords/msgHistory"
+  },
+  {
+    "name": "未完成订单主订单导出",
+    "url": "/v1/order/manage/{token}/unfinished/refund/export"
+  },
+  {
+    "name": "IM投顾好友列表",
+    "url": "/v1/{token}/IMChatRecords/wxFriendsList"
+  },
+  {
+    "name": "IM聊天记录",
+    "url": "/v1/{token}/IMChatRecords/msgHistory"
+  },
+  {
+    "name": "未完成订单子订单导出",
+    "url": "/v1/order/manage/{token}/unfinished/subOrder/refund/export"
+  },
+  {
+    "name": "财务退款-查看退款失败信息",
+    "url": "/v1/order/manage/{token}/finance/refund/fail/list"
+  },
+  {
+    "name": "财务退款-导出主订单Excel",
+    "url": "/v1/order/manage/{token}/finance/export"
+  },
+  {
+    "name": "财务退款-导出子订单Excel",
+    "url": "/v1/order/manage/{token}/finance/subOrder/export"
+  },
+  {
+    "name": "业务取消暂停服务",
+    "url": "/v1/order/manage/{token}/order/stop/cancel"
+  },
+  {
+    "name": "业务申请恢复服务",
+    "url": "/v1/order/manage/{token}/order/recover/add"
+  },
+  {
+    "name": "业务取消恢复服务",
+    "url": "/v1/order/manage/{token}/order/recover/cancel"
+  },
+  {
+    "name": "查看身份证图片",
+    "url": "/v1/order/manage/{token}/orderNo/imageUrl"
+  },
+  {
+    "name": "合规查询审核员工",
+    "url": "/v1/order/employee/{token}/reviewed/info"
+  },
+  {
+    "name": "查询审核记录",
+    "url": "/v1/order/employee/{token}/reviewed/list"
+  },
+  {
+    "name": "合规审核员工",
+    "url": "/v1/order/employee/{token}/reviewed/user"
+  },
+  {
+    "name": "投顾取消降级",
+    "url": "/v1/order/manage/{token}/relegate/cancel"
+  },
+  {
+    "name": "客服投顾编辑",
+    "url": "/v1/order/manage/{token}/customize/edit"
+  },
+  {
+    "name": "客服换课申请",
+    "url": "/v1/order/manage/{token}/exchange/customize"
+  },
+  {
+    "name": "客户投顾降级申请",
+    "url": "/v1/order/manage/{token}/relegate/customize"
+  },
+  {
+    "name": "校验区块链",
+    "url": "/v1/agreement/{token}/block/chain/check"
+  },
+  {
+    "name": "登录日志列表",
+    "url": "/v1/operate/manage/{token}/login/list"
+  },
+  {
+    "name": "计划列表",
+    "url": "/v1/plan/manage/{token}/plan/list"
+  },
+  {
+    "name": "计划区块链校验",
+    "url": "/v1/plan/manage/{token}/plan/check"
+  },
+  {
+    "name": "交易列表",
+    "url": "/v1/plan/manage/{token}/trade/list"
+  },
+  {
+    "name": "交易区块链校验",
+    "url": "/v1/plan/manage/{token}/trade/check"
+  },
+  {
+    "name": "查看部门树",
+    "url": "/v1/manage/department/{token}/tree"
+  },
+  {
+    "name": "外部联系人单聊好友列表",
+    "url": "/v1/{token}/external/records/getSingleFriendsList"
+  },
+  {
+    "name": "外部联系人单聊聊天列表",
+    "url": "/v1/{token}/external/records/getSingleChatMessage"
+  },
+  {
+    "name": "查看明文协议",
+    "url": "/v1/agreement/{token}/plaintext/preview"
+  },
+  {
+    "name": "用户信息列表",
+    "url": "/v1/account/{token}/list"
+  },
+  {
+    "name": "用户信息详情",
+    "url": "/v1/detail/{token}/account"
+  },
+  {
+    "name": "子账号列表",
+    "url": "/v1/account/user/{token}/list"
+  },
+  {
+    "name": "用户属性列表",
+    "url": "/v1/account/attachment/{token}/list"
+  },
+  {
+    "name": "微信用户列表",
+    "url": "/v1/account/wx/{token}/page"
+  },
+  {
+    "name": "实名信息列表",
+    "url": "/v1/certification/{token}/userInfo/list"
+  },
+  {
+    "name": "实名信息记录列表",
+    "url": "/v1/certification/{token}/certificationLog/list"
+  },
+  {
+    "name": "查询身份证图片",
+    "url": "/v1/certification/{token}/certificationLog/imageUrl"
+  },
+  {
+    "name": "课程列表",
+    "url": "/v1/education/{token}/course/list"
+  },
+  {
+    "name": "策略列表",
+    "url": "/v1/education/{token}/courseStrategy/search"
+  },
+  {
+    "name": "优惠券列表",
+    "url": "/v1/order/{token}/coupon/list"
+  },
+  {
+    "name": "用户领取优惠券列表",
+    "url": "/v1/order/{token}/userCoupon/list"
+  },
+  {
+    "name": "权限包列表",
+    "url": "/v1/education/{token}/goods/list"
+  },
+  {
+    "name": "关联权限列表",
+    "url": "/v1/education/{token}/goods/courseListRef"
+  },
+  {
+    "name": "用户信息调研列表",
+    "url": "/v1/education/{token}/refund/questionnaireList"
+  },
+  {
+    "name": "股市生存考验列表",
+    "url": "/v1/user/answers/{token}/query"
+  },
+  {
+    "name": "股市生存考验导出",
+    "url": "/v1/user/answers/{token}/export"
+  },
+  {
+    "name": "根据appCode查询所有课程",
+    "url": "/v1/education/{token}/course/code"
+  },
+  {
+    "name": "导出用户领取优惠券记录",
+    "url": "/v1/order/{token}/userCoupon/export"
+  },
+  {
+    "name": "查询总客户数",
+    "url": "/v1/customer/{token}/customer/count"
+  },
+  {
+    "name": "解冻",
+    "url": "/v1/user/frozen/{token}/unFrozenLog"
+  },
+  {
+    "name": "账户解冻列表",
+    "url": "/v1/user/frozen/{token}/list"
+  },
+  {
+    "name": "关联老师",
+    "url": "/v1/binding/{token}/login/news/author"
+  },
+  {
+    "name": "查询绑定作者",
+    "url": "/v1/login/{token}/news/author/list"
+  },
+  {
+    "name": "资讯老师列表",
+    "url": "/v1/news/author/{token}/list"
+  },
+  {
+    "name": "更新用户实名信息",
+    "url": "/v1/certification/{token}/certificationLog/save"
+  },
+  {
+    "name": "权限历史查看",
+    "url": "/v1/education/{token}/userPermissionLog/getLogByUsername"
+  },
+  {
+    "name": "批量修改订单权限",
+    "url": "/v1/education/{token}/userPermissionLog/order/upload"
+  },
+  {
+    "name": "批量修改课程权限",
+    "url": "/v1/education/{token}/userPermissionLog/upload"
+  },
+  {
+    "name": "修改用户权限",
+    "url": "/v1/education/{token}/userPermission/batchUpdate"
+  },
+  {
+    "name": "权限查看",
+    "url": "/v1/education/{token}/auth/list"
+  },
+  {
+    "name": "重置",
+    "url": "/v1/reset/{token}/account/pwd"
+  },
+  {
+    "name": "推送",
+    "url": "/v1/push/{token}/circle/live"
+  },
+  {
+    "name": "修改账户",
+    "url": "/v1/update/{token}/account/user"
+  },
+  {
+    "name": "账户属性列表",
+    "url": "/v1/account/attachment/{token}/list"
+  },
+  {
+    "name": "删除子账户",
+    "url": "/v1/del/{token}/account/user"
+  },
+  {
+    "name": "新增子账户",
+    "url": "/v1/add/{token}/sub/account/user"
+  },
+  {
+    "name": "实名信息删除",
+    "url": "/v1/certification/{token}/userInfo/delete"
+  },
+  {
+    "name": "权限操作记录列表",
+    "url": "/v1/education/{token}/userPermissionLog/list"
+  },
+  {
+    "name": "修改权限包状态",
+    "url": "/v1/education/{token}/goods/update"
+  },
+  {
+    "name": "校验栏目代码",
+    "url": "/v1/education/{token}/courseColumn/valid"
+  },
+  {
+    "name": "新增课程栏目",
+    "url": "/v1/education/{token}/courseColumn/save"
+  },
+  {
+    "name": "修改课程栏目",
+    "url": "/v1/education/{token}/courseColumn/update"
+  },
+  {
+    "name": "删除课程栏目",
+    "url": "/v1/education/{token}/courseColumn/delete"
+  },
+  {
+    "name": "课程所有栏目",
+    "url": "/v1/education/{token}/courseColumn/list/all"
+  },
+  {
+    "name": "权限包详情",
+    "url": "/v1/education/{token}/goods/detail"
+  },
+  {
+    "name": "课程栏目列表",
+    "url": "/v1/education/{token}/courseColumn/list"
+  },
+  {
+    "name": "修改权限包",
+    "url": "/v1/education/{token}/goods/modify"
+  },
+  {
+    "name": "新增权限包",
+    "url": "/v1/education/{token}/goods/add"
+  },
+  {
+    "name": "交易校验",
+    "url": "/v1/education/{token}/trade/check"
+  },
+  {
+    "name": "撤销交易",
+    "url": "/v1/education/{token}/trade/cancelTrade"
+  },
+  {
+    "name": "根据计划编号获取交易记录",
+    "url": "/v1/education/{token}/trade/tradeLog"
+  },
+  {
+    "name": "获取某个计划内拥有的某个股票个数",
+    "url": "/v1/education/{token}/trade/stockNumber"
+  },
+  {
+    "name": "改变交易状态",
+    "url": "/v1/education/{token}/trade/changeStatus"
+  },
+  {
+    "name": "新增交易",
+    "url": "/v1/education/{token}/trade/addDelegationTrade"
+  },
+  {
+    "name": "新增课程策略",
+    "url": "/v1/education/{token}/courseStrategy/add"
+  },
+  {
+    "name": "子课程列表",
+    "url": "/v1/education/{token}/course/sub/list"
+  },
+  {
+    "name": "课程模糊查询",
+    "url": "/v1/education/{token}/course/like/list"
+  },
+  {
+    "name": "修改课程顺序",
+    "url": "/v1/education/{token}/course/sort"
+  },
+  {
+    "name": "删除课程",
+    "url": "/v1/education/{token}/course/del"
+  },
+  {
+    "name": "修改课程",
+    "url": "/v1/education/{token}/course/upd"
+  },
+  {
+    "name": "新增课程",
+    "url": "/v1/education/{token}/course/add"
+  },
+  {
+    "name": "老师列表",
+    "url": "/v1/login/{token}/news/author/list"
+  },
+  {
+    "name": "根据ID查询课程名称",
+    "url": "/v1/education/course/get/name/{token}/courses"
+  },
+  {
+    "name": "课程详情",
+    "url": "/v1/education/{token}/course/detail"
+  },
+  {
+    "name": "新增课程策略并且开启课程资讯开关",
+    "url": "/v1/education/{token}/courseStrategy/add/activate"
+  },
+  {
+    "name": "权限修改课程",
+    "url": "/v1/education/{token}/goods/modifyCourse"
+  },
+  {
+    "name": "删除权限包",
+    "url": "/v1/education/{token}/goods/deleteCourse"
+  },
+  {
+    "name": "权限包查询",
+    "url": "/v1/education/{token}/goods/query"
+  },
+  {
+    "name": "关联权限包",
+    "url": "/v1/education/{token}/goods/interlock"
+  },
+  {
+    "name": "查询指定课程的资讯推送开关",
+    "url": "/v1/education/{token}/courseStrategy/query/consult"
+  },
+  {
+    "name": "更新课程策略",
+    "url": "/v1/education/{token}/courseStrategy/update"
+  },
+  {
+    "name": "修改课程策略状态",
+    "url": "/v1/education/{token}/courseStrategy/updateStatus"
+  },
+  {
+    "name": "计划校验",
+    "url": "/v1/education/{token}/plan/check"
+  },
+  {
+    "name": "交易列表",
+    "url": "/v1/education/{token}/trade/list"
+  },
+  {
+    "name": "新增优惠券",
+    "url": "/v1/order/{token}/coupon/create"
+  },
+  {
+    "name": "修改优惠券",
+    "url": "/v1/order/{token}/coupon/modify"
+  },
+  {
+    "name": "优惠券发放",
+    "url": "/v1/order/{token}/coupon/issue"
+  },
+  {
+    "name": "计划列表",
+    "url": "/v1/education/{token}/plan/list"
+  },
+  {
+    "name": "更改计划状态",
+    "url": "/v1/education/{token}/plan/changeStatus"
+  },
+  {
+    "name": "查看计划详情",
+    "url": "/v1/education/{token}/plan/planDetail"
+  },
+  {
+    "name": "根据计划获取平台",
+    "url": "/v1/education/{token}/plan/planPlatform"
+  },
+  {
+    "name": "根据用户获取计划",
+    "url": "/v1/education/{token}/plan/getPlanByTeacher"
+  },
+  {
+    "name": "根据计划编号获取总金额",
+    "url": "/v1/education/{token}/plan/totalFunding"
+  },
+  {
+    "name": "修改计划",
+    "url": "/v1/education/{token}/plan/update"
+  },
+  {
+    "name": "新建计划",
+    "url": "/v1/education/{token}/plan/add"
+  },
+  {
+    "name": "任务列表",
+    "url": "/v1/taskManage/{token}/list"
+  },
+  {
+    "name": "新增任务管理",
+    "url": "/v1/taskManage/{token}/add"
+  },
+  {
+    "name": "根据积分产品id获取积分兑换详情",
+    "url": "/v1/integralProduct/{token}/detail"
+  },
+  {
+    "name": "商品积分列表",
+    "url": "/v1/integralProduct/{token}/list"
+  },
+  {
+    "name": "更新积分商品状态",
+    "url": "/v1/integralProduct/{token}/changeStatus"
+  },
+  {
+    "name": "修改积分商品信息",
+    "url": "/v1/integralProduct/{token}/update"
+  },
+  {
+    "name": "新增积分商品",
+    "url": "/v1/integralProduct/{token}/add"
+  },
+  {
+    "name": "查询操作日志",
+    "url": "/v1/score/mall/{token}/operate/log"
+  },
+  {
+    "name": "查询寄送信息",
+    "url": "/v1/score/mall/deliver/{token}/detail"
+  },
+  {
+    "name": "兑换进度更新",
+    "url": "/v1/score/mall/status/{token}/update"
+  },
+  {
+    "name": "查询兑换进度",
+    "url": "/v1/score/mall/transfer/{token}/query"
+  },
+  {
+    "name": "积分流水详情",
+    "url": "/v1/destoonFinanceCredit/{token}/list"
+  },
+  {
+    "name": "修改任务管理的状态",
+    "url": "/v1/taskManage/{token}/update"
+  },
+  {
+    "name": "新建任务配置",
+    "url": "/v1/taskConfig/{token}/add"
+  },
+  {
+    "name": "任务配置列表",
+    "url": "/v1/taskConfig/{token}/list"
+  },
+  {
+    "name": "更新配置列表",
+    "url": "/v1/taskConfig/{token}/update"
+  },
+  {
+    "name": "更新配置的显示状态",
+    "url": "/v1/taskConfig/{token}/changeStatus"
+  },
+  {
+    "name": "新增配图",
+    "url": "/v1/illustratingPicture/{token}/add"
+  },
+  {
+    "name": "删除配图",
+    "url": "/v1/illustratingPicture/{token}/delete"
+  },
+  {
+    "name": "配图列表",
+    "url": "/v1/illustratingPicture/{token}/list"
+  },
+  {
+    "name": "更新配图",
+    "url": "/v1/illustratingPicture/{token}/update"
+  },
+  {
+    "name": "用户积分列表",
+    "url": "/v1/userIntegral/{token}/list"
+  },
+  {
+    "name": "增加或者减少用户积分",
+    "url": "/v1/userIntegral/{token}/update"
+  },
+  {
+    "name": "根据用户名查询用户的积分流水",
+    "url": "/v1/userIntegral/{token}/username"
+  },
+  {
+    "name": "优惠券退款-查看退款失败留痕",
+    "url": "/v1/order/manage/{token}/refund/portion/fail/list"
+  },
+  {
+    "name": "编辑认领信息",
+    "url": "/A1234"
+  },
+  {
+    "name": "专题-分页列表",
+    "url": "/v1/news/subject/{token}/page"
+  },
+  {
+    "name": "专题编辑",
+    "url": "/v1/news/subject/{token}/edit"
+  },
+  {
+    "name": "专题-绑定栏目",
+    "url": "/v1/news/subject/{token}/bind/column"
+  },
+  {
+    "name": "专题-解绑栏目",
+    "url": "/v1/news/subject/{token}/untied/column"
+  },
+  {
+    "name": "专题-未绑定栏目列表",
+    "url": "/v1/news/subject/{token}/columns/unbind"
+  },
+  {
+    "name": "专题-栏目排序",
+    "url": "/v1/news/subject/{token}/column/sort"
+  },
+  {
+    "name": "专题-已绑栏目列表",
+    "url": "/v1/news/subject/{token}/column/page"
+  },
+  {
+    "name": "专题-列表(All不分页)",
+    "url": "/v1/news/subject/{token}/all"
+  },
+  {
+    "name": "专题-已绑定栏目列表(All不分页)",
+    "url": "/v1/news/subject/{token}/column/all"
+  },
+  {
+    "name": "资讯栏目列表",
+    "url": "/v1/news/column/{token}/list"
+  },
+  {
+    "name": "资讯栏目列表接口（ALL不分页）",
+    "url": "/v1/news/column/{token}/all/list"
+  },
+  {
+    "name": "栏目模糊查询",
+    "url": "/v1/news/column/{token}/fuzzy/list"
+  },
+  {
+    "name": "资讯栏目新增",
+    "url": "/v1/add/{token}/news/column"
+  },
+  {
+    "name": "资讯栏目修改",
+    "url": "/v1/update/{token}/news/column"
+  },
+  {
+    "name": "栏目排序修改",
+    "url": "/v1/update/{token}/news/column/sortNum"
+  },
+  {
+    "name": "新增栏目属性",
+    "url": "/v1/save/{token}/news/column/attribute"
+  },
+  {
+    "name": "获取栏目属性",
+    "url": "/v1/get/{token}/news/column/attribute"
+  },
+  {
+    "name": "团队单个查询",
+    "url": "/v1/team/{token}/selectOne"
+  },
+  {
+    "name": "新增团队",
+    "url": "/v1/team/{token}/addTeamInfo"
+  },
+  {
+    "name": "团队列表",
+    "url": "/v1/team/{token}/queryTeamInfoByPage"
+  },
+  {
+    "name": "修改团队信息",
+    "url": "/v1/team/{token}/updateTeamInfo"
+  },
+  {
+    "name": "修改老师主页展示状态",
+    "url": "/v1/team/{token}/updateStatus"
+  },
+  {
+    "name": "研报主页查询",
+    "url": "/v1/research/report/{token}/list"
+  },
+  {
+    "name": "资讯-标签-分页列表",
+    "url": "/v1/news/label/{token}/pageList"
+  },
+  {
+    "name": "资讯-标签-列表",
+    "url": "/v1/news/label/{token}/list"
+  },
+  {
+    "name": "标签模糊查询",
+    "url": "/v1/news/label/{token}/fuzzy/list"
+  },
+  {
+    "name": "资讯-标签-列表-类型",
+    "url": "/v1/news/label/{token}/type/list"
+  },
+  {
+    "name": "资讯-标签-新增",
+    "url": "/v1/news/label/{token}/add"
+  },
+  {
+    "name": "资讯-标签-修改",
+    "url": "/v1/news/label/{token}/update"
+  },
+  {
+    "name": "资讯-标签-删除",
+    "url": "/v1/news/label/{token}/delete"
+  },
+  {
+    "name": "资讯-标签组-分页列表",
+    "url": "/v1/news/labelGroup/{token}/pageList"
+  },
+  {
+    "name": "资讯-标签组-列表",
+    "url": "/v1/news/labelGroup/{token}/list"
+  },
+  {
+    "name": "资讯-标签组-新增",
+    "url": "/v1/news/labelGroup/{token}/add"
+  },
+  {
+    "name": "资讯-标签组-修改",
+    "url": "/v1/news/labelGroup/{token}/update"
+  },
+  {
+    "name": "资讯-标签组-删除",
+    "url": "/v1/news/labelGroup/{token}/delete"
+  },
+  {
+    "name": "头条财经新闻列表",
+    "url": "/v1/news/thridPart/toutiao/{token}/list"
+  },
+  {
+    "name": "头条财经新闻详细",
+    "url": "/v1/news/thridPart/toutiao/{token}/detail"
+  },
+  {
+    "name": "头条财经新闻评论",
+    "url": "/v1/news/thridPart/toutiao/{token}/comments"
+  },
+  {
+    "name": "头条财经新闻状态",
+    "url": "/v1/news/thridPart/toutiao/{token}/status"
+  },
+  {
+    "name": "头条财经新闻评论状态",
+    "url": "/v1/news/thridPart/toutiao/{token}/commentStatus"
+  },
+  {
+    "name": "头条财经新闻更新",
+    "url": "/v1/news/thridPart/toutiao/{token}/updNews"
+  },
+  {
+    "name": "第三方7*24查询",
+    "url": "/v1/news/thridPart/7/24/{token}/list"
+  },
+  {
+    "name": "第三方7*24修改",
+    "url": "/v1/news/thridPart/7/24/{token}/status"
+  },
+  {
+    "name": "第三方格隆汇查询",
+    "url": "/v1/news/thridPart/gelonghui/{token}/list"
+  },
+  {
+    "name": "第三方格隆汇修改",
+    "url": "/v1/news/thridPart/gelonghui/{token}/status"
+  },
+  {
+    "name": "产品矩阵列表",
+    "url": "/v1/icon/{token}/get"
+  },
+  {
+    "name": "产品矩阵新增",
+    "url": "/v1/icon/{token}/add"
+  },
+  {
+    "name": "产品矩阵修改",
+    "url": "/v1/icon/{token}/update"
+  },
+  {
+    "name": "文章管理列表",
+    "url": "/v1/news/{token}/list"
+  },
+  {
+    "name": "文章资源库列表",
+    "url": "/v1/news/{token}/listAll"
+  },
+  {
+    "name": "新增文章",
+    "url": "/v1/news/{token}/add"
+  },
+  {
+    "name": "修改文章",
+    "url": "/v1/news/{token}/update"
+  },
+  {
+    "name": "更改文章发布状态",
+    "url": "/v1/news/publish/status/{token}/upd"
+  },
+  {
+    "name": "复制文章",
+    "url": "/v1/news/{token}/copy"
+  },
+  {
+    "name": "查看文章详情",
+    "url": "/v1/news/{token}/get/detail"
+  },
+  {
+    "name": "查看复制文章详情",
+    "url": "/v1/news/{token}/get/copyDetail"
+  },
+  {
+    "name": "同步文章到cms",
+    "url": "/v1/news/{token}/sync/cms"
+  },
+  {
+    "name": "老师列表",
+    "url": "/v1/news/author/{token}/list"
+  },
+  {
+    "name": "查询所有老师",
+    "url": "/v1/news/author/{token}/all/list"
+  },
+  {
+    "name": "查询绑定老师",
+    "url": "/v1/login/{token}/news/author/list"
+  },
+  {
+    "name": "新增老师",
+    "url": "/v1/add/{token}/news/teacher"
+  },
+  {
+    "name": "修改老师",
+    "url": "/v1/update/{token}/news/teacher"
+  },
+  {
+    "name": "新增或修改老师分应用平台配置",
+    "url": "/v1/update/{token}/news/teacherSkin"
+  },
+  {
+    "name": "获取老师列表（老师合并）",
+    "url": "/v1/news/teacher/{token}/list"
+  },
+  {
+    "name": "获取老师详情",
+    "url": "/v1/news/{token}/teacher/detail"
+  },
+  {
+    "name": "重置老师密码",
+    "url": "/v1/news/{token}/teacher/resetPassword"
+  },
+  {
+    "name": "查询文章点击量",
+    "url": "/v1/news/{token}/get/hitCount"
+  },
+  {
+    "name": "应用列表",
+    "url": "/v1/news/application/{token}/list"
+  },
+  {
+    "name": "获取所有应用",
+    "url": "/v1/news/application/{token}/all/list"
+  },
+  {
+    "name": "新增应用",
+    "url": "/v1/add/{token}/news/application"
+  },
+  {
+    "name": "修改应用",
+    "url": "/v1/update/{token}/news/application"
+  },
+  {
+    "name": "查询文章绑定的应用",
+    "url": "/v1/news/application/{token}/bind/list"
+  },
+  {
+    "name": "文章置顶/移除置顶",
+    "url": "/v1/news/application/{token}/top/sort"
+  },
+  {
+    "name": "查询应用属性",
+    "url": "/v1/get/{token}/news/application/attribute"
+  },
+  {
+    "name": "编辑应用属性",
+    "url": "/v1/save/{token}/news/application/attribute"
+  },
+  {
+    "name": "获取应用平台（自定义推送）",
+    "url": "/v1/news/application/{token}/fuzzy/list"
+  },
+  {
+    "name": "资讯-栏目-搜索配置-列表",
+    "url": "/v1/news/searchConfig/{token}/byColumn/list"
+  },
+  {
+    "name": "资讯-栏目-搜索配置-编辑",
+    "url": "/v1/news/searchConfig/{token}/submit"
+  },
+  {
+    "name": "资讯-栏目-搜索配置-删除",
+    "url": "/v1/news/searchConfig/{token}/delete"
+  },
+  {
+    "name": "资讯-智能排序-修改",
+    "url": "/v1/news/{token}/sort/config/update"
+  },
+  {
+    "name": "资讯-智能排序-列表",
+    "url": "/v1/news/{token}/sort/config/list"
+  },
+  {
+    "name": "资讯-栏目-搜索配置-列表",
+    "url": "/v1/news/searchConfig/{token}/list"
+  },
+  {
+    "name": "置顶管理",
+    "url": "/v1/news/{token}/get/application/top"
+  },
+  {
+    "name": "资讯-自选-列表-分页",
+    "url": "/v1/news/xl/cj/{token}/list"
+  },
+  {
+    "name": "资讯-自选-上下架",
+    "url": "/v1/news/xl/cj/{token}/upd/status"
+  },
+  {
+    "name": "资讯-自选-详情",
+    "url": "/v1/news/xl/cj/{token}/detail"
+  },
+  {
+    "name": "修改xlcj文章详情",
+    "url": "/v1/news/xl/cj/{token}/detail/upd"
+  },
+  {
+    "name": "XL资讯港股列表",
+    "url": "/v1/news/xlhk/stock/{token}/list"
+  },
+  {
+    "name": "XL资讯美股列表",
+    "url": "/v1/news/xlus/stock/{token}/list"
+  },
+  {
+    "name": "更改港股文章状态",
+    "url": "/v1/news/xlhk/stock/{token}/upd"
+  },
+  {
+    "name": "更改美股文章状态",
+    "url": "/v1/news/xlus/stock/{token}/upd"
+  },
+  {
+    "name": "XL资讯详情接口",
+    "url": "/v1/news/xl/stock/{token}/detail"
+  },
+  {
+    "name": "XL资讯详情修改接口",
+    "url": "/v1/news/xl/stock/{token}/upd"
+  },
+  {
+    "name": "文章管理刷新",
+    "url": "/v1/news/module/{token}/content/staticHtml"
+  },
+  {
+    "name": "阿里云MTS转码",
+    "url": "/v1/aliyun/mts/{token}/trans"
+  },
+  {
+    "name": "阿里云转码任务列表",
+    "url": "/v1/aliyun/mts/{token}/list"
+  },
+  {
+    "name": "阿里云点播-资源编辑",
+    "url": "/v1/aliyun/vod/{token}/edit"
+  },
+  {
+    "name": "阿里云点播-分页查询",
+    "url": "/v1/aliyun/vod/{token}/page"
+  },
+  {
+    "name": "阿里云点播转码回退",
+    "url": "/v1/aliyun/vod/trans/code/callback"
+  },
+  {
+    "name": "阿里云点播转码列表",
+    "url": "/v1/aliyun/vod/trans/{token}/list"
+  },
+  {
+    "name": "素材-编辑",
+    "url": "/v1/material/{token}/submit"
+  },
+  {
+    "name": "素材-列表-分页",
+    "url": "/v1/material/{token}/page"
+  },
+  {
+    "name": "素材-删除",
+    "url": "/v1/material/{token}/del"
+  },
+  {
+    "name": "自定义推送",
+    "url": "/v1/defined/push/{token}/message"
+  },
+  {
+    "name": "自定义消息列表",
+    "url": "/v1/defined/push/messages/{token}/list"
+  },
+  {
+    "name": "取消自定义消息",
+    "url": "/v1/defined/push/messages/{token}/del"
+  },
+  {
+    "name": "审核操作日志列表",
+    "url": "/v1/circle/operate/log/{token}/list"
+  },
+  {
+    "name": "审核操作日志删除",
+    "url": "/v1/circle/operate/log/{token}/del"
+  },
+  {
+    "name": "圈子栏目列表",
+    "url": "/v1/circle/column/{token}/list"
+  },
+  {
+    "name": "所有圈子栏目列表",
+    "url": "/v1/circle/column/{token}/all/list"
+  },
+  {
+    "name": "圈子栏目列表(模糊不分页)",
+    "url": "/v1/circle/column/{token}/fuzzy/list"
+  },
+  {
+    "name": "新增栏目信息",
+    "url": "/v1/add/{token}/circle/column"
+  },
+  {
+    "name": "修改栏目信息",
+    "url": "/v1/update/{token}/circle/column"
+  },
+  {
+    "name": "修改圈子栏目排序",
+    "url": "/v1/update/{token}/circle/column/sortNum"
+  },
+  {
+    "name": "删除栏目信息",
+    "url": "/v1/del/{token}/circle/column"
+  },
+  {
+    "name": "保存圈子栏目属性",
+    "url": "/v1/save/{token}/circle/column/attribute"
+  },
+  {
+    "name": "获取圈子栏目属性",
+    "url": "/v1/get/{token}/circle/column/attribute"
+  },
+  {
+    "name": "圈子敏感词列表",
+    "url": "/v1/circle/{token}/keyword/list"
+  },
+  {
+    "name": "圈子敏感词新增",
+    "url": "/v1/circle/{token}/keyword/save"
+  },
+  {
+    "name": "圈子敏感词修改",
+    "url": "/v1/circle/{token}/keyword/update"
+  },
+  {
+    "name": "圈子敏感词删除",
+    "url": "/v1/circle/{token}/keyword/delete"
+  },
+  {
+    "name": "圈子敏感词批量删除",
+    "url": "/v1/circle/{token}/keyword/deleteMore"
+  },
+  {
+    "name": "/v1/圈子开关列表",
+    "url": "/v1/circle/{token}/switch/list"
+  },
+  {
+    "name": "新增圈子开关",
+    "url": "/v1/circle/{token}/switch/save"
+  },
+  {
+    "name": "修改圈子开关",
+    "url": "/v1/circle/{token}/switch/update"
+  },
+  {
+    "name": "删除圈子开关",
+    "url": "/v1/circle/{token}/switch/delete"
+  },
+  {
+    "name": "更新圈子开关状态",
+    "url": "/v1/circle/{token}/switch/status/update"
+  },
+  {
+    "name": "圈子动态列表",
+    "url": "/v1/circle/news/{token}/list"
+  },
+  {
+    "name": "老师发表动态",
+    "url": "/v1/circle/news/{token}/teacher_add"
+  },
+  {
+    "name": "老师点赞",
+    "url": "/v1/circle/news/{token}/teacher_support"
+  },
+  {
+    "name": "老师取消点赞",
+    "url": "/v1/circle/news/{token}/teacher_unsupport"
+  },
+  {
+    "name": "老师评论",
+    "url": "/v1/circle/news/{token}/teacher_review"
+  },
+  {
+    "name": "动态的评论列表",
+    "url": "/v1/circle/news/{token}/review_list"
+  },
+  {
+    "name": "观点未审核列表",
+    "url": "/v1/circle/news/{token}/no/approve/list"
+  },
+  {
+    "name": "观点审核",
+    "url": "/v1/circle/news/{token}/approve"
+  },
+  {
+    "name": "评论未审核列表",
+    "url": "/v1/circle/review/{token}/no/approve/list"
+  },
+  {
+    "name": "评论审核",
+    "url": "/v1/circle/review/{token}/approve"
+  },
+  {
+    "name": "留言管理批量审核",
+    "url": "/v1/circle/review/{token}/batch/approve"
+  },
+  {
+    "name": "圈子动态状态",
+    "url": "/v1/circle/news/{token}/status"
+  },
+  {
+    "name": "圈子动态-评论状态",
+    "url": "/v1/circle/review/{token}/status"
+  },
+  {
+    "name": "举报列表",
+    "url": "/v1/circle/report/{token}/list"
+  },
+  {
+    "name": "观点确认功能",
+    "url": "/v1/circle/news/{token}/check"
+  },
+  {
+    "name": "圈子动态-评论列表",
+    "url": "/v1/circle/reviews/{token}/list"
+  },
+  {
+    "name": "圈子动态-新增留言置顶",
+    "url": "/v1/circle/reviews/{token}/top"
+  },
+  {
+    "name": "圈子动态",
+    "url": "/v1/circle/reviews/{token}/del"
+  },
+  {
+    "name": "股吧帖子置顶",
+    "url": "/v1/circle/stock/bar/news/{token}/top"
+  },
+  {
+    "name": "动态智能排序列表",
+    "url": "/v1/circle/news/{token}/sort/list"
+  },
+  {
+    "name": "动态智能排序更新",
+    "url": "/v1/circle/news/{token}/sort/upd"
+  },
+  {
+    "name": "圈子老师列表",
+    "url": "/v1/circle/teacher/{token}/list"
+  },
+  {
+    "name": "圈子老师新增",
+    "url": "/v1/circle/teacher/{token}/add"
+  },
+  {
+    "name": "圈子老师修改",
+    "url": "/v1/circle/teacher/{token}/upd"
+  },
+  {
+    "name": "圈子老师删除",
+    "url": "/v1/circle/teacher/{token}/del"
+  },
+  {
+    "name": "老师关注列表",
+    "url": "/v1/circle/teacher/{token}/concern"
+  },
+  {
+    "name": "老师取消关注",
+    "url": "/v1/circle/teacher/{token}/cancel_concern"
+  },
+  {
+    "name": "老师用户关系列表",
+    "url": "/v1/circle/teacher/{token}/member_type"
+  },
+  {
+    "name": "老师模型列表",
+    "url": "/v1/circle/teacher/{token}/model/list"
+  },
+  {
+    "name": "老师模型增加",
+    "url": "/v1/circle/teacher/{token}/model/add"
+  },
+  {
+    "name": "老师模型修改",
+    "url": "/v1/circle/teacher/{token}/model/upd"
+  },
+  {
+    "name": "老师模型删除",
+    "url": "/v1/circle/teacher/{token}/model/del"
+  },
+  {
+    "name": "后台用户绑定老师",
+    "url": "/v1/circle/teacher/{token}/binding/binding"
+  },
+  {
+    "name": "获取绑定老师",
+    "url": "/v1/circle/teacher/{token}/binding/list"
+  },
+  {
+    "name": "老师绑定课程产品接口",
+    "url": "/v1/circle/teacher/course/{token}/binding"
+  },
+  {
+    "name": "删除老师绑定课程接口",
+    "url": "/v1/circle/teacher/course/{token}/binding/del"
+  },
+  {
+    "name": "老师绑定课程列表接口",
+    "url": "/v1/circle/teacher/course/{token}/binding/list"
+  },
+  {
+    "name": "修改老师绑定课程排序接口",
+    "url": "/v1/circle/teacher/course/{token}/binding/upd/sortNum"
+  },
+  {
+    "name": "圈子动态-文件上传",
+    "url": "/v1/circle/upload/{token}/upload"
+  },
+  {
+    "name": "圈子用户列表",
+    "url": "/v1/circle/user/{token}/list"
+  },
+  {
+    "name": "用户关注列表",
+    "url": "/v1/circle/user/{token}/concern"
+  },
+  {
+    "name": "圈子用户禁言/不禁言",
+    "url": "/v1/circle/user/{token}/forbidden"
+  },
+  {
+    "name": "直播室列表",
+    "url": "/v1/minilive/{token}/miniRoom/pageMiniRoom"
+  },
+  {
+    "name": "用户已绑定和未绑定关系的直播室列表",
+    "url": "/v1/minilive/{token}/miniRoom/listUserRoom"
+  },
+  {
+    "name": "新建直播室",
+    "url": "/v1/minilive/{token}/miniRoom/save"
+  },
+  {
+    "name": "修改直播室",
+    "url": "/v1/minilive/{token}/miniRoom/update"
+  },
+  {
+    "name": "设置直播室视频状态",
+    "url": "/v1/minilive/{token}/miniRoom/setVideoStatus"
+  },
+  {
+    "name": "老师直播室列表",
+    "url": "/v1/minilive/{token}/miniRoom/teacher/getMergeTeacherRooms"
+  },
+  {
+    "name": "老师绑定直播室",
+    "url": "/v1/minilive/{token}/miniRoom/teacher/bindRooms"
+  },
+  {
+    "name": "根据业务查询直播室",
+    "url": "/v1/minilive/{token}/miniRoom/getByCompanyId"
+  },
+  {
+    "name": "新增账号对应直播室权限",
+    "url": "/v1/minilive/{token}/miniRoom/roomAuth/saveOrUpdate"
+  },
+  {
+    "name": "查询账号对应直播室权限",
+    "url": "/v1/minilive/{token}/miniRoom/roomAuth/query"
+  },
+  {
+    "name": "平台列表",
+    "url": "/v1/platform/{token}/list"
+  },
+  {
+    "name": "直播室期列表",
+    "url": "/v1/mini/period/{token}/list"
+  },
+  {
+    "name": "新增或修改期",
+    "url": "/v1/mini/period/{token}/edit"
+  },
+  {
+    "name": "删除期",
+    "url": "/v1/mini/period/{token}/del"
+  },
+  {
+    "name": "查询直播室期列表",
+    "url": "/v1/mini/period/{token}/getPeriodByRoomNo"
+  },
+  {
+    "name": "查询直播室当前期",
+    "url": "/v1/mini/period/{token}/current"
+  },
+  {
+    "name": "根据期生成节目单",
+    "url": "/v1/mini/period/{token}/createProgram"
+  },
+  {
+    "name": "新增期和视频数据",
+    "url": "/v1/mini/period/{token}/add/edit"
+  },
+  {
+    "name": "直播室期列表",
+    "url": "/v1/mini/period/{token}/page/list"
+  },
+  {
+    "name": "期列表-状态修改",
+    "url": "/v1/mini/period/{token}/status/change"
+  },
+  {
+    "name": "根据期编号删除节目单",
+    "url": "/v1/mini/period/{token}/auditPeriod"
+  },
+  {
+    "name": "公司列表",
+    "url": "/v1/company/{token}/list"
+  },
+  {
+    "name": "聊天机器人列表",
+    "url": "/v1/minilive/{token}/miniChatRobot/pageMiniChatRobot"
+  },
+  {
+    "name": "新增或编辑聊天机器人",
+    "url": "/v1/minilive/{token}/miniChatRobot/editChatRobot"
+  },
+  {
+    "name": "删除聊天机器人",
+    "url": "/v1/minilive/{token}/miniChatRobot/deleteChatRobot"
+  },
+  {
+    "name": "停止云端录制并生成回放",
+    "url": "/v1/minilive/{token}/baijiayun/stopAndTransCloudRecord"
+  },
+  {
+    "name": "获取回放列表",
+    "url": "/v1/minilive/{token}/baijiayun/playback/list"
+  },
+  {
+    "name": "直播室节目单列表",
+    "url": "/v1/mini/roomProgram/{token}/list"
+  },
+  {
+    "name": "新增或修改直播室节目",
+    "url": "/v1/mini/roomProgram/{token}/submit"
+  },
+  {
+    "name": "删除直播室节目",
+    "url": "/v1/mini/roomProgram/{token}/del"
+  },
+  {
+    "name": "根据期编号插入节目单",
+    "url": "/v1/mini/roomProgram/{token}/add"
+  },
+  {
+    "name": "根据期编号删除节目单",
+    "url": "/v1/mini/roomProgram/{token}/delByPeriodId"
+  },
+  {
+    "name": "ip黑名单列表",
+    "url": "/v1/minilive/{token}/miniBanIp/getBanIpList"
+  },
+  {
+    "name": "批量解禁",
+    "url": "/v1/minilive/{token}/miniBanIp/setListStatus"
+  },
+  {
+    "name": "添加ip黑名单",
+    "url": "/v1/minilive/{token}/miniBanIp/addBanIp"
+  },
+  {
+    "name": "查询直播室实时播放情况",
+    "url": "/v1/mini/userOnline/{token}/charts"
+  },
+  {
+    "name": "直播室用户分页",
+    "url": "/v1/minilive/{token}/miniRoomUser/pageMiniRoom"
+  },
+  {
+    "name": "直播室用户列表",
+    "url": "/v1/miniLive/{token}/roomUser/list"
+  },
+  {
+    "name": "设置禁言或解禁批量",
+    "url": "/v1/minilive/{token}/miniRoomUser/setListStatus"
+  },
+  {
+    "name": "直播室用户对应的用户直播室",
+    "url": "/v1/minilive/{token}/miniRoomUser/form"
+  },
+  {
+    "name": "直播室用户新建或编辑",
+    "url": "/v1/minilive/{token}/miniRoomUser/formSubmit"
+  },
+  {
+    "name": "直播室用户关注直播室",
+    "url": "/v1/miniLive/{token}/roomUser/focus"
+  },
+  {
+    "name": "直播室用户取消关注直播室",
+    "url": "/v1/miniLive/{token}/roomUser/unFocus"
+  },
+  {
+    "name": "用户类型列表",
+    "url": "/v1/minilive/{token}/roomUserType/list"
+  },
+  {
+    "name": "获取用户类型直播室列表",
+    "url": "/v1/minilive/{token}/roomUserType/getRooms"
+  },
+  {
+    "name": "删除直播室用户类型",
+    "url": "/v1/minilive/{token}/roomUserType/delete"
+  },
+  {
+    "name": "直播室用户类型排序",
+    "url": "/v1/minilive/{token}/roomUserType/sort"
+  },
+  {
+    "name": "直播室用户类型新增或编辑",
+    "url": "/v1/minilive/{token}/roomUserType/formSubmit"
+  },
+  {
+    "name": "用户列表",
+    "url": "/v1/minilive/{token}/miniAllRoomUser/pageMiniAllRoomUser"
+  },
+  {
+    "name": "设置禁言或解禁",
+    "url": "/v1/miniLive/{token}/user/update/status"
+  },
+  {
+    "name": "批量设置禁言或解禁",
+    "url": "/v1/miniLive/{token}/user/update/status/multi"
+  },
+  {
+    "name": "添加用户",
+    "url": "/v1/miniLive/{token}/user/add"
+  },
+  {
+    "name": "消息列表",
+    "url": "/v1/minilive/{token}/miniMessage/pageMiniMessage"
+  },
+  {
+    "name": "批量删除消息",
+    "url": "/v1/minilive/{token}/miniMessage/deleteMessage"
+  },
+  {
+    "name": "获取CRM客户ID",
+    "url": "/v1/minilive/{token}/miniMessage/getCusId"
+  },
+  {
+    "name": "审核消息列表",
+    "url": "/v1/mini/redisMessage/{token}/listMessage"
+  },
+  {
+    "name": "审核消息",
+    "url": "/v1/mini/redisMessage/{token}/approveMessage"
+  },
+  {
+    "name": "纸条列表",
+    "url": "/v1/mini/script/{token}/list"
+  },
+  {
+    "name": "审核纸条",
+    "url": "/v1/mini/script/{token}/reSubmit"
+  },
+  {
+    "name": "删除纸条",
+    "url": "/v1/mini/script/{token}/del"
+  },
+  {
+    "name": "直播室-老师-分页列表",
+    "url": "/v1/mini/teacher/{token}/list"
+  },
+  {
+    "name": "直播室-老师-详情",
+    "url": "/v1/mini/teacher/{token}/get/detail"
+  },
+  {
+    "name": "直播室-老师-提交",
+    "url": "/v1/mini/teacher/{token}/submit"
+  },
+  {
+    "name": "直播室-老师-删除",
+    "url": "/v1/mini/teacher/{token}/del"
+  },
+  {
+    "name": "直播室-老师-校验登录名",
+    "url": "/v1/mini/teacher/{token}/validLoginName"
+  },
+  {
+    "name": "直播室-老师-所有老师列表",
+    "url": "/v1/mini/teacher/{token}/all"
+  },
+  {
+    "name": "直播室-老师-战绩-新增",
+    "url": "/v1/mini/teacher/achievement/{token}/add"
+  },
+  {
+    "name": "直播室-老师-战绩-修改",
+    "url": "/v1/mini/teacher/achievement/{token}/update"
+  },
+  {
+    "name": "直播室-老师-战绩-删除",
+    "url": "/v1/mini/teacher/achievement/{token}/remove"
+  },
+  {
+    "name": "直播室-老师-战绩-分页列表",
+    "url": "/v1/mini/teacher/achievement/{token}/page"
+  },
+  {
+    "name": "获取老师直播室列表",
+    "url": "/v1/minilive/{token}/miniRoom/teacher/getTeacherRooms"
+  },
+  {
+    "name": "阿里云直播室(推流、拉流)",
+    "url": "/v1/mini/roomVideo/{token}/stream/link/list"
+  },
+  {
+    "name": "腾讯云直播室(推流、拉流)",
+    "url": "/v1/mini/tecent/{token}/stream/link/list"
+  },
+  {
+    "name": "文库列表",
+    "url": "/v1/{token}/libraries"
+  },
+  {
+    "name": "文库详情",
+    "url": "/v1/{token}/libraryDetails"
+  },
+  {
+    "name": "活动管理",
+    "url": "/v1/{token}/manage/activities"
+  },
+  {
+    "name": "根据应用获取版本号",
+    "url": "/v1/defined/push/version/{token}/versionList"
+  },
+  {
+    "name": "运营角色列表",
+    "url": "/v1/1/role/{token}/list"
+  },
+  {
+    "name": "新增运营角色",
+    "url": "/v1/1/role/{token}/add"
+  },
+  {
+    "name": "修改运营角色",
+    "url": "/v1/role/{token}/edit"
+  },
+  {
+    "name": "删除运营角色",
+    "url": "/v1/role/{token}/del"
+  },
+  {
+    "name": "运营角色权限列表",
+    "url": "/v1/role/permission/{token}/list"
+  },
+  {
+    "name": "运营角色绑定操作权限",
+    "url": "/v1/role/{token}/operate/permission"
+  },
+  {
+    "name": "运营权限列表",
+    "url": "/v1/1/permission/{token}/tree"
+  },
+  {
+    "name": "上门留痕新增",
+    "url": "/v1/door/remark/{token}/add"
+  },
+  {
+    "name": "腾讯云直播室(推流、拉流)",
+    "url": "/v1/mini/tecent/{token}/stream/link/list"
+  },
+  {
+    "name": "邀请好友名字重复判断",
+    "url": "/v1/education/business/{token}/activity/invivation/existName"
+  },
+  {
+    "name": "邀请好友修改",
+    "url": "/v1/education/business/{token}/activity/invivation/updateStatus"
+  },
+  {
+    "name": "邀请好友列表",
+    "url": "/v1/education/business/{token}/activity/invivation/list"
+  },
+  {
+    "name": "邀请好友删除",
+    "url": "/v1/education/business/{token}/activity/invivation/delById"
+  },
+  {
+    "name": "邀请好友修改",
+    "url": "/v1/education/business/{token}/activity/invivation/updateById"
+  },
+  {
+    "name": "邀请好友新增",
+    "url": "/v1/education/business/{token}/activity/invivation/add"
+  },
+  {
+    "name": "新人礼包名字重复判断",
+    "url": "/v1/education/business/{token}/activity/newuser/existName"
+  },
+  {
+    "name": "新人礼包状态修改",
+    "url": "/v1/education/business/{token}/activity/newuser/updateStatus"
+  },
+  {
+    "name": "新人礼包列表",
+    "url": "/v1/education/business/{token}/activity/newuser/list"
+  },
+  {
+    "name": "新人礼包删除",
+    "url": "/v1/education/business/{token}/activity/newuser/delById"
+  },
+  {
+    "name": "新人礼包修改",
+    "url": "/v1/education/business/{token}/activity/newuser/updateById"
+  },
+  {
+    "name": "新人礼包新增",
+    "url": "/v1/education/business/{token}/activity/newuser/add"
+  },
+  {
+    "name": "课程退款周期",
+    "url": "/v1/order/analysis/{token}/period/product/refund"
+  },
+  {
+    "name": "课程退款率",
+    "url": "/v1/order/analysis/{token}/rate/product/refund"
+  },
+  {
+    "name": "课程续费周期",
+    "url": "/v1/order/analysis/{token}/period/product/renew"
+  },
+  {
+    "name": "课程续费率",
+    "url": "/v1/order/analysis/{token}/rate/product/renew"
+  },
+  {
+    "name": "课程升级周期",
+    "url": "/v1/order/analysis/{token}/period/product/upgrade"
+  },
+  {
+    "name": "课程升级率",
+    "url": "/v1/order/analysis/{token}/rate/product/upgrade"
+  },
+  {
+    "name": "营销活动列表",
+    "url": "/v1/education/{token}/marketingActivity/list"
+  },
+  {
+    "name": "新增营销活动",
+    "url": "/v1/1/education/{token}/marketingActivity/add"
+  },
+  {
+    "name": "修改营销活动",
+    "url": "/v1/1/education/{token}/marketingActivity/update"
+  },
+  {
+    "name": "删除营销活动",
+    "url": "/v1/1/education/{token}/marketingActivity/delete"
+  },
+  {
+    "name": "合规审核信息详情",
+    "url": "/v1/verify/adviser/{token}/get/id"
+  },
+  {
+    "name": "商品展示隐藏",
+    "url": "/v1/education/{token}/goods/show/update"
+  },
+  {
+    "name": "直播礼物删除",
+    "url": "/v1/aries/{token}/gift/del"
+  },
+  {
+    "name": "直播礼物增加",
+    "url": "/v1/aries/{token}/gift/add"
+  },
+  {
+    "name": "退款-可继续退款",
+    "url": "/v1/order/manage/{token}/finance/refund/refundable"
+  },
+  {
+    "name": "优惠券退款--可继续退款",
+    "url": "/v1/order/manage/{token}/refund/portion/refundable"
+  },
+  {
+    "name": "未完成子订单退款--可继续退款",
+    "url": "/v1/order/manage/{token}/unfinished/refund/refundable"
+  },
+  {
+    "name": "课程权限列表",
+    "url": "/v1/education/{token}/coursePermission/list"
+  },
+  {
+    "name": "用户课程权限编辑",
+    "url": "/v1/education/{token}/coursePermission/updOrSavePermission"
+  },
+  {
+    "name": "新增或延期用户权限",
+    "url": "/v1/education/{token}/coursePermission/manualOpenOrder"
+  },
+  {
+    "name": "查询订单权限",
+    "url": "/v1/education/{token}/userPermissionLog/queryOrderPermission"
+  },
+  {
+    "name": "分页查询订单权限历史",
+    "url": "/v1/education/{token}/userPermissionLog/page"
+  },
+  {
+    "name": "活动抽奖配置单个查询",
+    "url": "/v1/edu/business/activity/luckyDraw/{token}/getByUid"
+  },
+  {
+    "name": "活动抽奖配置删除",
+    "url": "/v1/edu/business/activity/luckyDraw/{token}/del"
+  },
+  {
+    "name": "活动抽奖配置修改",
+    "url": "/v1/edu/business/activity/luckyDraw/{token}/update"
+  },
+  {
+    "name": "奖品设置-更新",
+    "url": "/v1/edu/business/activity/{token}/activityprize/upd"
+  },
+  {
+    "name": "热门活动-根据ID获取",
+    "url": "/v1/edu/business/activity/{token}/hotactivity"
+  },
+  {
+    "name": "热门活动-删除",
+    "url": "/v1/edu/business/activity/{token}/hotactivity/del"
+  },
+  {
+    "name": "热门活动-更新",
+    "url": "/v1/edu/business/activity/{token}/hotactivity/upd"
+  },
+  {
+    "name": "热门活动-列表",
+    "url": "/v1/edu/business/activity/{token}/hotactivity/list/{activityId}"
+  },
+  {
+    "name": "奖品设置-根据ID获取",
+    "url": "/v1/edu/business/activity/{token}/activityprize"
+  },
+  {
+    "name": "奖品设置-删除",
+    "url": "/v1/edu/business/activity/{token}/activityprize/del"
+  },
+  {
+    "name": "奖品设置-列表",
+    "url": "/v1/edu/business/activity/{token}/activityprize/list"
+  },
+  {
+    "name": "查询所有活动配置",
+    "url": "/v1/taskConfig/{token}/all"
+  },
+  {
+    "name": "退款管理-导出Excel",
+    "url": "/v1/order/manage/{token}/refund/management/export"
+  },
+  {
+    "name": "发票管理",
+    "url": "/v1/invoice/{token}/apply"
+  },
+  {
+    "name": "作废发票",
+    "url": "/v1/invoice/{token}/cancel"
+  },
+  {
+    "name": "重开发票",
+    "url": "/v1/invoice/{token}/repeat/apply"
+  },
+  {
+    "name": "根据发票属性查询发票信息列表",
+    "url": "/v1/invoice/{token}/get/invoice/by/orderno"
+  },
+  {
+    "name": "批量申请发票",
+    "url": "/v1/invoice/{token}/batch/upload/apply/invoice"
+  },
+  {
+    "name": "修改课程天秤展示状态",
+    "url": "/v1/education/{token}/goods/libra/update"
+  },
+  {
+    "name": "查询课程未过期数量",
+    "url": "/v1/education/{token}/coursePermission/count/notExpire"
+  },
+  {
+    "name": "课程权限迁移记录",
+    "url": "/v1/education/{token}/coursePermission/move/list"
+  },
+  {
+    "name": "课程权限迁移",
+    "url": "/v1/education/{token}/coursePermission/move"
+  },
+  {
+    "name": "批量发放优惠券",
+    "url": "/v1/order/{token}/issueCoupon/import"
+  },
+  {
+    "name": "案例股删除",
+    "url": "/v1/education/{token}/case/stock/delete"
+  },
+  {
+    "name": "案例查询",
+    "url": "/v1/education/{token}/case/stock/query"
+  },
+  {
+    "name": "取消关注",
+    "url": "/v1/education/{token}/case/stock/cancelttention"
+  },
+  {
+    "name": "案例股三合一接口",
+    "url": "/v1/education/{token}/case/stock"
+  },
+  {
+    "name": "新增免责声明",
+    "url": "/v1/education/{token}/teacher/disclaimer/add"
+  },
+  {
+    "name": "删除免责声明",
+    "url": "/v1/education/{token}/teacher/disclaimer/delete"
+  },
+  {
+    "name": "案例股免责声明查询",
+    "url": "/v1/education/{token}/teacher/disclaimer"
+  },
+  {
+    "name": "查询白名单外的股票",
+    "url": "/v1/education/{token}/all/stock/without/white/list"
+  },
+  {
+    "name": "单个新增白名单",
+    "url": "/v1/education/{token}/case/stock/whitelist"
+  },
+  {
+    "name": "战绩表分页列表",
+    "url": "/v1/education/{token}/case/stock/record/page"
+  },
+  {
+    "name": "批量新增白名单",
+    "url": "/v1/education/{token}/case/stock/whitelist/batch"
+  },
+  {
+    "name": "移出白名单",
+    "url": "/v1/education/{token}/case/stock/whitelist/delete"
+  },
+  {
+    "name": "白名单分页查询",
+    "url": "/v1/education/{token}/case/stock/whitelist/page"
+  },
+  {
+    "name": "股票是否在白名单中",
+    "url": "/v1/education/{token}/stock/is/in/whitelist"
+  },
+  {
+    "name": "案例股中股票（不包含白名单）",
+    "url": "/v1/education/{token}/stock/not/in/white/list"
+  },
+  {
+    "name": "白名单操作留痕分页查询",
+    "url": "/v1/education/{token}/case/stock/operate/mark"
+  },
+  {
+    "name": "案例股操作历史",
+    "url": "/v1/education/{token}/case/stock/log/list"
+  },
+  {
+    "name": "未完成订单可继续退款",
+    "url": "/api/v1/{token}/order/unfinish/refund/able"
+  },
+  {
+    "name": "未完成订单申请退款",
+    "url": "/api/v1/{token}/order/unfinish/refund/apply"
+  },
+  {
+    "name": "点击行为列表",
+    "url": "/api/v1/{token}/user/buttons"
+  },
+  {
+    "name": "可继续退款",
+    "url": "/api/v1/{token}/order/refund/able"
+  },
+  {
+    "name": "申请退款",
+    "url": "/api/v1/{token}/order/refund/apply"
+  },
+  {
+    "name": "回访中",
+    "url": "/api/v1/{token}/order/refund/recall"
+  },
+  {
+    "name": "添加回访信息-软件",
+    "url": "/api/v1/order/manage/{token}/callback/add"
+  },
+  {
+    "name": "回访详情按钮-软件",
+    "url": "/api/v1/order/manage/{token}/callback/detail"
+  },
+  {
+    "name": "退款-开始处理",
+    "url": "/api/v1/{token}/order/refund/operate"
+  },
+  {
+    "name": "未完成订单退款子订单导出",
+    "url": "/api/v1/{token}/order/unfinish/refund/query/sub/export"
+  },
+  {
+    "name": "未完成订单退款确认退款",
+    "url": "/api/v1/{token}/order/unfinish/refund/confirm"
+  },
+  {
+    "name": "发票导出-软件",
+    "url": "/api/v1/invoice/{token}/export"
+  },
+  {
+    "name": "未完成订单退款驳回",
+    "url": "/api/v1/{token}/order/unfinish/refund/reject"
+  },
+  {
+    "name": "根据发票属性查询发票信息列表-软件",
+    "url": "/api/v1/invoice/{token}/get/invoice/by/orderNo"
+  },
+  {
+    "name": "重开发票-软件",
+    "url": "/api/v1/invoice/{token}/repeat/apply"
+  },
+  {
+    "name": "作废发票-软件",
+    "url": "/api/v1/invoice/{token}/cance"
+  },
+  {
+    "name": "申请发票-软件",
+    "url": "/api/v1/invoice/{token}/apply"
+  },
+  {
+    "name": "添加审核信息-软件",
+    "url": "/api/v1/order/manage/{token}/callback/reviewed/add"
+  },
+  {
+    "name": "赠送订单",
+    "url": "/api/v1/{token}/create/give/order"
+  },
+  {
+    "name": "订单调价",
+    "url": "/api/v1/{token}/order/modify/price"
+  },
+  {
+    "name": "level2订单",
+    "url": "/rjhy-monkey/v1/order/manage/list"
+  },
+  {
+    "name": "当月",
+    "url": "/rjhy-monkey/v1/level2/account/{token}/getByMonth"
+  },
+  {
+    "name": "当日",
+    "url": "/rjhy-monkey/v1/level2/account/{token}/getByDay"
+  },
+  {
+    "name": "用户列表",
+    "url": "/rjhy-monkey/v1/level2/account/{token}/list"
+  },
+  {
+    "name": "查询客户信息",
+    "url": "/api/v1/{token}/agreement/user/message"
+  },
+  {
+    "name": "线下订单认领财务确认通过",
+    "url": "/api/v1/{token}/order/offline/confirm"
+  },
+  {
+    "name": "线下订单认领财务驳回",
+    "url": "/api/v1/{token}/order/offline/rejected"
+  },
+  {
+    "name": "回访认领超管权限",
+    "url": "/callback/all/list/claim/permissions"
+  },
+  {
+    "name": "换课申请",
+    "url": "/api/v1/{token}/order/exchange/apply"
+  },
+  {
+    "name": "换课取消",
+    "url": "/api/v1/{token}/order/exchange/cancel"
+  },
+  {
+    "name": "换课列表导出",
+    "url": "/api/v1/{token}/compliance/order/exchange/export"
+  },
+  {
+    "name": "换课审核合规通过",
+    "url": "/api/v1/{token}/order/exchange/pass"
+  },
+  {
+    "name": "换课审核合规驳回",
+    "url": "/api/v1/{token}/order/exchange/reject"
+  },
+  {
+    "name": "运营确认换课",
+    "url": "/api/v1/{token}/order/exchange/operator/confirm"
+  },
+  {
+    "name": "运营确认赠送订单换课",
+    "url": "/api/v1/{token}/order/exchange/present/confirm"
+  },
+  {
+    "name": "调查问卷-答卷详情",
+    "url": "/调查问卷-答卷详情"
+  },
+  {
+    "name": "调查问卷-删除",
+    "url": "/v1/question/questionnaire/{token}/delete"
+  },
+  {
+    "name": "调查问卷-答卷详情",
+    "url": "/v1/question/user/{token}/query/detail"
+  },
+  {
+    "name": "关闭赠送订单",
+    "url": "/api/v1/{token}/close/give/order"
+  },
+  {
+    "name": "申请优惠券退款",
+    "url": "/api/v1/{token}/order/coupon/refund/apply"
+  },
+  {
+    "name": "运营审核优惠券退款通过",
+    "url": "/api/v1/{token}/operator/coupon/refund/pass"
+  },
+  {
+    "name": "运营审核优惠券退款驳回",
+    "url": "/api/v1/{token}/operator/coupon/refund/reject"
+  },
+  {
+    "name": "财务审核优惠券确认退款",
+    "url": "/api/v1/{token}/finance/coupon/refund/confirm"
+  },
+  {
+    "name": "财务审核优惠券退款驳回",
+    "url": "/api/v1/{token}/finance/coupon/refund/reject"
+  },
+  {
+    "name": "优惠券可继续退款",
+    "url": "/api/v1/{token}/order/coupon/refund/able"
+  },
+  {
+    "name": "新增/更新合规报备信息",
+    "url": "/api/v1/order/manage/{token}/compliance/add"
+  },
+  {
+    "name": "查询合规报备详情",
+    "url": "/api/v1/order/manage/{token}/compliance/detail"
+  },
+  {
+    "name": "更改退款记录投诉备注",
+    "url": "/api/v1/{token}/order/refund/remark/modify"
+  },
+  {
+    "name": "资讯研报审核",
+    "url": "/v1/{token}/research/report/audit"
+  },
+  {
+    "name": "资讯研报审核历史",
+    "url": "/v1/{token}/research/report/audit/log"
+  },
+  {
+    "name": "资讯研报审核日志根据newsId查询",
+    "url": "/v1/{token}/research/report/audit/log/list"
+  },
+  {
+    "name": "新增资讯审核记录",
+    "url": "/v1/{token}/news/audit/log/add"
+  },
+  {
+    "name": "根据historyId查询历史记录",
+    "url": "/v1/{token}/news/audit/log/byNewsHistoryId"
+  },
+  {
+    "name": "根据newsId查询历史记录列表",
+    "url": "/v1/{token}/news/audit/log/byNewsId"
+  },
+  {
+    "name": "资讯文章审核/复核",
+    "url": "/v1/{token}/news/audit/again"
+  },
+  {
+    "name": "新增资讯历史记录",
+    "url": "/v1/{token}/news/history/add"
+  },
+  {
+    "name": "根据id查询历史记录",
+    "url": "/v1/{token}/news/history/byId"
+  },
+  {
+    "name": "根据newsId查询历史记录列表",
+    "url": "/v1/{token}/news/history/list/byNewsId"
+  },
+  {
+    "name": "研报留痕负责人",
+    "url": "/v1/research/report/leaveTraceUser"
+  },
+  {
+    "name": "查询AI素材列表",
+    "url": "/v1/{token}/ai/material/query/list"
+  },
+  {
+    "name": "新增企业号应用配置",
+    "url": "/api/v1/{token}/company/config/add"
+  },
+  {
+    "name": "更新企业号应用配置",
+    "url": "/api/v1/{token}/company/config/modify"
+  },
+  {
+    "name": "企业号应用配置删除",
+    "url": "/api/v1/{token}/company/config/del"
+  },
+  {
+    "name": "分页查询企业号应用配置",
+    "url": "/api/v1/{token}/company/config/query"
+  },
+  {
+    "name": "案例股审核列表",
+    "url": "/v1/education/{token}/case/stock/review/list"
+  },
+  {
+    "name": "课程中是否有未审核的案例股",
+    "url": "/v1/education/{token}/is/have/stock/review"
+  },
+  {
+    "name": "案例股审核历史（案例股审核列表页面用",
+    "url": "/v1/education/{token}/stock/review/history"
+  },
+  {
+    "name": "案例股审核历史（策略列表页面用）",
+    "url": "/v1/education/{token}/stock/strategy/review/history"
+  },
+  {
+    "name": "选股列表",
+    "url": "/v1/education/{token}/plan/simple/list"
+  },
+  {
+    "name": "选股-计划列表",
+    "url": "/v1/education/{token}/plan/simple/list"
+  },
+  {
+    "name": "投资委员会审核接口",
+    "url": "/v1/{token}/material/investment/audit"
+  },
+  {
+    "name": "案例股审核列表审核历史",
+    "url": "/v1/education/{token}/case/stock/review/history"
+  },
+  {
+    "name": "案例股投资委员会审核",
+    "url": "/v1/education/{token}/case/stock/review/nvest"
+  },
+  {
+    "name": "案例股合规审核",
+    "url": "/v1/education/{token}/case/stock/review/compliance"
+  },
+  {
+    "name": "查询个股替换记录",
+    "url": "/api/v1/{token}/quote/trade/stock/query"
+  },
+  {
+    "name": "个股替换",
+    "url": "/api/v1/{token}/quote/trade/stock/opt"
+  },
+  {
+    "name": "更新对标明星公募基金",
+    "url": "/api/v1/{token}/quote/star/fund/update"
+  },
+  {
+    "name": "获取对表明星公募基金",
+    "url": "/api/v1/{token}/quote/star/fund/query"
+  },
+  {
+    "name": "获取实时仓位",
+    "url": "/api/v1/{token}/quote/strategy/info/query"
+  },
+  {
+    "name": "根据ID获取视频信息",
+    "url": "/api/1/content/video/search"
+  },
+  {
+    "name": "审核视频",
+    "url": "/api/1/content/video/status"
+  },
+  {
+    "name": "新增视频审核",
+    "url": "/api/1/add/content/video"
+  },
+  {
+    "name": "列表查询",
+    "url": "/api/1/content/video"
+  },
+  {
+    "name": "申请降级",
+    "url": "/api/v1/{token}/order/relegate/apply"
+  },
+  {
+    "name": "降级取消",
+    "url": "/api/v1/{token}/order/relegate/cancel"
+  },
+  {
+    "name": "查询风险测评-旗舰",
+    "url": "/v1/agreement/{token}/user/risk/page"
+  },
+  {
+    "name": "运营-继续降级",
+    "url": "/api/v1/{token}/order/operations/relegate/continue"
+  },
+  {
+    "name": "直播中审核-菜单",
+    "url": "/api/admin/1/minilive/{token}/room/living/list"
+  },
+  {
+    "name": "异常处理-菜单",
+    "url": "/api/admin/1/minilive/{token}/room/audio/abnormal/page"
+  },
+  {
+    "name": "直播后审核-菜单",
+    "url": "/api/admin/1/minilive/{token}/room/playback/page"
+  },
+  {
+    "name": "查询标签组分页",
+    "url": "/api/center/1/news/label/group/libra/page"
+  },
+  {
+    "name": "模糊查询标签列表",
+    "url": "/api/center/1/news/label/fuzzy/libra/list"
+  },
+  {
+    "name": "查询标签组列表",
+    "url": "/api/center/1/news/label/group/limit/libra/list"
+  },
+  {
+    "name": "查询企业配置",
+    "url": "/api/1/get/invoice/enterprise/configure"
+  },
+  {
+    "name": "换开发票",
+    "url": "/api/1/order/open/invoice/exchange"
+  },
+  {
+    "name": "新增开票配置",
+    "url": "/api/1/add/invoice/configure"
+  },
+  {
+    "name": "查询开票配置",
+    "url": "/api/1/get/invoice/configure"
+  },
+  {
+    "name": "新增企业开票配置",
+    "url": "/api/1/add/invoice/enterprise/configure"
+  },
+  {
+    "name": "开票结果分页查询",
+    "url": "/api/1/query/invoice/page"
+  },
+  {
+    "name": "开票结果详情",
+    "url": "/api/1/query/invoice/detail"
+  },
+  {
+    "name": "获取可录入的蓝票列表",
+    "url": "/api/1/get/blue/invoice/list"
+  },
+  {
+    "name": "退款冲红",
+    "url": "/api/1/order/refund/apply/red/invoice"
+  },
+  {
+    "name": "刷新发票结果",
+    "url": "/api/1/refresh/order/invoice/status"
+  },
+  {
+    "name": "录入退款信息",
+    "url": "/v1/order/manage/{token}/manual/refund/submit"
+  },
+  {
+    "name": "录入退款信息-优惠卷退款",
+    "url": "/v1/order/manage/{token}/portion/manual/refund/submit"
+  },
+  {
+    "name": "录入退款信息-降级退款",
+    "url": "/v1/order/manage/{token}/relegate/manual/refund/submit"
+  },
+  {
+    "name": "导出订单合规报备分页列表",
+    "url": "/v1/order/manage/{token}/fore/compliance/list/export"
+  },
+  {
+    "name": "新增投顾服务配置",
+    "url": "/api/1/investmentAdvisoryServiceConfig/add"
+  },
+  {
+    "name": "获取个股诊断/智投工具配置列表不分页",
+    "url": "/api/1/stockInvestConfig/list"
+  },
+  {
+    "name": "新手任务上下架",
+    "url": "/api/v1/activity/libra/info/updateStatus"
+  },
+  {
+    "name": "解禁用户",
+    "url": "/api/1/user/restore"
+  },
+  {
+    "name": "获取所有用户信息",
+    "url": "/api/1/user/userList"
+  },
+  {
+    "name": "获取MGR用户ID",
+    "url": "/api/1/user/mgr/userId"
+  },
+  {
+    "name": "获取角色绑定权限列表",
+    "url": "/api/1/role/permission/list"
+  },
+  {
+    "name": "权限列表",
+    "url": "/api/1/permission/all/list"
+  },
+  {
+    "name": "日志详情",
+    "url": "/api/1/log/batch/get"
+  },
+  {
+    "name": "登录日志导出",
+    "url": "/api/1/account/login/log/export"
+  },
+  {
+    "name": "批量新增用户标签",
+    "url": "/api/v1/user/intent/saveBatch"
+  },
+  {
+    "name": "降价管理-擒龙",
+    "url": "/menu_order_discount_ql"
+  },
+  {
+    "name": "降价管理-旗舰",
+    "url": "/menu_order_discount_qj"
+  },
+  {
+    "name": "修改素材接口",
+    "url": "/api/2/libra-service/material/modify"
+  },
+  {
+    "name": "查询素材历史接口",
+    "url": "/api/2/libra-service/material/record/query/list"
+  },
+  {
+    "name": "查询素材审核历史接口",
+    "url": "/api/2/libra-service/material/audit/record/query"
+  },
+  {
+    "name": "素材审核接口",
+    "url": "/api/2/libra-service/material/audit"
+  },
+  {
+    "name": "查询AI素材列表接口",
+    "url": "/api/2/libra-service/ai/material/query/list"
+  },
+  {
+    "name": "查询超投列表接口",
+    "url": "/api/2/libra-service/overcast/query/list"
+  },
+  {
+    "name": "投资委员会审核接口",
+    "url": "/api/2/libra-service/material/investment/audit"
+  },
+  {
+    "name": "查询推广素材列表接口",
+    "url": "/api/2/libra-service/promotional/material/query/list"
+  },
+  {
+    "name": "查询素材推广物料接口",
+    "url": "/api/2/libra-service/material/promotional/supply/query/list"
+  },
+  {
+    "name": "保存素材推广渠道",
+    "url": "/api/2/libra-service/promotional/material/save"
+  },
+  {
+    "name": "查询历史文件或者图片素材列表接口",
+    "url": "/api/2/libra-service/material/history/tab/list"
+  },
+  {
+    "name": "修改群组接口",
+    "url": "/api/2/libra-service/group/update"
+  },
+  {
+    "name": "校验父账号用户名是否存在",
+    "url": "/api/1/user/check/username/exist"
+  },
+  {
+    "name": "(非登录)修改密码",
+    "url": "/api/1/noLogin/account/modify/password"
+  },
+  {
+    "name": "抽奖-天秤-详情",
+    "url": "/mgt/api/1/activity/luck/tc/detail"
+  },
+  {
+    "name": "抽奖-天秤-分页查询",
+    "url": "/mgt/api/1/activity/luck/tc/page"
+  },
+  {
+    "name": "抽奖-天秤-新增",
+    "url": "/mgt/api/1/activity/luck/tc/add"
+  },
+  {
+    "name": "擒龙商品列表查询",
+    "url": "/mgt/api/1/goods/lite/page/list"
+  },
+  {
+    "name": "查询商品可用的降价活动",
+    "url": "/api/1/event/goods"
+  },
+  {
+    "name": "商品列表查询接口",
+    "url": "/mgt/api/1/activity/room/libra/sku/list"
+  },
+  {
+    "name": "商品详情接口",
+    "url": "/mgt/api/1/activity/room/libra/sku/detail"
+  },
+  {
+    "name": "商品新增接口",
+    "url": "/mgt/api/1/activity/room/libra/sku/add"
+  },
+  {
+    "name": "优惠券详情",
+    "url": "/mgt/api/1/activity/libra/coupon/copy"
+  },
+  {
+    "name": "天秤后台-优惠券新增",
+    "url": "/mgt/api/1/activity/libra/coupon/add"
+  },
+  {
+    "name": "天秤后台-查询优惠券列表",
+    "url": "/mgt/api/1/activity/libra/coupon/list"
+  },
+  {
+    "name": "app-查询直播间上架优惠券信息",
+    "url": "/api/1/activity/{channel}/coupon/shelf/detail"
+  },
+  {
+    "name": "优惠券分页列表",
+    "url": "/mgt/api/1/coupon/page"
+  },
+  {
+    "name": "旗舰商品-分页查询",
+    "url": "/mgt/api/1/goods/page"
+  },
+  {
+    "name": "录入退款信息-退款",
+    "url": "/api/v1/{token}/order/manual/refund/submit"
+  },
+  {
+    "name": "录入退款信息-降级退款",
+    "url": "/api/v1/{token}/order/relegate/manual/refund/submit"
+  },
+  {
+    "name": "录入退款信息-优惠劵退款",
+    "url": "/api/v1/{token}/coupon/manual/refund/submit"
+  },
+  {
+    "name": "用户统计擒龙菜单权限",
+    "url": "/api/1/uranus/order/user/query"
+  },
+  {
+    "name": "通知消息分页查询",
+    "url": "/mgt/api/1/message/page/list"
+  },
+  {
+    "name": "更新消息查看状态",
+    "url": "/mgt/api/1/message/update/readStatus"
+  },
+  {
+    "name": "关闭0元订单",
+    "url": "/api/v1/{token}/close/zero/order"
+  },
+  {
+    "name": "批量发放赠送订单",
+    "url": "/admin/api/1/order/manage/batch/give/order"
+  },
+  {
+    "name": "创建单个赠送订单",
+    "url": "/admin/api/1/order/manage/create/give/order"
+  },
+  {
+    "name": "开通权限历史查询",
+    "url": "/admin/api/1/order/manage/batch/give/query"
+  },
+  {
+    "name": "导出用户批量授权记录",
+    "url": "/admin/api/1/order/manage/batch/give/export"
+  },
+  {
+    "name": "查看发票PDF原件",
+    "url": "/look/Invoice/pdf"
+  },
+  {
+    "name": "团队配置新增",
+    "url": "/admin/api/1/team/add"
+  },
+  {
+    "name": "团队配置修改",
+    "url": "/admin/api/1/team/change"
+  },
+  {
+    "name": "团队配置查询",
+    "url": "/admin/api/1/team/getTeams"
+  },
+  {
+    "name": "团队配置删除",
+    "url": "/admin/api/1/team/delTeamConfig"
+  },
+  {
+    "name": "模糊查询团队配置",
+    "url": "/admin/api/1/team/vagueQueryTeams"
+  },
+  {
+    "name": "直播间或栏目配置",
+    "url": "/admin/api/1/teamRelation/add"
+  },
+  {
+    "name": "直播间或栏目配置删除",
+    "url": "/admin/api/1/teamRelation/del"
+  },
+  {
+    "name": "直播间或栏目配置更新",
+    "url": "/admin/api/1/teamRelation/update"
+  },
+  {
+    "name": "查询直播间或栏目",
+    "url": "/admin/api/1/teamRelation/query"
+  },
+  {
+    "name": "获取栏目",
+    "url": "/admin/api/1/teamRelation/columns"
+  },
+  {
+    "name": "获取直播间",
+    "url": "/admin/api/1/teamRelation/rooms"
+  },
+  {
+    "name": "跌幅预警-跌幅档位预警统计",
+    "url": "/admin/api/1/stock/alert/ByConfigId"
+  },
+  {
+    "name": "二级行业查询",
+    "url": "/admin/api/1/stock/getStockSecondIndustries"
+  },
+  {
+    "name": "修改预警配置",
+    "url": "/admin/api/1/stock/warningConfig"
+  },
+  {
+    "name": "获取预警配置",
+    "url": "/admin/api/1/stock/getWarningConfig"
+  },
+  {
+    "name": "个股详情统计",
+    "url": "/admin/api/1/stock/query"
+  },
+  {
+    "name": "个股详情查看",
+    "url": "/admin/api/1/stock/queryManipulate"
+  },
+  {
+    "name": "个股风险预警统计",
+    "url": "/admin/api/1/stock/queryWarnings"
+  },
+  {
+    "name": "行业集中度查询",
+    "url": "/admin/api/1/stock/industryFocusLevel"
+  },
+  {
+    "name": "行业个股涨跌幅查询",
+    "url": "/admin/api/1/stock/stockChange"
+  },
+  {
+    "name": "个股集中度查询",
+    "url": "/admin/api/1/stock/stockFocusLevel"
+  },
+  {
+    "name": "导出个股详情数据",
+    "url": "/admin/api/1/stock/excel"
+  },
+  {
+    "name": "查询股票信息含模糊查询",
+    "url": "/admin/api/1/stock/queryStockInfos"
+  },
+  {
+    "name": "查询老师信息含模糊查询",
+    "url": "/admin/api/1/stock/queryTeacherInfos"
+  },
+  {
+    "name": "案例全览-在期客户统计",
+    "url": "/admin/api/1/customer/count"
+  },
+  {
+    "name": "案例全览-涨幅股票数量统计",
+    "url": "/admin/api/1/stock/case-overview/stockCount"
+  },
+  {
+    "name": "案例全览-涨幅股票柱状图",
+    "url": "/admin/api/1/stock/case-overview/list"
+  },
+  {
+    "name": "跌幅预警-未读消息",
+    "url": "/admin/api/1/stock/alert/unReadAlert"
+  },
+  {
+    "name": "素材撤回",
+    "url": "/api/2/libra-service/material/recall"
+  },
+  {
+    "name": "查询素材ai审核内容",
+    "url": "/api/2/libra-service/ai/audit/content"
+  },
+  {
+    "name": "天秤后台-礼包新增",
+    "url": "/mgt/api/1/activity/libra/gift/add"
+  },
+  {
+    "name": "天秤后台-礼包详情",
+    "url": "/mgt/api/1/activity/libra/gift/detail"
+  },
+  {
+    "name": "天秤后台-修改礼包博主可见开关",
+    "url": "/mgt/api/1/activity/libra/gift/update/status"
+  },
+  {
+    "name": "擒龙根据goodsNo查询课程信息",
+    "url": "/api/1/education/course/getCourseByGoodsNo"
+  },
+  {
+    "name": "旗舰根据goodsNo查询课程信息",
+    "url": "/api/1/education/goods/course/info"
+  },
+  {
+    "name": "天秤后台-修改商品播主可见开关",
+    "url": "/mgt/api/1/activity/room/libra/sku/update/status"
+  },
+  {
+    "name": "天秤后台-优惠券修改播主可见开关",
+    "url": "/mgt/api/1/activity/libra/coupon/anchor/status"
+  },
+  {
+    "name": "天秤后台-抽奖修改播主可见开关",
+    "url": "/mgt/api/1/activity/luck/tc/status"
+  },
+  {
+    "name": "天秤后台-礼包列表查询",
+    "url": "/mgt/api/1/activity/libra/gift/list"
+  }
+]

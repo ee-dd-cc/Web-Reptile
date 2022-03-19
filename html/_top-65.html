@@ -1,0 +1,71 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML <span class="color_h1">字符集</span>
+</h1>
+<hr>
+<p class="intro">要正确显示一个 HTML 页面，浏览器必须知道要使用的字符集（字符编码）。</p>
+<hr>
+
+<h2>HTML 字符集</h2>
+<p>在 HTML 中，正确的字符编码是什么？</p>
+<p><strong>HTML5 中默认的字符编码是 UTF-8。</strong></p>
+<p>这并非总是如此。早期网络的字符编码是 ASCII 码。</p>
+<p>后来，从 HTML 2.0 到 HTML 4.01，ISO-8859-1 被认定为标准。</p>
+<p>随着 XML 和 HTML5 的出现，UTF-8 也终于到来了，解决了大量的字符编码问题。</p>
+<p>下面是关于字符编码标准的简短概述。</p>
+<hr>
+
+<h2>在开始的时候：ASCII</h2>
+<p>计算机信息（数字、文字、图片）在电子中是以二进制 1 和 0（01000101）进行存储的。</p>
+<p>为了规范字母数字字符的存储，创建了 ASCII（全称 American Standard Code for Information Interchange）。它为每个存储字符定义了一个独特的二元 7 位数字，支持 0-9 数字，大/小写英文字母（a-z、A-Z）和一些特殊的字符，比如 ! $ + - ( ) @ &lt; &gt; 。</p>
+<p>由于 ASCII 使用一个字节（7 位表示字符，1 位表示传输奇偶控制），所以它只能表示 128 个不同的字符。这些字符中有 32 个被保留作为其他控制目的使用。</p>
+<p>ASCII 的最大的缺点是，它排除了非英文字母。</p>
+<p>ASCII 今天仍然在广泛使用，尤其是在大型计算机系统中。</p>
+<p>如需深入了解 ASCII，请查看<a href="ref-html-ascii.html">完整的 ASCII 
+参考手册</a>。</p>
+<hr>
+
+<h2>在 Windows 中：ANSI</h2>
+<p>ANSI（也称为 Windows-1252），是 Windows 95 及其之前的 Windows 系统中默认的字符集。</p>
+<p>ANSI 是 ASCII 的扩展，它加入了国际字符。它使用一个完整的字节（8 位）来表示 256 个不同字符。</p>
+<p>自从 ANSI 成为 Windows 中默认的字符集，所有的浏览器都支持 ANSI。</p>
+<p>如需深入了解 ANSI，请查看<a href="ref-html-ansi.html">完整的 ANSI 
+参考手册</a>。</p>
+<hr>
+
+<h2>在 HTML 4 中：ISO-8859-1</h2>
+<p>由于大多数国家使用 ASCII 以外的字符，在 HTML 2.0 标准中，默认的字符编码更改为 ISO-8859-1。</p>
+<p>ISO-8859-1 是 ASCII 的扩展，它加入了国际字符。与 ANSI 一样，它使用一个完整的字节（8 位）来表示 256 个不同字符。</p>
+<table class="lamp"><tbody><tr>
+<th style="width:34px"><img src="/images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>当浏览器在网页中检测到 ISO-8859-1 时，通常默认为 ANSI，因为除了 ANSI 有 32 个额外的字符这一点，其他方面 ANSI 基本等同于 ISO-8859-1。</td>
+</tr></tbody></table>
+<p>如果 HTML 4 网页使用了不同于 ISO-8859-1 的字符集，则需要在 &lt;meta&gt; 标签中指定，如下所示：</p>
+<div class="example">
+	<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">meta</span><span class="hl-code"> </span><span class="hl-var">http-equiv</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">Content-Type</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">content</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">text/html;charset=ISO-8859-8</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<br><table class="lamp"><tbody><tr>
+<th style="width:34px"><img src="/images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>
+<p>HTML5 中默认的字符集是 UTF-8。<br>所有的 HTML 4 处理器都支持 UTF-8，所有的 HTML5 和 XML 处理器都支持 UTF-8 和 UTF-16。</p>
+</td>
+</tr></tbody></table>
+<p>如需深入了解 ISO-8859-1，请查看<a href="ref-html-8859.html">完整的 ISO-8859-1 
+参考手册</a>。</p>
+<hr>
+
+<h2>在 HTML5 中：Unicode（UTF-8）</h2>
+<p>由于以上所列的字符集是有限的，在多语言环境中是不兼容的，所以 Unicode 联盟（Unicode Consortium）开发了 Unicode 标准（Unicode Standard）。</p>
+<p>Unicode 标准覆盖了（几乎）所有的字符、标点符号和符号。</p>
+<p>Unicode 使文本的处理、存储和运输，独立于平台和语言。</p>
+<p><strong>HTML5 中默认的字符编码是 UTF-8。</strong></p>
+<p>如需深入了解 Unicode（UTF-8），请查看<a href="ref-html-utf8.html">完整的 
+Unicode 参考手册</a>。</p>
+<br>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

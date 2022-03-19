@@ -1,0 +1,236 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML<span class="color_h1"> - XHTML</span>
+</h1>
+<hr>
+<p class="intro">XHTML 是以 XML 格式编写的 HTML。</p>
+<hr>
+<h2>什么是 XHTML?</h2>
+<ul>
+<li>XHTML 指的是可扩展超文本标记语言</li>
+<li>XHTML 与 HTML 4.01 几乎是相同的</li>
+<li>XHTML 是更严格更纯净的 HTML 版本</li>
+<li>XHTML 是以 XML 应用的方式定义的 HTML</li>
+<li>XHTML 是 <a href="/w3c/w3c-xhtml.html" title="W3C XHTML 活动">2001 年 1 月</a>发布的 W3C 推荐标准</li>
+<li>XHTML 得到所有主流浏览器的支持</li>
+</ul>
+<hr>
+<h2>为什么使用 XHTML?</h2>
+<p>因特网上的很多页面包含了"糟糕"的 HTML。</p>
+<p>如果在浏览器中查看，下面的 HTML 代码运行起来非常正常（即使它并未遵守 HTML 规则）：</p>
+
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">html</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">head</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">meta</span><span class="hl-code"> </span><span class="hl-var">charset</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">utf-8</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">title</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个不规范的 HTML</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">title</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">h1</span><span class="hl-brackets">&gt;</span><span class="hl-code">不规范的 HTML
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+
+<p>XML 是一种必须正确标记且格式良好的标记语言。</p>
+<p>如果希望学习 XML，请阅读我们的<a href="/xml/xml-tutorial.html"> XML 教程</a>。</p>
+<p>今日的科技界存在一些不同的浏览器技术。其中一些在计算机上运行，而另一些可能在移动电话或其他小型设备上运行。小型设备往往缺乏解释"糟糕"的标记语言的资源和能力。</p>
+<p>所以 - 通过结合 XML 和 HTML 的长处，开发出了 XHTML。XHTML 是作为 XML 被重新设计的 HTML。</p>
+<hr>
+<h2>与 HTML 相比最重要的区别：</h2>
+<h3>文档结构</h3>
+
+<ul>
+<li>XHTML DOCTYPE 是<em>强制性的</em></li>
+<li>&lt;html&gt; 中的 XML namespace 属性是<em>强制性的</em></li>
+<li>&lt;html&gt;、&lt;head&gt;、&lt;title&gt; 以及 &lt;body&gt; 也是<em>强制性的</em></li>
+</ul>
+
+<h3>元素语法</h3>
+
+<ul>
+<li>XHTML 元素必须<em>正确嵌套</em></li>
+<li>XHTML 元素必须始终<em>关闭</em></li>
+<li>XHTML 元素必须<em>小写</em></li>
+<li>XHTML 文档必须有<em>一个根元素</em></li>
+</ul>
+
+<h3>属性语法</h3>
+
+<ul>
+<li>XHTML 属性必须使用<em>小写</em></li>
+<li>XHTML 属性值必须用<em>引号包围</em></li>
+<li>XHTML 属性最小化也是<em>禁止的</em></li>
+</ul><hr>
+<h2>&lt;!DOCTYPE ....&gt;是强制性的</h2>
+<p>XHTML 文档必须进行 XHTML 文档类型声明（XHTML DOCTYPE declaration）。</p>
+
+<p>您可以在古元坤教程的标签参考手册中找到完整的 <a href="/tags/tag-doctype.html">XHTML 文档类型。</a></p>
+<p>&lt;html&gt;, &lt;head&gt;, &lt;title&gt;, 和 &lt;body&gt; 元素也必须存在，并且必须使用 &lt;html&gt; 中的 xmlns 属性为文档规定 xml 命名空间。</p>
+
+<p>下面的例子展示了带有最少的必需标签的 XHTML 文档：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-code">!</span><span class="hl-var">DOCTYPE</span><span class="hl-code"> </span><span class="hl-var">html</span><span class="hl-code"> </span><span class="hl-var">PUBLIC</span><span class="hl-code"> </span><span class="hl-quotes">"</span><span class="hl-string">-//W3C//DTD XHTML 1.0 Transitional//EN</span><span class="hl-quotes">"</span><span class="hl-code">
+</span><span class="hl-quotes">"</span><span class="hl-string">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">html</span><span class="hl-code"> </span><span class="hl-var">xmlns</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">http://www.w3.org/1999/xhtml</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">head</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">meta</span><span class="hl-code"> </span><span class="hl-var">charset</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">utf-8</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+  </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">title</span><span class="hl-brackets">&gt;</span><span class="hl-code">文档标题</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">title</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">head</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+文档内容
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+ 
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">html</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<br><hr>
+<h2>XHTML 元素必须合理嵌套</h2>
+<p>在 HTML 中，一些元素可以不互相嵌套，像这样：</p>
+
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">b</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">i</span><span class="hl-brackets">&gt;</span><span class="hl-code">粗体和斜体文本</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">b</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">i</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<p>在 XHTML 中，所有的元素都必须互相合理地嵌套，像这样：</p>
+
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">b</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">i</span><span class="hl-brackets">&gt;</span><span class="hl-code">粗体和斜体文本</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">i</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">b</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<br><hr>
+<h2>XHTML 元素必须有关闭标签</h2>
+
+<p>错误示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是另外一个段落</span></div>
+</div>
+</div>
+
+<p>正确示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是另外一个段落</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<br><hr>
+<h2>空元素必须包含关闭标签</h2>
+<p>错误示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-code">分行:</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">br</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+水平线: </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">hr</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+图片: </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">img</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">happy.gif</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">alt</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">Happy face</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+
+<p>正确示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-code">分行:</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">br</span><span class="hl-code"> </span><span class="hl-brackets">/&gt;</span><span class="hl-code">
+水平线: </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">hr</span><span class="hl-code"> </span><span class="hl-brackets">/&gt;</span><span class="hl-code">
+图片: </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">img</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">happy.gif</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">alt</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">Happy face</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-brackets">/&gt;</span></div>
+</div>
+</div>
+<br><hr>
+<h2>XHTML 元素必须是小写</h2>
+
+<p>错误示例:</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">BODY</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">P</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">P</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">BODY</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+
+<p>正确示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">body</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<br><hr>
+<h2>属性名称必须是小写</h2>
+<p>错误示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">table</span><span class="hl-code"> </span><span class="hl-var">WIDTH</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">100%</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<p>正确示例:</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">table</span><span class="hl-code"> </span><span class="hl-var">width</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">100%</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<br><hr>
+<h2>属性值必须有引号</h2>
+<p>错误示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">table</span><span class="hl-code"> </span><span class="hl-var">width</span><span class="hl-code">=</span><span class="hl-var">100</span><span class="hl-code">%</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+
+<p>正确示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">table</span><span class="hl-code"> </span><span class="hl-var">width</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">100%</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<br><hr>
+<h2>不允许属性简写</h2>
+<p>错误示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">checked</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">readonly</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">disabled</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">option</span><span class="hl-code"> </span><span class="hl-var">selected</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<p>正确示例：</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">checked</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">checked</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">readonly</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">readonly</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">input</span><span class="hl-code"> </span><span class="hl-var">disabled</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">disabled</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">option</span><span class="hl-code"> </span><span class="hl-var">selected</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">selected</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<br><hr>
+<h2>如何将 HTML 转换为 XHTML</h2>
+<ol>
+<li>添加一个 XHTML &lt;!DOCTYPE&gt; 到你的网页中</li>
+	<li>添加 xmlns 属性添加到每个页面的html元素中。 </li>
+	<li>改变所有的元素为小写</li>
+	<li>关闭所有的空元素</li>
+	<li>修改所有的属性名称为小写</li>
+	<li>所有属性值添加引号</li>
+</ol>
+<hr>
+<h2>使用 W3C 验证器来测试你的 XHTML</h2>
+<form method="get" action="http://validator.w3.org/check" target="_blank">
+<p>请在下面的输入框中输入您的网址：</p>
+<p><input name="uri" size="60" value="http://www.runoob.com"></p>
+<input type="submit" value="页面验证"></form>
+
+
+
+			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

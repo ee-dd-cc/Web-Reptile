@@ -1,0 +1,106 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+						
+<h1>HTML <span class="color_h1">脚本</span></h1>
+
+<hr><p class="intro">JavaScript 使 HTML 页面具有更强的动态和交互性。</p>
+<hr><div class="tryit_ex">
+<img loading="lazy" src="/images/tryitimg.gif" width="40" height="46px" alt="Examples"><h2>在线实例</h2>
+</div>
+
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_script">插入一段脚本</a><br>
+如何将脚本插入 HTML 文档。</p>
+
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_noscript">使用 &lt;noscript&gt;  标签
+</a><br>
+如何应对不支持脚本或禁用脚本的浏览器。</p>
+
+<hr><h2>HTML &lt;script&gt; 标签</h2>
+
+<p>&lt;script&gt; 标签用于定义客户端脚本，比如 JavaScript。</p>
+<p>&lt;script&gt; 元素既可包含脚本语句，也可通过 src 属性指向外部脚本文件。</p>
+<p>JavaScript 最常用于图片操作、表单验证以及内容动态更新。</p>
+<p>下面的脚本会向浏览器输出"Hello World!"：</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-code">&lt;</span><span class="hl-identifier">script</span><span class="hl-code">&gt;
+</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">write</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Hello World!</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+&lt;/</span><span class="hl-identifier">script</span><span class="hl-code">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml_script" class="tryitbtn">尝试一下 »</a>
+</div>
+
+<p><img border="0" src="/images/lamp.gif" alt="Remark"><b>Tip:</b> 学习更多关于Javascript教程，请查看<a href="/js/js-tutorial.html">JavaScript 教程</a>!<br>
+</p>
+<hr><h2>HTML&lt;noscript&gt; 标签</h2>
+<p>&lt;noscript&gt; 标签提供无法使用脚本时的替代内容，比方在浏览器禁用脚本时，或浏览器不支持客户端脚本时。</p>
+<p>&lt;noscript&gt;元素可包含普通 HTML 页面的 body 元素中能够找到的所有元素。</p>
+<p>只有在浏览器不支持脚本或者禁用脚本时，才会显示 &lt;noscript&gt;  元素中的内容：</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-code">&lt;</span><span class="hl-identifier">script</span><span class="hl-code">&gt;
+</span><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">write</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Hello World!</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">
+&lt;/</span><span class="hl-identifier">script</span><span class="hl-code">&gt;
+&lt;</span><span class="hl-identifier">noscript</span><span class="hl-code">&gt;抱歉，你的浏览器不支持 </span><span class="hl-identifier">JavaScript</span><span class="hl-code">!&lt;/</span><span class="hl-identifier">noscript</span><span class="hl-code">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml_noscript" class="tryitbtn">尝试一下 »</a>
+</div>
+<br>
+<hr>
+
+<h2>JavaScript体验(来自本站javascript教程)</h2>
+<p>JavaScript实例代码:</p>
+<div class="example">
+<h2 class="example">JavaScript可以直接在HTML输出:</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">write</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">&lt;p&gt;这是一个段落。&lt;/p&gt;</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+<br>
+<a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryjs_intro_document_write">尝试一下 »</a>
+</div>
+<br>
+
+<div class="example">
+<h2 class="example">JavaScript事件响应:</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">button</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">button</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">onclick</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">myFunction()</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span class="hl-code">点我！</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">button</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br>
+<a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryjs_intro_event">尝试一下 »</a>
+</div>
+<br>
+
+<div class="example">
+<h2 class="example">JavaScript处理 HTML 样式:</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-builtin">document</span><span class="hl-code">.</span><span class="hl-identifier">getElementById</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">demo</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">.</span><span class="hl-identifier">style</span><span class="hl-code">.</span><span class="hl-identifier">color</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">#ff0000</span><span class="hl-quotes">"</span><span class="hl-code">;</span></div>
+</div>
+<br>
+<a target="_blank" class="tryitbtn" href="/try/try.php?filename=tryjs_intro_style">尝试一下 »</a>
+</div>
+<br>
+
+<hr><h2>HTML 脚本标签</h2>
+
+<table class="reference">
+<tbody><tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+<tr>
+<td><a href="/tags/tag-script.html">&lt;script&gt;</a></td>
+<td>定义了客户端脚本</td>
+</tr>
+<tr>
+<td><a href="/tags/tag-noscript.html">&lt;noscript&gt;</a></td>
+<td>定义了不支持脚本浏览器输出的文本</td>
+</tr>
+</tbody></table>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

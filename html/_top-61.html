@@ -1,0 +1,260 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML <span class="color_h1">音频/视频</span> DOM 参考手册</h1>
+<hr>
+<h2>HTML 音频/视频 DOM 参考手册</h2>
+<p>HTML5 DOM 为 &lt;audio&gt; 和 &lt;video&gt; 元素提供了方法、属性和事件。</p>
+<p>这些方法、属性和事件允许您使用 JavaScript 来操作 &lt;audio&gt; 和 &lt;video&gt; 元素。</p>
+<hr>
+<h2>HTML 音频/视频 方法</h2>
+
+<table class="reference notranslate">
+<tbody><tr>
+<th align="left" width="25%">方法</th>
+<th align="left" width="75%">描述</th>
+</tr>
+<tr>
+<td><a href="av-met-addtexttrack.html">addTextTrack()</a></td>
+<td>向音频/视频添加新的文本轨道。</td>
+	</tr>
+<tr>
+<td><a href="av-met-canplaytype.html">canPlayType()</a></td>
+<td>检测浏览器是否能播放指定的音频/视频类型。</td>
+	</tr>
+<tr>
+<td><a href="av-met-load.html">load()</a></td>
+<td>重新加载音频/视频元素。</td>
+</tr>
+<tr>
+<td><a href="av-met-play.html">play()</a></td>
+<td>开始播放音频/视频。</td>
+	</tr>
+<tr>
+<td><a href="av-met-pause.html">pause()</a></td>
+<td>暂停当前播放的音频/视频。</td>
+	</tr>
+</tbody></table>
+<h2>HTML 音频/视频属性</h2>
+
+<table class="reference notranslate">
+<tbody><tr>
+<th align="left" width="25%">属性</th>
+<th align="left" width="75%">描述</th>
+</tr>
+<tr>
+<td><a href="av-prop-audiotracks.html">audioTracks</a></td>
+<td>返回表示可用音频轨道的 AudioTrackList 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-autoplay.html">autoplay</a></td>
+<td>设置或返回是否在加载完成后随即播放音频/视频。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-buffered.html">buffered</a></td>
+<td>返回表示音频/视频已缓冲部分的 TimeRanges 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-controller.html">controller</a></td>
+<td>返回表示音频/视频当前媒体控制器的 MediaController 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-controls.html">controls</a></td>
+<td>设置或返回音频/视频是否显示控件（比如播放/暂停等）。</td>
+	</tr>
+<tr>
+<td>crossOrigin</td>
+<td>设置或返回音频/视频的 CORS 设置。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-currentsrc.html">currentSrc</a></td>
+<td>返回当前音频/视频的 URL。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-currenttime.html">currentTime</a></td>
+<td>设置或返回音频/视频中的当前播放位置（以秒计）。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-defaultmuted.html">defaultMuted</a></td>
+<td>设置或返回音频/视频默认是否静音。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-defaultplaybackrate.html">defaultPlaybackRate</a></td>
+<td>设置或返回音频/视频的默认播放速度。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-duration.html">duration</a></td>
+<td>返回当前音频/视频的长度（以秒计）。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-ended.html">ended</a></td>
+<td>返回音频/视频的播放是否已结束。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-error.html">error</a></td>
+<td>返回表示音频/视频错误状态的 MediaError 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-loop.html">loop</a></td>
+<td>设置或返回音频/视频是否应在结束时重新播放。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-mediagroup.html">mediaGroup</a></td>
+<td>设置或返回音频/视频所属的组合（用于连接多个音频/视频元素）。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-muted.html">muted</a></td>
+<td>设置或返回音频/视频是否静音。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-networkstate.html">networkState</a></td>
+<td>返回音频/视频的当前网络状态。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-paused.html">paused</a></td>
+<td>设置或返回音频/视频是否暂停。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-playbackrate.html">playbackRate</a></td>
+<td>设置或返回音频/视频播放的速度。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-played.html">played</a></td>
+<td>返回表示音频/视频已播放部分的 TimeRanges 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-preload.html">preload</a></td>
+<td>设置或返回音频/视频是否应该在页面加载后进行加载。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-readystate.html">readyState</a></td>
+<td>返回音频/视频当前的就绪状态。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-seekable.html">seekable</a></td>
+<td>返回表示音频/视频可寻址部分的 TimeRanges 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-seeking.html">seeking</a></td>
+<td>返回用户是否正在音频/视频中进行查找。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-src.html">src</a></td>
+<td>设置或返回音频/视频元素的当前来源。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-startdate.html">startDate</a></td>
+<td>返回表示当前时间偏移的 Date 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-texttracks.html">textTracks</a></td>
+<td>返回表示可用文本轨道的 TextTrackList 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-videotracks.html">videoTracks</a></td>
+<td>返回表示可用视频轨道的 VideoTrackList 对象。</td>
+	</tr>
+<tr>
+<td><a href="av-prop-volume.html">volume</a></td>
+<td>设置或返回音频/视频的音量。</td>
+	</tr>
+</tbody></table>
+<h2>HTML 音频/视频事件</h2>
+
+<table class="reference">
+<tbody><tr>
+<th align="left" width="25%">事件</th>
+<th align="left" width="75%">描述</th>
+</tr>
+<tr>
+<td><a href="av-event-abort.html">abort</a></td>
+<td>当音频/视频的加载已放弃时触发。</td>
+</tr>
+<tr>
+<td><a href="av-event-canplay.html">canplay</a></td>
+<td>当浏览器可以开始播放音频/视频时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-canplaythrough.html">canplaythrough</a></td>
+<td>当浏览器可在不因缓冲而停顿的情况下进行播放时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-durationchange.html">durationchange</a></td>
+<td>当音频/视频的时长已更改时触发。</td>
+	</tr>
+<tr>
+<td>emptied</td>
+<td>当目前的播放列表为空时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-ended.html">ended</a></td>
+<td>当目前的播放列表已结束时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-error.html">error</a></td>
+<td>当在音频/视频加载期间发生错误时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-loadeddata.html">loadeddata</a></td>
+<td>当浏览器已加载音频/视频的当前帧时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-loadedmetadata.html">loadedmetadata</a></td>
+<td>当浏览器已加载音频/视频的元数据时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-loadstart.html">loadstart</a></td>
+<td>当浏览器开始查找音频/视频时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-pause.html">pause</a></td>
+<td>当音频/视频已暂停时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-play.html">play</a></td>
+<td>当音频/视频已开始或不再暂停时触发。</td>
+</tr>
+<tr>
+<td><a href="av-event-playing.html">playing</a></td>
+<td>当音频/视频在因缓冲而暂停或停止后已就绪时触发。</td>
+</tr>
+<tr>
+<td><a href="av-event-progress.html">progress</a></td>
+<td>当浏览器正在下载音频/视频时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-ratechange.html">ratechange</a></td>
+<td>当音频/视频的播放速度已更改时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-seeked.html">seeked</a></td>
+<td>当用户已移动/跳跃到音频/视频中的新位置时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-seeking.html">seeking</a></td>
+<td>当用户开始移动/跳跃到音频/视频中的新位置时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-stalled.html">stalled</a></td>
+<td>当浏览器尝试获取媒体数据，但数据不可用时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-suspend.html">suspend</a></td>
+<td>当浏览器刻意不获取媒体数据时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-timeupdate.html">timeupdate</a></td>
+<td>当目前的播放位置已更改时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-volumechange.html">volumechange</a></td>
+<td>当音量已更改时触发。</td>
+	</tr>
+<tr>
+<td><a href="av-event-waiting.html">waiting</a></td>
+<td>当视频由于需要缓冲下一帧而停止时触发。</td>
+</tr>
+</tbody></table>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

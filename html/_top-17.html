@@ -1,0 +1,222 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML <span class="color_h1">表单和输入</span></h1>
+<hr>
+<p class="intro">HTML 表单用于收集不同类型的用户输入。</p>
+<hr>
+<div class="tryit_ex">
+<img loading="lazy" src="/images/tryitimg.gif" width="40" height="46px" alt="Examples">
+<h2>在线实例</h2>
+</div>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_input" rel="noopener noreferrer">创建文本字段 (Text field)</a><br>
+本例演示如何在 HTML 页面创建文本域。用户可以在文本域中写入文本。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_inputpassword" rel="noopener noreferrer">创建密码字段</a><br>
+本例演示如何创建 HTML 的密码域。</p>
+<p>（在本页底端可以找到更多实例。）</p>
+<hr>
+
+<h2>HTML 表单</h2>
+<p>表单是一个包含表单元素的区域。</p>
+<p>表单元素是允许用户在表单中输入内容,比如：文本域(textarea)、下拉列表、单选框(radio-buttons)、复选框(checkboxes)等等。</p>
+<p>表单使用表单标签 &lt;form&gt; 来设置:</p>
+
+<div class="code notranslate"><div>
+&lt;form&gt;<br>
+.<br>
+<i>input 元素</i><br>
+.<br>
+&lt;/form&gt;<br>
+</div></div>
+<br>
+<hr>
+
+<h2>HTML 表单 - 输入元素</h2>
+<p>多数情况下被用到的表单标签是输入标签（&lt;input&gt;）。</p><p>输入类型是由类型属性（type）定义的。大多数经常被用到的输入类型如下：</p>
+
+<hr>
+
+<h2>文本域（Text Fields）</h2>
+<p>文本域通过&lt;input type="text"&gt; 标签来设定，当用户要在表单中键入字母、数字等内容时，就会用到文本域。</p>
+<div class="code notranslate"><div>
+&lt;form&gt;<br>
+First name:
+&lt;input type="text" name="firstname"&gt;&lt;br&gt;<br>
+Last name:
+&lt;input type="text" name="lastname"&gt;<br>
+&lt;/form&gt;
+</div></div>
+
+<p>浏览器显示如下：</p>
+<form action="">
+First name: <input type="text" name="firstname" size="20"><br>
+Last name: <input type="text" name="lastname" size="20">
+</form>
+<p><b> 注意:</b>表单本身并不可见。同时，在大多数浏览器中，文本域的默认宽度是 20 个字符。
+</p>
+<hr>
+
+<h2>密码字段</h2>
+<p>密码字段通过标签&lt;input type="password"&gt; 来定义:</p>
+<div class="code notranslate"><div>
+&lt;form&gt;<br>
+Password:
+&lt;input type="password" name="pwd"&gt;<br>
+&lt;/form&gt;
+</div></div>
+
+<p>浏览器显示效果如下:</p>
+<form action="">
+Password: <input type="password" name="pwd">
+</form>
+<p><b>注意:</b>密码字段字符不会明文显示，而是以星号或圆点替代。</p>
+<hr>
+
+<h2>单选按钮（Radio Buttons）</h2>
+<p>&lt;input type="radio"&gt; 标签定义了表单单选框选项</p>
+<div class="code notranslate"><div>
+&lt;form&gt;<br>
+&lt;input type="radio" name="sex" value="male"&gt;Male&lt;br&gt;<br>
+&lt;input type="radio" name="sex" value="female"&gt;Female<br>
+&lt;/form&gt;
+</div></div>
+
+<p>浏览器显示效果如下:</p>
+<form action="">
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+</form>
+<hr>
+
+<h2>复选框（Checkboxes）</h2>
+<p>&lt;input type="checkbox"&gt; 定义了复选框. 用户需要从若干给定的选择中选取一个或若干选项。</p>
+<div class="code notranslate"><div>
+&lt;form&gt;<br>
+&lt;input type="checkbox" name="vehicle" value="Bike"&gt;I have a bike&lt;br&gt;<br>
+&lt;input type="checkbox" name="vehicle" value="Car"&gt;I have a car <br>
+&lt;/form&gt;
+</div></div>
+
+<p>浏览器显示效果如下:</p>
+<form action="">
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car 
+</form>
+<hr>
+
+<h2>提交按钮(Submit Button)</h2>
+<p>&lt;input type="submit"&gt; 定义了提交按钮.</p>
+<p>当用户单击确认按钮时，表单的内容会被传送到另一个文件。表单的动作属性定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。:</p>
+<div class="code notranslate"><div>
+&lt;form name="input" action="html_form_action.php" method="get"&gt;<br>
+Username:
+&lt;input type="text" name="user"&gt;<br>
+&lt;input type="submit" value="Submit"&gt;<br>
+&lt;/form&gt;
+</div></div>
+
+<p>浏览器显示效果如下:</p>
+<form name="input0" target="_blank" action="/try/demo_source/html_form_action.php" method="get">
+Username: <input type="text" name="user" size="20"><input type="submit" value="Submit">
+</form>
+
+<p>
+假如您在上面的文本框内键入几个字母，然后点击确认按钮，那么输入数据会传送到 "html_form_action.php" 的页面。该页面将显示出输入的结果。
+</p>
+<hr>
+
+<h2>
+<img loading="lazy" border="0" align="middle" src="/images/tryitpic.gif" width="44" height="46" alt="Try it">
+更多实例</h2>
+
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_radio" rel="noopener noreferrer">单选按钮(Radio buttons)</a><br>
+本例演示如何在 HTML 中创建单选按钮。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_checkbox" rel="noopener noreferrer">复选框(Checkboxes)</a><br>
+本例演示如何在 HTML 页中创建复选框。用户可以选中或取消选取复选框。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_select2" rel="noopener noreferrer">简单的下拉列表</a><br>
+本例演示如何在 HTML 页面中创建简单的下拉列表框。下拉列表框是一个可选列表。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_select3" rel="noopener noreferrer">预选下拉列表</a><br>
+本例演示如何创建一个简单的带有预选值的下拉列表。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_textarea" rel="noopener noreferrer">文本域(Textarea)</a><br>
+本例演示如何创建文本域（多行文本输入控件）。用户可在文本域中写入文本。可写入字符的字数不受限制。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_button" rel="noopener noreferrer">创建按钮</a><br>
+本例演示如何创建按钮。你可以对按钮上的文字进行自定义。</p>
+
+<h2>
+<img loading="lazy" border="0" align="middle" src="/images/tryitpic.gif" width="44" height="46" alt="Try it">
+表单实例</h2>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_legend" rel="noopener noreferrer">带边框的表单</a><br>
+本例演示如何在数据周围绘制一个带标题的框。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_form_submit" rel="noopener noreferrer">带有输入框和确认按钮的表单</a><br>
+本例演示如何向页面添加表单。此表单包含两个输入框和一个确认按钮。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_form_checkbox" rel="noopener noreferrer">带有复选框的表单</a><br>
+此表单包含两个复选框和一个确认按钮。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_form_radio" rel="noopener noreferrer">带有单选按钮的表单</a><br>
+此表单包含两个单选框和一个确认按钮。</p>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_form_mail" rel="noopener noreferrer">从表单发送电子邮件</a><br>
+此例演示如何从表单发送电子邮件。</p>
+<hr>
+
+<h2>HTML 表单标签</h2>
+<p><span class="new" style="float:left;">New</span>&nbsp;: HTML5新标签</p>
+<table class="reference">
+<tbody><tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-form.html" rel="noopener noreferrer">&lt;form&gt;</a></td>
+<td> 定义供用户输入的表单</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-input.html" rel="noopener noreferrer">&lt;input&gt;</a></td>
+<td>定义输入域</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-textarea.html" rel="noopener noreferrer">&lt;textarea&gt;</a></td>
+<td>定义文本域 (一个多行的输入控件)</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-label.html" rel="noopener noreferrer">&lt;label&gt;</a></td>
+<td>定义了 &lt;input&gt; 元素的标签，一般为输入标题</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-fieldset.html" rel="noopener noreferrer">&lt;fieldset&gt;</a></td>
+<td>定义了一组相关的表单元素，并使用外框包含起来</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-legend.html" rel="noopener noreferrer">&lt;legend&gt;</a></td>
+<td>定义了  &lt;fieldset&gt; 元素的标题</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-select.html" rel="noopener noreferrer">&lt;select&gt;</a></td>
+<td>定义了下拉选项列表</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-optgroup.html" rel="noopener noreferrer">&lt;optgroup&gt;</a></td>
+<td>定义选项组</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-option.html" rel="noopener noreferrer">&lt;option&gt;</a></td>
+<td>定义下拉列表中的选项</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-button.html" rel="noopener noreferrer">&lt;button&gt;</a></td>
+<td>定义一个点击按钮</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-datalist.html" rel="noopener noreferrer">&lt;datalist&gt;</a><span class="new">New</span></td>
+<td>指定一个预先定义的输入控件选项列表</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-keygen.html" rel="noopener noreferrer">&lt;keygen&gt;</a><span class="new">New</span></td>
+<td>定义了表单的密钥对生成器字段</td>
+</tr>
+<tr>
+<td><a target="_blank" href="/tags/tag-output.html" rel="noopener noreferrer">&lt;output&gt;</a><span class="new">New</span></td>
+<td>定义一个计算结果</td>
+</tr>
+</tbody></table>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

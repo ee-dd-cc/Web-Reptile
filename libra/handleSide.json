@@ -1,0 +1,859 @@
+[
+  {
+    "parName": "数据统计",
+    "subMenus": [
+      {
+        "name": "客户属性分析",
+        "url": "/v1/customer/{token}/customer/count"
+      },
+      {
+        "name": "订单统计分析",
+        "url": "/v1/order/analysis/{token}/statistics/status"
+      },
+      {
+        "name": "直播数据",
+        "url": "/v1/aries/{token}/gift/detail/export"
+      }
+    ]
+  },
+  {
+    "parName": "订单管理-旗舰",
+    "subMenus": [
+      {
+        "name": "业务-线下认领",
+        "url": "/v1/unpaid/order/{token}/page/list"
+      },
+      {
+        "name": "订单管理",
+        "url": "/v1/order/manage/{token}/statistics/page"
+      },
+      {
+        "name": "业务-前端",
+        "url": "/v1/order/manage/{token}/fore/page/list"
+      },
+      {
+        "name": "业务-后端",
+        "url": "/v1/order/manage/{token}/back/page/list"
+      },
+      {
+        "name": "业务-客服",
+        "url": "/v1/order/manage/{token}/customize/page/list"
+      },
+      {
+        "name": "未完成子订单",
+        "url": "/v1/unfinishedorder/manage/{token}/page/list"
+      },
+      {
+        "name": "未完成子订单记录",
+        "url": "/v1/unfinishedorder/manage/{token}/status/page/list"
+      }
+    ]
+  },
+  {
+    "parName": "开票管理",
+    "subMenus": [
+      {
+        "name": "开票设置",
+        "url": "/v1/order/{token}/open/invoice/page/list"
+      },
+      {
+        "name": "开票申请-旗舰",
+        "url": "/v1/order/{token}/open/invoice/page/list"
+      },
+      {
+        "name": "开票申请-擒龙",
+        "url": "/v1/order/{token}/open/invoice/page/list"
+      },
+      {
+        "name": "开票结果",
+        "url": "/v1/order/{token}/open/invoice/page/list"
+      }
+    ]
+  },
+  {
+    "parName": "合规审核记录",
+    "subMenus": [
+      {
+        "name": "合规审核查询",
+        "url": "/v1/verify/adviser/{token}/query"
+      },
+      {
+        "name": "合规报备-旗舰",
+        "url": "/v1/order/manage/{token}/fore/compliance/list/page"
+      },
+      {
+        "name": "合规报备-软件",
+        "url": "/api/v1/order/manage/{token}/compliance/list/page"
+      }
+    ]
+  },
+  {
+    "parName": "认领管理",
+    "subMenus": [
+      {
+        "name": "运营-线下订单",
+        "url": "/v1/unpaid/order/{token}/page/operation"
+      },
+      {
+        "name": "财务-线下订单",
+        "url": "/v1/order/manage/{token}/finance/exchange/supplement/query"
+      }
+    ]
+  },
+  {
+    "parName": "换课管理",
+    "subMenus": [
+      {
+        "name": "换课补款",
+        "url": "/v1/order/manage/{token}/finance/exchange/supplement/query2"
+      },
+      {
+        "name": "换课列表",
+        "url": "/v1/order/manage/{token}/lesson/exchange/list"
+      },
+      {
+        "name": "运营-投教权限",
+        "url": "/v1/order/manage/{token}/lesson/authacess/list"
+      }
+    ]
+  },
+  {
+    "parName": "降级管理",
+    "subMenus": [
+      {
+        "name": "降级管理-投诉",
+        "url": "/v1/order/manage/{token}/lesson/relegate/ts/list"
+      },
+      {
+        "name": "降级管理-合规",
+        "url": "/v1/order/manage/{token}/lesson/relegate/hg/list"
+      }
+    ]
+  },
+  {
+    "parName": "退款管理-旗舰",
+    "subMenus": [
+      {
+        "name": "退款",
+        "url": "/v1/order/manage/{token}/finance/refund/list"
+      },
+      {
+        "name": "降级退款",
+        "url": "/v1/order/manage/{token}/finance/relegate/refund/query"
+      },
+      {
+        "name": "退款管理",
+        "url": "/v1/order/manage/{token}/lesson/refund/list"
+      },
+      {
+        "name": "优惠券退款",
+        "url": "/v1/order/manage/{token}/refund/portion/fin/list"
+      },
+      {
+        "name": "优惠券退款管理",
+        "url": "/v1/order/manage/{token}/refund/portion/page/list"
+      },
+      {
+        "name": "未完成子订单退款",
+        "url": "/v1/order/manage/{token}/unfinished/refund/list"
+      }
+    ]
+  },
+  {
+    "parName": "暂停管理",
+    "subMenus": [
+      {
+        "name": "暂停服务-合规",
+        "url": "/v1/order/manage/{token}/comp/stop/list"
+      },
+      {
+        "name": "暂停服务-运营",
+        "url": "/v1/order/manage/{token}/operate/stop/list"
+      },
+      {
+        "name": "恢复服务",
+        "url": "/v1/order/manage/{token}/operate/recover/list"
+      }
+    ]
+  },
+  {
+    "parName": "level2用户查询",
+    "subMenus": [
+      {
+        "name": "用户列表",
+        "url": "/rjhy-monkey/v1/level2/account/{token}/list"
+      },
+      {
+        "name": "当日用户统计",
+        "url": "/rjhy-monkey/v1/level2/account/{token}/getByDay"
+      },
+      {
+        "name": "当月用户统计",
+        "url": "/rjhy-monkey/v1/level2/account/{token}/getByMonth"
+      }
+    ]
+  },
+  {
+    "parName": "mini直播室",
+    "subMenus": [
+      {
+        "name": "直播室管理",
+        "url": "/v1/minilive/{token}/miniRoom/pageMiniRoom"
+      },
+      {
+        "name": "直播室工具",
+        "url": "/v1/mini/roomVideo/{token}/stream/link/list"
+      },
+      {
+        "name": "百家云回放",
+        "url": "/v1/minilive/{token}/baijiayun/playback/list"
+      },
+      {
+        "name": "用户类型管理",
+        "url": "/v1/minilive/{token}/roomUserType/list"
+      },
+      {
+        "name": "用户关系管理",
+        "url": "/v1/minilive/{token}/miniRoomUser/pageMiniRoom"
+      },
+      {
+        "name": "用户管理",
+        "url": "/v1/minilive/{token}/miniAllRoomUser/pageMiniAllRoomUser"
+      },
+      {
+        "name": "直播审核"
+      },
+      {
+        "name": "聊天消息",
+        "url": "直播室聊天消息"
+      }
+    ]
+  },
+  {
+    "parName": "资讯管理",
+    "subMenus": [
+      {
+        "name": "文章管理",
+        "url": "/v1/news/{token}/list"
+      },
+      {
+        "name": "老师管理",
+        "url": "/v1/news/teacher/{token}/list"
+      },
+      {
+        "name": "文章资源库",
+        "url": "/v1/news/{token}/listAll"
+      },
+      {
+        "name": "置顶管理",
+        "url": "/v1/news/{token}/get/application/top"
+      },
+      {
+        "name": "应用管理",
+        "url": "/v1/news/application/{token}/list"
+      },
+      {
+        "name": "专题管理",
+        "url": "/v1/news/subject/{token}/page"
+      },
+      {
+        "name": "栏目管理",
+        "url": "/v1/news/column/{token}/list"
+      },
+      {
+        "name": "团队管理",
+        "url": "/v1/team/{token}/queryTeamInfoByPage"
+      },
+      {
+        "name": "研报管理",
+        "url": "/v1/research/report/{token}/list"
+      },
+      {
+        "name": "标签管理",
+        "url": "投教标签"
+      },
+      {
+        "name": "第三方资讯"
+      },
+      {
+        "name": "产品矩阵管理",
+        "url": "/v1/icon/{token}/get"
+      }
+    ]
+  },
+  {
+    "parName": "学友圈管理",
+    "subMenus": [
+      {
+        "name": "用户管理",
+        "url": "/v1/circle/user/{token}/list"
+      },
+      {
+        "name": "观点管理",
+        "url": "/v1/circle/news/{token}/list"
+      },
+      {
+        "name": "留言管理",
+        "url": "/v1/circle/reviews/{token}/list"
+      },
+      {
+        "name": "审核管理",
+        "url": "审核管理"
+      },
+      {
+        "name": "审核日志",
+        "url": "/v1/circle/operate/log/{token}/list"
+      }
+    ]
+  },
+  {
+    "parName": "推送管理",
+    "subMenus": [
+      {
+        "name": "自定义推送列表",
+        "url": "/v1/defined/push/messages/{token}/list"
+      },
+      {
+        "name": "自定义推送",
+        "url": "/v1/defined/push/{token}/message"
+      }
+    ]
+  },
+  {
+    "parName": "投教管理",
+    "subMenus": [
+      {
+        "name": "课程管理",
+        "url": "/v1/education/{token}/course/list"
+      },
+      {
+        "name": "优惠券管理",
+        "url": "/v1/order/{token}/coupon/list"
+      },
+      {
+        "name": "权限管理",
+        "url": "/v1/education/{token}/goods/list"
+      },
+      {
+        "name": "降价管理",
+        "url": "menu_order_discount_qj"
+      },
+      {
+        "name": "用户调研",
+        "url": "用户调研"
+      },
+      {
+        "name": "营销活动",
+        "url": "/v1/education/{token}/marketingActivity/list"
+      }
+    ]
+  },
+  {
+    "parName": "交易计划",
+    "subMenus": [
+      {
+        "name": "计划管理",
+        "url": "/v1/plan/manage/{token}/plan/list"
+      },
+      {
+        "name": "选股管理",
+        "url": "/v1/education/{token}/plan/simple/list"
+      },
+      {
+        "name": "交易管理",
+        "url": "/v1/plan/manage/{token}/trade/list"
+      },
+      {
+        "name": "大势追踪",
+        "url": "/api/v1/{token}/quote/trade/stock/query"
+      }
+    ]
+  },
+  {
+    "parName": "案例股",
+    "subMenus": [
+      {
+        "name": "白名单",
+        "url": "/v1/education/{token}/case/stock/whitelist/page"
+      },
+      {
+        "name": "战绩表",
+        "url": "/v1/education/{token}/case/stock/record/page"
+      }
+    ]
+  },
+  {
+    "parName": "软件产品跟踪",
+    "subMenus": [
+      {
+        "name": "牛点狙击",
+        "url": "/v1/education/{token}/case/stock/record/page"
+      },
+      {
+        "name": "技术股池",
+        "url": "/v1/education/{token}/case/stock/record/page"
+      }
+    ]
+  },
+  {
+    "parName": "营销中心",
+    "subMenus": [
+      {
+        "name": "新人礼包",
+        "url": "/v1/education/business/{token}/activity/newuser/list"
+      },
+      {
+        "name": "邀请好友",
+        "url": "/v1/education/business/{token}/activity/invivation/list"
+      },
+      {
+        "name": "积分抽奖",
+        "url": "/v1/edu/business/activity/luckyDraw/{token}/list"
+      },
+      {
+        "name": "调查问卷",
+        "url": "/v1/question/questionnaire/{token}/query"
+      },
+      {
+        "name": "新手任务",
+        "url": "/api/v1/activity/libra/info/list"
+      }
+    ]
+  },
+  {
+    "parName": "vip配置",
+    "subMenus": [
+      {
+        "name": "vip页面配置",
+        "url": "/api/1/investmentAdvisoryServiceConfig/list"
+      }
+    ]
+  },
+  {
+    "parName": "活动管理",
+    "subMenus": [
+      {
+        "name": "活动列表",
+        "url": "/v1/{token}/manage/activities"
+      },
+      {
+        "name": "文库管理",
+        "url": "/v1/{token}/libraries"
+      }
+    ]
+  },
+  {
+    "parName": "积分商城",
+    "subMenus": [
+      {
+        "name": "任务管理",
+        "url": "/v1/taskManage/{token}/list"
+      },
+      {
+        "name": "任务配置",
+        "url": "/v1/taskConfig/{token}/list"
+      },
+      {
+        "name": "商品配置",
+        "url": "/v1/integralProduct/{token}/list"
+      },
+      {
+        "name": "用户明细",
+        "url": "/v1/userIntegral/{token}/list"
+      },
+      {
+        "name": "积分流水",
+        "url": "/v1/destoonFinanceCredit/{token}/list"
+      },
+      {
+        "name": "兑换进度",
+        "url": "/v1/score/mall/transfer/{token}/query"
+      },
+      {
+        "name": "礼物管理",
+        "url": "/v1/aries/{token}/gift/list"
+      },
+      {
+        "name": "操作日志",
+        "url": "/v1/score/mall/{token}/operate/log"
+      }
+    ]
+  },
+  {
+    "parName": "文件上传",
+    "subMenus": [
+      {
+        "name": "上门留痕",
+        "url": "/v1/door/remark/{token}/list"
+      },
+      {
+        "name": "阿里云MTS转码",
+        "url": "/v1/aliyun/mts/{token}/list"
+      },
+      {
+        "name": "阿里云录播视频",
+        "url": "/v1/aliyun/vod/{token}/page"
+      },
+      {
+        "name": "素材库",
+        "url": "/v1/material/{token}/page"
+      },
+      {
+        "name": "素材管理",
+        "url": "/v1/{token}/material/query/list"
+      },
+      {
+        "name": "超投管理",
+        "url": "/v1/{token}/overcast/query/list"
+      },
+      {
+        "name": "推广材料管理"
+      },
+      {
+        "name": "视频管理",
+        "url": "/api/1/content/video/page"
+      }
+    ]
+  },
+  {
+    "parName": "合规审核",
+    "subMenus": [
+      {
+        "name": "文章审核",
+        "url": "/v1/{token}/news/audit/again"
+      },
+      {
+        "name": "研报审核",
+        "url": "/v1/{token}/research/report/page"
+      },
+      {
+        "name": "素材审核",
+        "url": "/v1/{token}/material/query/list"
+      },
+      {
+        "name": "案例股审核",
+        "url": "/v1/education/{token}/case/stock/review/list"
+      },
+      {
+        "name": "超投审核",
+        "url": "/v1/{token}/overcast/query/list"
+      },
+      {
+        "name": "推广材料审核"
+      },
+      {
+        "name": "视频审核",
+        "url": "/api/1/content/video/page"
+      }
+    ]
+  },
+  {
+    "parName": "留痕管理-旗舰",
+    "subMenus": [
+      {
+        "name": "协议留痕",
+        "url": "/v1/agreement/{token}/list"
+      },
+      {
+        "name": "风险测评留痕",
+        "url": "/v1/agreement/{token}/list"
+      },
+      {
+        "name": "风险测评告知函",
+        "url": "/v1/agreement/{token}/list"
+      },
+      {
+        "name": "风险揭示书",
+        "url": "/v1/agreement/{token}/list"
+      }
+    ]
+  },
+  {
+    "parName": "聊天记录",
+    "subMenus": [
+      {
+        "name": "微信聊天",
+        "url": "/v1/{token}/chatRecords/msgHistory"
+      },
+      {
+        "name": "企业号聊天",
+        "url": "/v1/{token}/chatRecords/msgHistory"
+      },
+      {
+        "name": "IM聊天",
+        "url": "/v1/{token}/IMChatRecords/msgHistory"
+      },
+      {
+        "name": "外部联系人聊天",
+        "url": "/v1/{token}/chatRecords/msgHistory"
+      }
+    ]
+  },
+  {
+    "parName": "回访记录",
+    "subMenus": [
+      {
+        "name": "回访记录-旗舰",
+        "url": "/v1/order/manage/{token}/callback/list"
+      },
+      {
+        "name": "回访记录-软件",
+        "url": "/api/v1/order/manage/{token}/callback/list"
+      }
+    ]
+  },
+  {
+    "parName": "用户管理",
+    "subMenus": [
+      {
+        "name": "用户信息",
+        "url": "/v1/account/{token}/list"
+      },
+      {
+        "name": "微信用户",
+        "url": "/v1/account/wx/{token}/page"
+      },
+      {
+        "name": "实名信息",
+        "url": "/v1/certification/{token}/userInfo/list"
+      },
+      {
+        "name": "实名信息记录",
+        "url": "/v1/certification/{token}/userInfo/list"
+      },
+      {
+        "name": "权限操作记录",
+        "url": "/v1/education/{token}/userPermissionLog/list"
+      }
+    ]
+  },
+  {
+    "parName": "同步企业号",
+    "subMenus": [
+      {
+        "name": "同步企业号配置",
+        "url": "/api/v1/{token}/company/config/query"
+      },
+      {
+        "name": "用户统计-旗舰",
+        "url": "/api/v1/{token}/order/user/query"
+      },
+      {
+        "name": "用户统计-擒龙",
+        "url": "/api/1/uranus/order/user/query"
+      }
+    ]
+  },
+  {
+    "parName": "员工管理",
+    "subMenus": [
+      {
+        "name": "员工管理",
+        "url": "/v1/manage/adviser/{token}/list"
+      },
+      {
+        "name": "组别标签",
+        "url": "/api/v1/{token}/coupon/group/pageList"
+      },
+      {
+        "name": "测试名单",
+        "url": "/api/v1/user/intent/pageList"
+      }
+    ]
+  },
+  {
+    "parName": "日志管理",
+    "subMenus": [
+      {
+        "name": "操作日志-新",
+        "url": "/v1/operate/manage/{token}/log/list"
+      },
+      {
+        "name": "操作日志",
+        "url": "/v1/operate/manage/{token}/log/list"
+      },
+      {
+        "name": "登录日志",
+        "url": "/v1/operate/manage/{token}/login/list"
+      },
+      {
+        "name": "推送日志",
+        "url": "/v1/minilive/log/{token}/queryLogPage"
+      }
+    ]
+  },
+  {
+    "parName": "权限配置",
+    "subMenus": [
+      {
+        "name": "操作员",
+        "url": "/v1/manage/user/{token}/page/list"
+      },
+      {
+        "name": "角色",
+        "url": "/v1/manage/role/{token}/list"
+      },
+      {
+        "name": "权限",
+        "url": "/v1/manage/permission/{token}/page/list"
+      }
+    ]
+  },
+  {
+    "parName": "账户安全管理",
+    "subMenus": [
+      {
+        "name": "密码修改",
+        "url": "/v1/user/{token}/modify/password"
+      },
+      {
+        "name": "账号解冻",
+        "url": "/v1/user/frozen/{token}/list"
+      }
+    ]
+  },
+  {
+    "parName": "白名单",
+    "subMenus": [
+      {
+        "name": "白名单",
+        "url": "/api/v1/{token}/buy/white/list/page"
+      }
+    ]
+  },
+  {
+    "parName": "订单管理-软件",
+    "subMenus": [
+      {
+        "name": "订单管理",
+        "url": "/api/v1/{token}/order/page/all"
+      },
+      {
+        "name": "线下审核-财务",
+        "url": "/api/v1/{token}/order/query/offline/finance/page"
+      }
+    ]
+  },
+  {
+    "parName": "换课管理-软件",
+    "subMenus": [
+      {
+        "name": "换课审核-合规",
+        "url": "/api/v1/{token}/compliance/order/exchange/page"
+      },
+      {
+        "name": "换课审核-运营",
+        "url": "/api/v1/{token}/operator/order/exchange/page"
+      }
+    ]
+  },
+  {
+    "parName": "降级管理-软件",
+    "subMenus": [
+      {
+        "name": "降级管理-投诉",
+        "url": "/api/v1/{token}/order/complaint/relegate/page"
+      },
+      {
+        "name": "降级管理-合规",
+        "url": "/api/v1/{token}/order/compliance/relegate/page"
+      },
+      {
+        "name": "降级管理-运营",
+        "url": "/api/v1/{token}/order/operations/relegate/page"
+      }
+    ]
+  },
+  {
+    "parName": "退款管理-软件",
+    "subMenus": [
+      {
+        "name": "退款管理",
+        "url": "/api/v1/{token}/order/refund/query/page"
+      },
+      {
+        "name": "退款",
+        "url": "/api/v1/{token}/order/refund/finance/query/page"
+      },
+      {
+        "name": "降级退款",
+        "url": "/api/v1/{token}/order/finance/relegate/page"
+      },
+      {
+        "name": "未完成子订单退款",
+        "url": "/api/v1/{token}/order/unfinish/refund/query/page"
+      },
+      {
+        "name": "优惠券退款-运营",
+        "url": "/api/v1/{token}/operator/coupon/refund/page"
+      },
+      {
+        "name": "优惠券退款-财务",
+        "url": "/api/v1/{token}/finance/coupon/refund/page"
+      },
+      {
+        "name": "银联退款信息查询",
+        "url": "/api/v1/{token}/get/order/refund/info"
+      }
+    ]
+  },
+  {
+    "parName": "产品体系管理",
+    "subMenus": [
+      {
+        "name": "课程管理",
+        "url": "/api/v1/education/{token}/course/list"
+      },
+      {
+        "name": "优惠券管理",
+        "url": "/v1/order/{token}/coupon/list"
+      },
+      {
+        "name": "权限管理",
+        "url": "/api/v1/education/{token}/goods/list"
+      },
+      {
+        "name": "降价管理",
+        "url": "menu_order_discount_ql"
+      },
+      {
+        "name": "系列课",
+        "url": "/api/v1/series/{token}/list"
+      },
+      {
+        "name": "同类型课程",
+        "url": "/api/v1/education/{token}/course/same/group/query/page"
+      }
+    ]
+  },
+  {
+    "parName": "留痕管理-软件",
+    "subMenus": [
+      {
+        "name": "协议留痕",
+        "url": "/api/v1/{token}/agreement/query/page"
+      },
+      {
+        "name": "风险测评留痕",
+        "url": "/api/v1/aries/{token}/user/risk/list"
+      },
+      {
+        "name": "风险测评告知函",
+        "url": "/api/v1/{token}/agreement/query/page"
+      },
+      {
+        "name": "风险揭示书",
+        "url": "/api/v1/{token}/agreement/query/page"
+      }
+    ]
+  },
+  {
+    "parName": "用户管理-软件",
+    "subMenus": [
+      {
+        "name": "用户信息",
+        "url": "/v1/account/{token}/list"
+      }
+    ]
+  }
+]

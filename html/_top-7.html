@@ -1,0 +1,101 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML <span class="color_h1">段落</span></h1>
+
+<hr><p class="intro">HTML 可以将文档分割为若干段落。</p>
+<hr><h2>HTML 段落</h2>
+
+<p>段落是通过 &lt;p&gt;  标签定义的。</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code notranslate">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落 </span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是另一个段落</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml_paragraphs1" class="tryitbtn">尝试一下 »</a>
+</div>
+<p><b>注意：</b>浏览器会自动地在段落的前后添加空行。（&lt;/p&gt; 是块级元素）</p>
+<hr><h2>不要忘记结束标签</h2>
+
+<p>即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来：</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code notranslate">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是一个段落
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这是另一个段落</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml_paragraphs0" class="tryitbtn">尝试一下 »</a>
+</div>
+<p>上面的例子在大多数浏览器中都没问题，但不要依赖这种做法。忘记使用结束标签会产生意想不到的结果和错误。</p>
+<p><b>注释:</b> 在未来的 HTML 版本中，不允许省略结束标签。</p>
+<hr><h2>HTML 折行</h2>
+
+<p>如果您希望在不产生一个新段落的情况下进行换行（新行），请使用 <span class="marked">&lt;br&gt;</span> 标签：</p>
+
+<div class="example">
+<h2 class="example">实例</h2>
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span><span class="hl-code">这个</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">br</span><span class="hl-brackets">&gt;</span><span class="hl-code">段落</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">br</span><span class="hl-brackets">&gt;</span><span class="hl-code">演示了分行的效果</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span class="hl-brackets">&gt;</span></div>
+</div>
+<br><a target="_blank" href="/try/try.php?filename=tryhtml_paragraphs" class="tryitbtn">尝试一下 »</a>
+</div>
+<p>&lt;br /&gt; 元素是一个空的 HTML 元素。由于关闭标签没有任何意义，因此它没有结束标签。</p>
+
+<hr>
+<h2>HTML 输出- 使用提醒</h2>
+
+<p>我们无法确定 HTML 被显示的确切效果。屏幕的大小，以及对窗口的调整都可能导致不同的结果。</p>
+
+<p>对于 HTML，您无法通过在 HTML 代码中添加额外的空格或换行来改变输出的效果。</p>
+
+<p>当显示页面时，浏览器会移除源代码中多余的空格和空行。所有连续的空格或空行都会被算作一个空格。需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。</p>
+
+<p><a href="/try/try.php?filename=tryhtml_poem" target="_blank">尝试一下</a></p>
+
+<p>（这个例子演示了一些 HTML 格式化方面的问题）</p>
+
+
+<hr><div class="tryit_ex">
+<img loading="lazy" src="/images/tryitimg.gif" width="40" height="46px" alt="Examples"><h2>本站实例</h2>
+</div>
+
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_paragraphs1">HTML 段落</a><br>
+如何在浏览器中显示 HTML 段落。
+</p>
+
+<p>
+<a target="_blank" href="/try/try.php?filename=tryhtml_paragraphs">换行</a><br>
+在 HTML 文档中使用换行。
+</p>
+
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_poem">在 HTML 代码中的排版一首唐诗</a><br>
+浏览器在显示 HTML 时，会省略源代码中多余的空白字符（空格或回车等）。
+</p>
+<h2>更多实例</h2>
+<p><a target="_blank" href="/try/try.php?filename=tryhtml_paragraphs2">更多段落</a><br>
+段落的默认行为。
+</p>
+
+<hr><h2>HTML 标签参考手册</h2>
+<p>古元坤教程的标签参考手册提供了有关 HTML 元素及其属性的更多信息。</p>
+
+<table class="reference notranslate">
+<tbody><tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+  </tr>
+  <tr>
+<td><a href="/tags/tag-p.html">&lt;p&gt;</a></td>
+<td>定义一个段落</td>
+  </tr>
+  <tr>
+<td><a href="/tags/tag-br.html">&lt;br&gt;</a></td>
+<td> 插入单个折行（换行）</td>
+  </tr>
+</tbody></table>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>

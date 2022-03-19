@@ -1,0 +1,1561 @@
+
+[
+  {
+    "id": "dashboard",
+    "index": "dashboard",
+    "icon": "tc-icons tc-dashboard",
+    "name": "数据统计",
+    "subMenus": [
+      {
+        "id": "cusAnalysis",
+        "index": "cusAnalysis",
+        "icon": "tc-icons tc-dashboard",
+        "name": "客户属性分析",
+        "key": "/v1/customer/{token}/customer/count"
+      },
+      {
+        "id": "orderAnalysis",
+        "index": "orderAnalysis",
+        "icon": "tc-icons tc-dashboard",
+        "name": "订单统计分析",
+        "key": "/v1/order/analysis/{token}/statistics/status"
+      },
+      {
+        "id": "liveAnalysis",
+        "index": "liveAnalysis",
+        "icon": "tc-icons tc-dashboard",
+        "name": "直播数据",
+        "key": "/v1/aries/{token}/gift/detail/export"
+      }
+    ]
+  },
+  {
+    "name": "订单管理-旗舰",
+    "icon": "tc-icons tc-ddgl",
+    "index": "businessMange",
+    "id": "businessMange",
+    "subMenus": [
+      {
+        "index": "salesClaim",
+        "name": "业务-线下认领",
+        "icon": "tc-icons tc-dingdanguanli-yewuqianduan",
+        "key": "/v1/unpaid/order/{token}/page/list"
+      },
+      {
+        "index": "salesman",
+        "name": "订单管理",
+        "icon": "tc-icons tc-dingdanguanli-yewuqianduan",
+        "key": "/v1/order/manage/{token}/statistics/page"
+      },
+      {
+        "index": "salesFore",
+        "icon": "tc-icons tc-dingdanguanli-yewuqianduan",
+        "name": "业务-前端",
+        "key": "/v1/order/manage/{token}/fore/page/list"
+      },
+      {
+        "index": "salesBack",
+        "icon": "tc-icons tc-dingdanguanli-yewuqianduan",
+        "name": "业务-后端",
+        "key": "/v1/order/manage/{token}/back/page/list"
+      },
+      {
+        "index": "salesCust",
+        "name": "业务-客服",
+        "icon": "tc-icons tc-yewukefu",
+        "key": "/v1/order/manage/{token}/customize/page/list"
+      },
+      {
+        "index": "unFinishOrder",
+        "name": "未完成子订单",
+        "icon": "tc-icons tc-dingdanguanli-weiwanchengzidingdan",
+        "key": "/v1/unfinishedorder/manage/{token}/page/list"
+      },
+      {
+        "index": "unFinishOrderStatus",
+        "name": "未完成子订单记录",
+        "icon": "tc-icons tc-dingdanguanli-weiwanchengzidingdanjilu",
+        "key": "/v1/unfinishedorder/manage/{token}/status/page/list"
+      }
+    ]
+  },
+  {
+    "name": "开票管理",
+    "icon": "tc-icons tc-image-text",
+    "index": "invoice",
+    "id": "invoice",
+    "subMenus": [
+      {
+        "index": "invoicingSet",
+        "name": "开票设置",
+        "icon": "tc-icons tc-dingdanguanli-weiwanchengzidingdanjilu",
+        "key": "/v1/order/{token}/open/invoice/page/list"
+      },
+      {
+        "index": "invoice",
+        "name": "开票申请-旗舰",
+        "icon": "tc-icons tc-dingdanguanli-weiwanchengzidingdanjilu",
+        "key": "/v1/order/{token}/open/invoice/page/list"
+      },
+      {
+        "index": "microApp/jfzt/invoiceApply",
+        "name": "开票申请-擒龙",
+        "icon": "tc-icons tc-dingdanguanli-weiwanchengzidingdanjilu",
+        "key": "/v1/order/{token}/open/invoice/page/list"
+      },
+      {
+        "index": "invoiceResult",
+        "name": "开票结果",
+        "icon": "tc-icons tc-dingdanguanli-weiwanchengzidingdanjilu",
+        "key": "/v1/order/{token}/open/invoice/page/list"
+      }
+    ]
+  },
+  {
+    "name": "合规审核记录",
+    "icon": "tc-icons tc-image-text",
+    "index": "comAuditRecord",
+    "id": "comAuditRecord",
+    "subMenus": [
+      {
+        "index": "comAudit",
+        "name": "合规审核查询",
+        "icon": "tc-icons tc-inspection",
+        "key": "/v1/verify/adviser/{token}/query"
+      },
+      {
+        "index": "complianceReport",
+        "name": "合规报备-旗舰",
+        "icon": "tc-icons tc-inspection",
+        "key": "/v1/order/manage/{token}/fore/compliance/list/page"
+      },
+      {
+        "index": "microApp/jfzt/complianceReport",
+        "name": "合规报备-软件",
+        "icon": "tc-icons tc-inspection",
+        "key": "/api/v1/order/manage/{token}/compliance/list/page"
+      }
+    ]
+  },
+  {
+    "name": "认领管理",
+    "icon": "tc-icons tc-renlingguanli",
+    "index": "operateMange",
+    "id": "operateMange",
+    "subMenus": [
+      {
+        "index": "operateULOrder",
+        "name": "运营-线下订单",
+        "icon": "tc-icons tc-renling-yunying-xianxiadingdan",
+        "key": "/v1/unpaid/order/{token}/page/operation"
+      },
+      {
+        "index": "offlineOrder",
+        "name": "财务-线下订单",
+        "icon": "tc-icons tc-renling-caiwu-xianxiadingdan",
+        "key": "/v1/order/manage/{token}/finance/exchange/supplement/query"
+      }
+    ]
+  },
+  {
+    "id": "exchangeCourseList",
+    "index": "exchangeCourseList",
+    "icon": "tc-icons tc-huankeguanli",
+    "name": "换课管理",
+    "subMenus": [
+      {
+        "index": "fillMoney",
+        "name": "换课补款",
+        "icon": "tc-icons tc-huankebukuan",
+        "key": "/v1/order/manage/{token}/finance/exchange/supplement/query2"
+      },
+      {
+        "index": "exchangeCourseList",
+        "name": "换课列表",
+        "icon": "tc-icons tc-huankeliebiao",
+        "key": "/v1/order/manage/{token}/lesson/exchange/list"
+      },
+      {
+        "index": "eduPermission",
+        "name": "运营-投教权限",
+        "icon": "tc-icons tc-huankeguanli-yunyingtoujiaoquanxian",
+        "key": "/v1/order/manage/{token}/lesson/authacess/list"
+      }
+    ]
+  },
+  {
+    "name": "降级管理",
+    "icon": "tc-icons tc-jiangjiguanli",
+    "index": "demotionMange",
+    "id": "demotionMange",
+    "subMenus": [
+      {
+        "index": "reduceMTS",
+        "name": "降级管理-投诉",
+        "icon": "tc-icons tc-jiangjiguanli-tousu",
+        "key": "/v1/order/manage/{token}/lesson/relegate/ts/list"
+      },
+      {
+        "index": "reduceMHG",
+        "name": "降级管理-合规",
+        "icon": "tc-icons tc-jiangjiguanli-hegui",
+        "key": "/v1/order/manage/{token}/lesson/relegate/hg/list"
+      }
+    ]
+  },
+  {
+    "name": "退款管理-旗舰",
+    "icon": "tc-icons tc-tuikuanguanli",
+    "index": "financeMange",
+    "id": "financeMange",
+    "subMenus": [
+      {
+        "index": "refundList",
+        "name": "退款",
+        "icon": "tc-icons tc-tuikuanguanli-tuikuan",
+        "key": "/v1/order/manage/{token}/finance/refund/list"
+      },
+      {
+        "index": "finaceReduce",
+        "name": "降级退款",
+        "icon": "tc-icons tc-tuikuanguanli-jiangjituikuan",
+        "key": "/v1/order/manage/{token}/finance/relegate/refund/query"
+      },
+      {
+        "index": "refundManagementList",
+        "name": "退款管理",
+        "icon": "tc-icons tc-tuikuanguanli-jiangjiguanli-baobei",
+        "key": "/v1/order/manage/{token}/lesson/refund/list"
+      },
+      {
+        "index": "couponRefund",
+        "name": "优惠券退款",
+        "icon": "tc-icons tc-tuikuanguanli-youhuiquan",
+        "key": "/v1/order/manage/{token}/refund/portion/fin/list"
+      },
+      {
+        "index": "couponRefundManage",
+        "name": "优惠券退款管理",
+        "icon": "tc-icons tc-tuikuanguanli-youhuiquanguanli",
+        "key": "/v1/order/manage/{token}/refund/portion/page/list"
+      },
+      {
+        "index": "unFinishRefund",
+        "name": "未完成子订单退款",
+        "icon": "tc-icons tc-tuikuanguanli-weiwanchengzituikuan",
+        "key": "/v1/order/manage/{token}/unfinished/refund/list"
+      }
+    ]
+  },
+  {
+    "name": "暂停管理",
+    "index": "suspendManage",
+    "id": "suspendManage",
+    "icon": "tc-icons tc-zantingguanli",
+    "subMenus": [
+      {
+        "index": "suspendMHG",
+        "name": "暂停服务-合规",
+        "icon": "tc-icons tc-zantingguanli-hegui",
+        "key": "/v1/order/manage/{token}/comp/stop/list"
+      },
+      {
+        "index": "suspendMYY",
+        "name": "暂停服务-运营",
+        "icon": "tc-icons tc-zantingfuwu-yunying",
+        "key": "/v1/order/manage/{token}/operate/stop/list"
+      },
+      {
+        "index": "recoverService",
+        "name": "恢复服务",
+        "icon": "tc-icons tc-zantingguanli-huifuquanxian",
+        "key": "/v1/order/manage/{token}/operate/recover/list"
+      }
+    ]
+  },
+  {
+    "id": "levelTwoJf",
+    "index": "levelTwoJf",
+    "icon": "tc-icons tc-ali-clould",
+    "name": "level2用户查询",
+    "element": "microAppLevelTwoJf",
+    "subMenus": [
+      {
+        "id": "levelTwoUserJf",
+        "name": "用户列表",
+        "index": "microApp/activity/levelTwoUserJf",
+        "icon": "tc-icons tc-nav-list",
+        "key": "/rjhy-monkey/v1/level2/account/{token}/list"
+      },
+      {
+        "id": "levelTwoCurDayJf",
+        "name": "当日用户统计",
+        "index": "microApp/activity/levelTwoCurDayJf",
+        "icon": "tc-icons tc-data",
+        "key": "/rjhy-monkey/v1/level2/account/{token}/getByDay"
+      },
+      {
+        "id": "levelTwoCurMonthJf",
+        "name": "当月用户统计",
+        "index": "microApp/activity/levelTwoCurMonthJf",
+        "icon": "tc-icons tc-data",
+        "router": "/levelTwoCurMonth",
+        "key": "/rjhy-monkey/v1/level2/account/{token}/getByMonth"
+      }
+    ]
+  },
+  {
+    "id": "minilive",
+    "index": "minilive",
+    "icon": "tc-icons tc-zhibo",
+    "name": "mini直播室",
+    "element": "minilive",
+    "subMenus": [
+      {
+        "id": "refLiveList",
+        "index": "refLiveList",
+        "icon": "tc-icons tc-integral",
+        "name": "直播室管理",
+        "router": "/refLiveList",
+        "key": "/v1/minilive/{token}/miniRoom/pageMiniRoom"
+      },
+      {
+        "id": "tool",
+        "index": "tool",
+        "icon": "tc-icons tc-icon--",
+        "name": "直播室工具",
+        "router": "/tool",
+        "key": "/v1/mini/roomVideo/{token}/stream/link/list"
+      },
+      {
+        "id": "playback",
+        "index": "playback",
+        "icon": "tc-icons tc-play",
+        "name": "百家云回放",
+        "router": "/playback",
+        "key": "/v1/minilive/{token}/baijiayun/playback/list"
+      },
+      {
+        "id": "roomUserType",
+        "index": "roomUserType",
+        "icon": "tc-icons tc-guanliyuan1",
+        "name": "用户类型管理",
+        "router": "/roomUserType",
+        "key": "/v1/minilive/{token}/roomUserType/list"
+      },
+      {
+        "id": "liveUserRelationship",
+        "index": "liveUserRelationship",
+        "icon": "tc-icons tc-tongxunlu",
+        "name": "用户关系管理",
+        "router": "/liveUserRelationship",
+        "key": "/v1/minilive/{token}/miniRoomUser/pageMiniRoom"
+      },
+      {
+        "id": "",
+        "index": "liverUser",
+        "icon": "tc-icons tc-zhongjianren",
+        "name": "用户管理",
+        "router": "/liverUser",
+        "key": "/v1/minilive/{token}/miniAllRoomUser/pageMiniAllRoomUser"
+      },
+      {
+        "id": "livej",
+        "index": "livej",
+        "icon": "tc-icons tc-ali-clould",
+        "name": "直播审核",
+        "element": "livej",
+        "subMenus": [
+          {
+            "id": "livingAudit",
+            "name": "直播中审核",
+            "index": "microApp/minilive/livingAudit",
+            "icon": "tc-icons tc-nav-list",
+            "key": "/api/admin/1/minilive/{token}/room/living/list"
+          },
+          {
+            "id": "videoReviewEx",
+            "name": "直播后审核",
+            "index": "microApp/minilive/videoReviewEx",
+            "icon": "tc-icons tc-nav-list",
+            "key": "/api/admin/1/minilive/{token}/room/playback/page"
+          },
+          {
+            "id": "abnormalManage",
+            "name": "异常处理",
+            "index": "microApp/minilive/abnormalManage",
+            "icon": "tc-icons tc-nav-list",
+            "key": "/api/admin/1/minilive/{token}/room/audio/abnormal/page"
+          }
+        ]
+      },
+      {
+        "id": "liveRoomMessage",
+        "index": "liveRoomMessage",
+        "icon": "tc-icons tc-atm",
+        "name": "聊天消息",
+        "key": "直播室聊天消息",
+        "element": "liveRoomMessage",
+        "subMenus": [
+          {
+            "id": "liveRoomMessageList",
+            "index": "liveRoomMessageList",
+            "icon": "tc-icons tc-shenqingjilu",
+            "name": "消息管理",
+            "router": "/liveRoomMessageList",
+            "key": "/v1/minilive/{token}/miniMessage/pageMiniMessage"
+          },
+          {
+            "id": "msgAudit",
+            "index": "msgAudit",
+            "icon": "tc-icons tc-tradealert",
+            "name": "消息审核",
+            "router": "/msgAudit",
+            "key": "/v1/mini/redisMessage/{token}/listMessage"
+          },
+          {
+            "id": "miniScriptList",
+            "index": "miniScriptList",
+            "icon": "tc-icons tc-signboard",
+            "name": "纸条管理",
+            "router": "/miniScriptList",
+            "key": "/v1/mini/script/{token}/list"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-template",
+    "name": "资讯管理",
+    "key": "资讯管理",
+    "index": "newsManagement",
+    "id": "newsManagement",
+    "element": "newsElement",
+    "subMenus": [
+      {
+        "icon": "tc-icons tc-rejected-order",
+        "name": "文章管理",
+        "index": "article",
+        "router": "/article",
+        "key": "/v1/news/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-zhuanyequanwei",
+        "name": "老师管理",
+        "index": "teacher",
+        "router": "/teacher",
+        "key": "/v1/news/teacher/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-customization",
+        "name": "文章资源库",
+        "index": "library",
+        "router": "/library",
+        "key": "/v1/news/{token}/listAll"
+      },
+      {
+        "icon": "tc-icons tc-hot",
+        "name": "置顶管理",
+        "index": "stick",
+        "router": "/stick",
+        "key": "/v1/news/{token}/get/application/top"
+      },
+      {
+        "icon": "tc-icons tc-ali-clould",
+        "name": "应用管理",
+        "index": "application",
+        "router": "/application",
+        "key": "/v1/news/application/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-folder",
+        "name": "专题管理",
+        "index": "subject",
+        "router": "/subject",
+        "key": "/v1/news/subject/{token}/page"
+      },
+      {
+        "icon": "tc-icons tc-attachent",
+        "name": "栏目管理",
+        "index": "column",
+        "router": "/column",
+        "key": "/v1/news/column/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-topraning",
+        "name": "团队管理",
+        "index": "team",
+        "router": "/team",
+        "key": "/v1/team/{token}/queryTeamInfoByPage"
+      },
+      {
+        "icon": "tc-icons tc-image-text",
+        "name": "研报管理",
+        "index": "researchReport",
+        "router": "/researchReport",
+        "key": "/v1/research/report/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-discount",
+        "name": "标签管理",
+        "key": "投教标签",
+        "id": "newsLabel",
+        "index": "newsLabel",
+        "element": "newsLabelElement",
+        "subMenus": [
+          {
+            "icon": "tc-icons tc-pin",
+            "name": "资讯标签",
+            "index": "newsLabel",
+            "router": "/newsLabel",
+            "key": "/v1/news/label/{token}/pageList"
+          },
+          {
+            "icon": "tc-icons tc-folder",
+            "name": "资讯标签组",
+            "index": "newsLabelGroup",
+            "router": "/newsLabelGroup",
+            "key": "/v1/news/labelGroup/{token}/pageList"
+          }
+        ]
+      },
+      {
+        "icon": "tc-icons tc-signboard",
+        "name": "第三方资讯",
+        "id": "thirdNew",
+        "index": "thirdNew",
+        "element": "thirdNewElement",
+        "subMenus": [
+          {
+            "icon": "tc-icons tc-mobile-phone",
+            "name": "自选新闻",
+            "router": "/autoSelectNews",
+            "index": "autoSelectNews",
+            "key": "/v1/news/xl/cj/{token}/list"
+          },
+          {
+            "icon": "tc-icons tc-toy",
+            "name": "7*24小时",
+            "router": "/allTimeNews",
+            "index": "allTimeNews",
+            "key": "/v1/news/thridPart/7/24/{token}/list"
+          },
+          {
+            "icon": "tc-icons tc-gupiao",
+            "name": "格隆汇",
+            "router": "/guruNews",
+            "index": "guruNews",
+            "key": "/v1/news/thridPart/gelonghui/{token}/list"
+          },
+          {
+            "icon": "tc-icons tc-ganggu",
+            "name": "港股资讯",
+            "router": "/xlhkStock",
+            "index": "xlhkStock",
+            "key": "/v1/news/xlhk/stock/{token}/list"
+          },
+          {
+            "icon": "tc-icons tc-zixun-meigu",
+            "name": "美股资讯",
+            "router": "/xlusStock",
+            "index": "xlusStock",
+            "key": "/v1/news/xlus/stock/{token}/list"
+          }
+        ]
+      },
+      {
+        "icon": "tc-icons tc-product",
+        "name": "产品矩阵管理",
+        "router": "/matrix",
+        "index": "matrix",
+        "key": "/v1/icon/{token}/get"
+      }
+    ]
+  },
+  {
+    "name": "学友圈管理",
+    "icon": "tc-icons tc-earth",
+    "index": "friendCircleManagement",
+    "id": "friendCircleManagement",
+    "subMenus": [
+      {
+        "icon": "tc-icons tc-zhongjianren",
+        "name": "用户管理",
+        "index": "circleUser",
+        "router": "/circleUser",
+        "key": "/v1/circle/user/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-office-supplies",
+        "name": "观点管理",
+        "index": "circleViewpoint",
+        "router": "/circleViewpoint",
+        "key": "/v1/circle/news/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-email",
+        "name": "留言管理",
+        "index": "circleCommentList",
+        "router": "/circleCommentList",
+        "key": "/v1/circle/reviews/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-manage-order",
+        "name": "审核管理",
+        "key": "审核管理",
+        "index": "circleChecks",
+        "router": "/circleChecks",
+        "subMenus": [
+          {
+            "icon": "tc-icons tc-dingdanguanli-weiwanchengzidingdanjilu",
+            "name": "未审核评论",
+            "index": "noApproveReview",
+            "router": "/noApproveReview",
+            "key": "/v1/circle/review/{token}/no/approve/list"
+          }
+        ]
+      },
+      {
+        "icon": "tc-icons tc-calendar",
+        "name": "审核日志",
+        "index": "circleCheckLog",
+        "router": "/circleCheckLog",
+        "key": "/v1/circle/operate/log/{token}/list"
+      }
+    ]
+  },
+  {
+    "id": "push",
+    "index": "push",
+    "icon": "tc-icons tc-pcm",
+    "name": "推送管理",
+    "subMenus": [
+      {
+        "index": "diyPushList",
+        "icon": "tc-icons tc-category",
+        "name": "自定义推送列表",
+        "key": "/v1/defined/push/messages/{token}/list"
+      },
+      {
+        "index": "diyPush",
+        "icon": "tc-icons tc-nav-list",
+        "name": "自定义推送",
+        "key": "/v1/defined/push/{token}/message"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-tuikuanguanli-youhuiquanguanli",
+    "name": "投教管理",
+    "index": "teachManagement",
+    "id": "teachManagement",
+    "subMenus": [
+      {
+        "index": "course",
+        "name": "课程管理",
+        "icon": "tc-icons tc-play",
+        "router": "/course",
+        "key": "/v1/education/{token}/course/list"
+      },
+      {
+        "index": "coupon",
+        "name": "优惠券管理",
+        "icon": "tc-icons tc-tianjiayouhuiquan",
+        "router": "/coupon",
+        "key": "/v1/order/{token}/coupon/list"
+      },
+      {
+        "index": "permissionMgt",
+        "name": "权限管理",
+        "icon": "tc-icons tc-quanxian",
+        "router": "/permissionMgt",
+        "key": "/v1/education/{token}/goods/list"
+      },
+      {
+        "index": "priceCut",
+        "name": "降价管理",
+        "icon": "tc-icons tc-yidatong",
+        "router": "/priceCut",
+        "key": "menu_order_discount_qj"
+      },
+      {
+        "name": "用户调研",
+        "index": "answers",
+        "icon": "tc-icons tc-xinxibar_zhanghu",
+        "id": "answers",
+        "key": "用户调研",
+        "subMenus": [
+          {
+            "index": "questionnaire",
+            "name": "用户信息调研",
+            "icon": "tc-icons tc-xinxibar_zhanghu",
+            "router": "/questionnaire",
+            "key": "/v1/education/{token}/refund/questionnaireList"
+          },
+          {
+            "index": "gsscAnswers",
+            "name": "股市生存考验",
+            "icon": "tc-icons tc-yidatong",
+            "router": "/gsscAnswers",
+            "key": "/v1/user/answers/{token}/query"
+          }
+        ]
+      },
+      {
+        "name": "营销活动",
+        "index": "marketActivity",
+        "icon": "tc-icons tc-gift",
+        "key": "/v1/education/{token}/marketingActivity/list"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-jiaoyijilu",
+    "name": "交易计划",
+    "index": "tradePlan",
+    "id": "tradePlan",
+    "subMenus": [
+      {
+        "index": "plan",
+        "name": "计划管理",
+        "icon": "tc-icons tc-jiaoyijihua-jihuaguanli",
+        "key": "/v1/plan/manage/{token}/plan/list"
+      },
+      {
+        "index": "stockPicking",
+        "name": "选股管理",
+        "icon": "tc-icons tc-gupiao1",
+        "key": "/v1/education/{token}/plan/simple/list"
+      },
+      {
+        "index": "trade",
+        "name": "交易管理",
+        "icon": "tc-icons tc-jiaoyijihua-jiaoyiguanli",
+        "key": "/v1/plan/manage/{token}/trade/list"
+      },
+      {
+        "index": "riskManagement",
+        "name": "大势追踪",
+        "icon": "tc-icons tc-jiaoyijihua-jiaoyiguanli",
+        "key": "/api/v1/{token}/quote/trade/stock/query"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-tuikuanguanli-youhuiquanguanli",
+    "name": "案例股",
+    "index": "caseStock",
+    "id": "caseStock",
+    "subMenus": [
+      {
+        "index": "whiteList",
+        "name": "白名单",
+        "icon": "tc-icons tc-play",
+        "router": "/whiteList",
+        "key": "/v1/education/{token}/case/stock/whitelist/page"
+      },
+      {
+        "index": "recordList",
+        "name": "战绩表",
+        "icon": "tc-icons tc-play",
+        "router": "/recordList",
+        "key": "/v1/education/{token}/case/stock/record/page"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-jiaoyijilu",
+    "name": "软件产品跟踪",
+    "index": "softProductTracks",
+    "id": "softProductTracks",
+    "subMenus": [
+      {
+        "index": "sniper",
+        "name": "牛点狙击",
+        "icon": "tc-icons tc-apparel",
+        "router": "/sniper",
+        "key": "/v1/education/{token}/case/stock/record/page"
+      },
+      {
+        "index": "femoralPool",
+        "name": "技术股池",
+        "icon": "tc-icons tc-apparel",
+        "router": "/femoralPool",
+        "key": "/v1/education/{token}/case/stock/record/page"
+      }
+    ]
+  },
+  {
+    "id": "marketCenter",
+    "index": "marketCenter",
+    "icon": "tc-icons tc-gift",
+    "name": "营销中心",
+    "subMenus": [
+      {
+        "id": "newCommerGifts",
+        "index": "microApp/activity/newCommerGifts",
+        "icon": "tc-icons tc-apparel",
+        "name": "新人礼包",
+        "key": "/v1/education/business/{token}/activity/newuser/list"
+      },
+      {
+        "id": "inviteFriends",
+        "index": "microApp/activity/inviteFriends",
+        "icon": "tc-icons tc-zhanghaojiedong",
+        "name": "邀请好友",
+        "key": "/v1/education/business/{token}/activity/invivation/list"
+      },
+      {
+        "id": "integralDraw",
+        "index": "microApp/activity/integralDraw",
+        "icon": "tc-icons tc-zhanghaojiedong",
+        "name": "积分抽奖",
+        "key": "/v1/edu/business/activity/luckyDraw/{token}/list"
+      },
+      {
+        "id": "questionnaire",
+        "index": "microApp/activity/questionnaire",
+        "icon": "tc-icons tc-apparel",
+        "name": "调查问卷",
+        "key": "/v1/question/questionnaire/{token}/query"
+      },
+      {
+        "id": "newbieTask",
+        "index": "microApp/activity/newbieTask",
+        "icon": "tc-icons tc-apparel",
+        "name": "新手任务",
+        "key": "/api/v1/activity/libra/info/list"
+      }
+    ]
+  },
+  {
+    "id": "vip",
+    "index": "vip",
+    "icon": "tc-icons tc-xinxibar_zhanghu",
+    "name": "vip配置",
+    "subMenus": [
+      {
+        "id": "vip1",
+        "index": "microApp/jfzt/vip",
+        "icon": "tc-icons tc-apparel",
+        "name": "vip页面配置",
+        "key": "/api/1/investmentAdvisoryServiceConfig/list"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-topraning",
+    "name": "活动管理",
+    "index": "activity",
+    "id": "activity",
+    "subMenus": [
+      {
+        "index": "microApp/activity/activityList",
+        "name": "活动列表",
+        "icon": "tc-icons tc-fencengpeizhi",
+        "key": "/v1/{token}/manage/activities"
+      },{
+        "index": "microApp/activity/textLibrary",
+        "name": "文库管理",
+        "icon": "tc-icons tc-AddProducts",
+        "key": "/v1/{token}/libraries"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-cart-Empty",
+    "name": "积分商城",
+    "id": "pointMarket",
+    "index": "pointMarket",
+    "subMenus": [
+      {
+        "icon": "tc-icons tc-integral",
+        "name": "任务管理",
+        "index": "taskManage",
+        "router": "/taskManage",
+        "key": "/v1/taskManage/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-viewgallery",
+        "name": "任务配置",
+        "index": "taskConf",
+        "router": "/taskConf",
+        "key": "/v1/taskConfig/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-searchcart",
+        "name": "商品配置",
+        "index": "productConf",
+        "router": "/productConf",
+        "key": "/v1/integralProduct/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-dingdanguanli-weiwanchengzidingdanjilu",
+        "name": "用户明细",
+        "index": "userDetail",
+        "router": "/userDetail",
+        "key": "/v1/userIntegral/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-invoice",
+        "name": "积分流水",
+        "index": "pointBill",
+        "router": "/pointBill",
+        "key": "/v1/destoonFinanceCredit/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-history",
+        "name": "兑换进度",
+        "index": "converProgress",
+        "router": "/converProgress",
+        "key": "/v1/score/mall/transfer/{token}/query"
+      },
+      {
+        "icon": "tc-icons tc-history",
+        "name": "礼物管理",
+        "index": "liveGift",
+        "router": "/liveGift",
+        "key": "/v1/aries/{token}/gift/list"
+      },
+      {
+        "icon": "tc-icons tc-caozuorizhi1",
+        "name": "操作日志",
+        "index": "pointMarketLog",
+        "router": "/pointMarketLog",
+        "key": "/v1/score/mall/{token}/operate/log"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-quick",
+    "name": "文件上传",
+    "id": "fileUpload",
+    "index": "fileUpload",
+    "subMenus": [
+      {
+        "icon": "tc-icons tc-QRcode",
+        "name": "上门留痕",
+        "index": "doorList",
+        "router": "/doorList",
+        "key": "/v1/door/remark/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-QRcode",
+        "name": "阿里云MTS转码",
+        "index": "mtsTransList",
+        "router": "/mtsTransList",
+        "key": "/v1/aliyun/mts/{token}/list"
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "阿里云录播视频",
+        "index": "aliVideo",
+        "router": "/aliVideo",
+        "key": "/v1/aliyun/vod/{token}/page"
+      },
+      {
+        "icon": "tc-icons tc-pic",
+        "name": "素材库",
+        "index": "materialsLab",
+        "router": "/materialsLab",
+        "key": "/v1/material/{token}/page"
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "素材管理",
+        "index": "microApp/news/materialAdd",
+        "router": "/microApp/news/materialAdd",
+        "key": "/v1/{token}/material/query/list"
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "超投管理",
+        "index": "microApp/news/superUpload",
+        "router": "/microApp/news/superUpload",
+        "key": "/v1/{token}/overcast/query/list"
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "推广材料管理",
+        "id": "promotionalMaterial",
+        "index": "promotionalMaterial",
+        "subMenus": [
+          {
+            "icon": "tc-icons tc-play1",
+            "name": "推广素材管理",
+            "index": "microApp/news/promotionalMaterialUpload",
+            "router": "/microApp/news/promotionalMaterialUpload",
+            "key": "/v1/{token}/promotional/material/query/list"
+          },
+          {
+            "icon": "tc-icons tc-pic",
+            "name": "推广物料管理",
+            "index": "microApp/news/promotionalMaterialSupplyUpload",
+            "router": "/microApp/news/promotionalMaterialSupplyUpload",
+            "key": "/v1/{token}/material/promotional/supply/query/list"
+          }
+        ]
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "视频管理",
+        "index": "microApp/news/videoAdmin",
+        "router": "/microApp/news/videoAdmin",
+        "key": "/api/1/content/video/page"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-quick",
+    "name": "合规审核",
+    "id": "complianceAudit",
+    "index": "complianceAudit",
+    "subMenus": [
+      {
+        "icon": "tc-icons tc-QRcode",
+        "name": "文章审核",
+        "index": "microApp/news/articleAudit",
+        "key": "/v1/{token}/news/audit/again"
+      },
+      {
+        "icon": "tc-icons tc-QRcode",
+        "name": "研报审核",
+        "index": "microApp/news/studyReportAudit",
+        "router": "/microApp/news/studyReportAudit",
+        "key": "/v1/{token}/research/report/page"
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "素材审核",
+        "index": "microApp/news/audit",
+        "router": "/microApp/news/materialAudit",
+        "key": "/v1/{token}/material/query/list"
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "案例股审核",
+        "index": "microApp/news/caseStockAudit",
+        "router": "/microApp/news/caseStockAudit",
+        "key": "/v1/education/{token}/case/stock/review/list"
+      },
+      {
+        "icon": "tc-icons tc-QRcode",
+        "name": "超投审核",
+        "index": "microApp/news/superAudit",
+        "router": "/microApp/news/superAudit",
+        "key": "/v1/{token}/overcast/query/list"
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "推广材料审核",
+        "id": "promotionalMaterialAudit",
+        "index": "promotionalMaterialAudit",
+        "subMenus": [
+          {
+            "icon": "tc-icons tc-play1",
+            "name": "推广素材审核",
+            "index": "microApp/news/promotionalMaterialAudit",
+            "router": "/microApp/news/promotionalMaterialAudit",
+            "key": "/v1/{token}/promotional/material/query/list"
+          },
+          {
+            "icon": "tc-icons tc-pic",
+            "name": "推广物料审核",
+            "index": "microApp/news/promotionalMaterialSupplyAudit",
+            "router": "/microApp/news/promotionalMaterialSupplyAudit",
+            "key": "/v1/{token}/material/promotional/supply/query/list"
+          }
+        ]
+      },
+      {
+        "icon": "tc-icons tc-play1",
+        "name": "视频审核",
+        "index": "microApp/news/videoAudit",
+        "router": "/microApp/news/videoAudit",
+        "key": "/api/1/content/video/page"
+      }
+    ]
+  },
+  {
+    "name": "留痕管理-旗舰",
+    "index": "markLeftMange",
+    "id": "markLeftMange",
+    "icon": "tc-icons tc-liuhenguanli",
+    "subMenus": [
+      {
+        "index": "microApp/record/agreementMark",
+        "name": "协议留痕",
+        "icon": "tc-icons tc-liuhenguanli-xieyiliuhen",
+        "key": "/v1/agreement/{token}/list"
+      },
+      {
+        "index": "microApp/record/riskAssessment",
+        "name": "风险测评留痕",
+        "icon": "tc-icons tc-liuhen-xieyiliuhen",
+        "key": "/v1/agreement/{token}/list"
+      },
+      {
+        "index": "microApp/record/riskNotification",
+        "name": "风险测评告知函",
+        "icon": "tc-icons tc-liuhen-fengxiantongbaohan",
+        "key": "/v1/agreement/{token}/list"
+      },
+      {
+        "index": "microApp/record/riskRevelation",
+        "name": "风险揭示书",
+        "icon": "tc-icons tc-liuhenguanli-kechengfengxianjieshishu",
+        "key": "/v1/agreement/{token}/list"
+      }
+    ]
+  },
+  {
+    "name": "聊天记录",
+    "index": "chatRecord",
+    "id": "chatRecord",
+    "icon": "tc-icons tc-liaotianjilu",
+    "subMenus": [
+      {
+        "index": "microApp/record/wxChat",
+        "name": "微信聊天",
+        "icon": "tc-icons tc-liaotianjilu",
+        "key": "/v1/{token}/chatRecords/msgHistory"
+      },
+      {
+        "index": "microApp/record/corpChat",
+        "name": "企业号聊天",
+        "icon": "tc-icons tc-liaotianjilu",
+        "key": "/v1/{token}/chatRecords/msgHistory"
+      },
+      {
+        "index": "microApp/record/imChat",
+        "name": "IM聊天",
+        "icon": "tc-icons tc-lianxiren-im",
+        "key": "/v1/{token}/IMChatRecords/msgHistory"
+      },
+      {
+        "index": "microApp/record/externalChat",
+        "name": "外部联系人聊天",
+        "icon": "tc-icons tc-lianxiren-waibulianxiren",
+        "key": "/v1/{token}/chatRecords/msgHistory"
+      }
+    ]
+  },
+  {
+    "id": "returnVisitRecord",
+    "icon": "tc-icons tc-huifangjilu",
+    "name": "回访记录",
+    "index": "returnVisitRecord",
+    "subMenus": [
+      {
+        "id": "returnVisit",
+        "index": "returnVisitRecord",
+        "icon": "tc-icons tc-huifangjilu",
+        "name": "回访记录-旗舰",
+        "key": "/v1/order/manage/{token}/callback/list"
+      },
+      {
+        "id": "returnVisitRecord-jfzt",
+        "index": "microApp/jfzt/returnVisitRecord",
+        "icon": "tc-icons tc-huifangjilu",
+        "name": "回访记录-软件",
+        "key": "/api/v1/order/manage/{token}/callback/list"
+      }
+    ]
+  },
+  {
+    "name": "用户管理",
+    "icon": "tc-icons tc-yonghuguanli",
+    "index": "userManagement",
+    "id": "userManagement",
+    "subMenus": [
+      {
+        "index": "userManagement",
+        "name": "用户信息",
+        "icon": "tc-icons tc-bussiness-man",
+        "key": "/v1/account/{token}/list",
+        "router": "/userManagement"
+      },
+      {
+        "index": "weixinManagement",
+        "name": "微信用户",
+        "icon": "tc-icons tc-weixin",
+        "router": "/weixinManagement",
+        "key": "/v1/account/wx/{token}/page"
+      },
+      {
+        "index": "realnameManagement",
+        "name": "实名信息",
+        "icon": "tc-icons tc-shimingxinxi",
+        "router": "/realnameManagement",
+        "key": "/v1/certification/{token}/userInfo/list"
+      },
+      {
+        "index": "realnameRecord",
+        "name": "实名信息记录",
+        "icon": "tc-icons tc-zhanghaoanquanguanli",
+        "router": "/realnameRecord",
+        "key": "/v1/certification/{token}/userInfo/list"
+      },
+      {
+        "index": "usrOperationLog",
+        "name": "权限操作记录",
+        "icon": "tc-icons tc-image-text",
+        "router": "/usrOperationLog",
+        "key": "/v1/education/{token}/userPermissionLog/list"
+      }
+    ]
+  },
+  {
+    "name": "同步企业号",
+    "icon": "tc-icons tc-yonghuguanli",
+    "index": "synchronizeeEnterprise",
+    "id": "synchronizeeEnterprise",
+    "subMenus": [
+      {
+        "index": "syncConfig",
+        "name": "同步企业号配置",
+        "icon": "tc-icons tc-image-text",
+        "router": "/syncConfig",
+        "key": "/api/v1/{token}/company/config/query"
+      },
+      {
+        "index": "userStatistics",
+        "name": "用户统计-旗舰",
+        "icon": "tc-icons tc-image-text",
+        "router": "/userStatistics",
+        "key": "/api/v1/{token}/order/user/query"
+      },
+      {
+        "index": "microApp/jfzt/userStatistics",
+        "name": "用户统计-擒龙",
+        "icon": "tc-icons tc-image-text",
+        "key": "/api/1/uranus/order/user/query"
+      }
+    ]
+  },
+  {
+    "id": "staffManage",
+    "index": "staffManage",
+    "icon": "tc-icons tc-yuangongguanli",
+    "name": "员工管理",
+    "subMenus": [
+      {
+        "index": "staff",
+        "name": "员工管理",
+        "icon": "tc-icons tc-yuangongguanli",
+        "key": "/v1/manage/adviser/{token}/list"
+      },
+      {
+        "index": "groupTag",
+        "name": "组别标签",
+        "icon": "tc-icons tc-caozuorizhi1",
+        "key": "/api/v1/{token}/coupon/group/pageList"
+      },
+      {
+        "index": "testList",
+        "name": "测试名单",
+        "icon": "tc-icons tc-rizhiguanli",
+        "key": "/api/v1/user/intent/pageList"
+      }
+    ]
+  },
+  {
+    "name": "日志管理",
+    "index": "logManage",
+    "id": "logManage",
+    "icon": "tc-icons tc-rizhiguanli",
+    "subMenus": [
+      {
+        "index": "operationLog2",
+        "name": "操作日志-新",
+        "icon": "tc-icons tc-caozuorizhi1",
+        "key": "/v1/operate/manage/{token}/log/list"
+      },
+      {
+        "index": "operationLog",
+        "name": "操作日志",
+        "icon": "tc-icons tc-caozuorizhi1",
+        "key": "/v1/operate/manage/{token}/log/list"
+      },
+      {
+        "index": "loginLog",
+        "name": "登录日志",
+        "icon": "tc-icons tc-denglurizhi",
+        "key": "/v1/operate/manage/{token}/login/list"
+      },
+      {
+        "index": "pushLog",
+        "name": "推送日志",
+        "icon": "tc-icons tc-caozuorizhi1",
+        "key": "/v1/minilive/log/{token}/queryLogPage"
+      }
+    ]
+  },
+  {
+    "name": "权限配置",
+    "index": "permissionsConfig",
+    "id": "permissionsConfig",
+    "icon": "tc-icons tc-quanxianpeizhi",
+    "subMenus": [
+      {
+        "index": "administrator",
+        "name": "操作员",
+        "icon": "tc-icons tc-guanliyuan",
+        "key": "/v1/manage/user/{token}/page/list"
+      },{
+        "index": "role",
+        "name": "角色",
+        "icon": "tc-icons tc-jiaose",
+        "key": "/v1/manage/role/{token}/list"
+      },{
+        "index": "authority",
+        "name": "权限",
+        "icon": "tc-icons tc-quanxian",
+        "key": "/v1/manage/permission/{token}/page/list"
+      }
+    ]
+  },
+  {
+    "id": "account",
+    "index": "account",
+    "icon": "tc-icons tc-zhanghaoanquanguanli",
+    "name": "账户安全管理",
+    "subMenus": [
+      {
+        "id": "changePsd",
+        "index": "changePsd",
+        "icon": "tc-icons tc-mimaguanli",
+        "name": "密码修改",
+        "key": "/v1/user/{token}/modify/password"
+      },
+      {
+        "index": "fozenAccount",
+        "icon": "tc-icons tc-zhanghaojiedong",
+        "name": "账号解冻",
+        "key": "/v1/user/frozen/{token}/list"
+      }
+    ]
+  },
+  {
+    "id": "whiteList",
+    "index": "whiteList1",
+    "icon": "tc-icons tc-yonghuguanli",
+    "name": "白名单",
+    "subMenus": [
+      {
+        "id": "whiteListAll",
+        "index": "whiteListAll",
+        "icon": "tc-icons tc-bussiness-man",
+        "name": "白名单",
+        "key": "/api/v1/{token}/buy/white/list/page"
+      }
+    ]
+  },
+  {
+    "name": "订单管理-软件",
+    "icon": "tc-icons tc-ddgl",
+    "index": "businessMange-jfzt",
+    "id": "businessMange-jfzt",
+    "subMenus": [
+      {
+        "index": "microApp/jfzt/salesman",
+        "name": "订单管理",
+        "icon": "tc-icons tc-dingdanguanli-yewuqianduan",
+        "key": "/api/v1/{token}/order/page/all"
+      },
+      {
+        "index": "microApp/jfzt/offlineAuditFinance",
+        "name": "线下审核-财务",
+        "icon": "tc-icons tc-dingdanguanli-yewuqianduan",
+        "key": "/api/v1/{token}/order/query/offline/finance/page"
+      }
+    ]
+  },
+  {
+    "name": "换课管理-软件",
+    "icon": "tc-icons tc-tuikuanguanli",
+    "index": "exchangeCourse-jfzt",
+    "id": "exchangeCourse-jfzt",
+    "subMenus": [
+      {
+        "index": "microApp/jfzt/changeReview",
+        "name": "换课审核-合规",
+        "icon": "tc-icons tc-tuikuanguanli-jiangjiguanli-baobei",
+        "key": "/api/v1/{token}/compliance/order/exchange/page"
+      },
+      {
+        "index": "microApp/jfzt/operationReview",
+        "name": "换课审核-运营",
+        "icon": "tc-icons tc-tuikuanguanli-jiangjiguanli-baobei",
+        "key": "/api/v1/{token}/operator/order/exchange/page"
+      }
+    ]
+  },
+  {
+    "name": "降级管理-软件",
+    "icon": "tc-icons tc-jiangjiguanli",
+    "index": "demotionMange-jfzt",
+    "id": "demotionMange-jfzt",
+    "subMenus": [
+      {
+        "index": "microApp/jfzt/reduceMTS",
+        "name": "降级管理-投诉",
+        "icon": "tc-icons tc-jiangjiguanli-tousu",
+        "key": "/api/v1/{token}/order/complaint/relegate/page"
+      },
+      {
+        "index": "microApp/jfzt/reduceMHG",
+        "name": "降级管理-合规",
+        "icon": "tc-icons tc-jiangjiguanli-hegui",
+        "key": "/api/v1/{token}/order/compliance/relegate/page"
+      },
+      {
+        "index": "microApp/jfzt/reduceMYY",
+        "name": "降级管理-运营",
+        "icon": "tc-icons tc-jiangjiguanli-hegui",
+        "key": "/api/v1/{token}/order/operations/relegate/page"
+      }
+    ]
+  },
+  {
+    "name": "退款管理-软件",
+    "icon": "tc-icons tc-tuikuanguanli",
+    "index": "financeMange-jfzt",
+    "id": "financeMange-jfzt",
+    "subMenus": [
+      {
+        "index": "microApp/jfzt/refundManagementList",
+        "name": "退款管理",
+        "icon": "tc-icons tc-tuikuanguanli-jiangjiguanli-baobei",
+        "key": "/api/v1/{token}/order/refund/query/page"
+      },
+      {
+        "index": "microApp/jfzt/refundList",
+        "name": "退款",
+        "icon": "tc-icons tc-tuikuanguanli-tuikuan",
+        "key": "/api/v1/{token}/order/refund/finance/query/page"
+      },
+      {
+        "index": "microApp/jfzt/reduceRefund",
+        "name": "降级退款",
+        "icon": "tc-icons tc-tuikuanguanli-tuikuan",
+        "key": "/api/v1/{token}/order/finance/relegate/page"
+      },
+      {
+        "index": "microApp/jfzt/unFinishRefund",
+        "name": "未完成子订单退款",
+        "icon": "tc-icons tc-tuikuanguanli-weiwanchengzituikuan",
+        "key": "/api/v1/{token}/order/unfinish/refund/query/page"
+      },
+      {
+        "index": "microApp/jfzt/couponRefundAuditOperation",
+        "name": "优惠券退款-运营",
+        "icon": "tc-icons tc-tuikuanguanli-weiwanchengzituikuan",
+        "key": "/api/v1/{token}/operator/coupon/refund/page"
+      },
+      {
+        "index": "microApp/jfzt/couponRefundAuditFinance",
+        "name": "优惠券退款-财务",
+        "icon": "tc-icons tc-tuikuanguanli-weiwanchengzituikuan",
+        "key": "/api/v1/{token}/finance/coupon/refund/page"
+      },
+      {
+        "index": "microApp/jfzt/refundUnionPayList",
+        "name": "银联退款信息查询",
+        "icon": "tc-icons tc-tuikuanguanli-weiwanchengzituikuan",
+        "key": "/api/v1/{token}/get/order/refund/info"
+      }
+    ]
+  },
+  {
+    "icon": "tc-icons tc-tuikuanguanli-youhuiquanguanli",
+    "name": "产品体系管理",
+    "index": "productManagement",
+    "id": "productManagement",
+    "subMenus": [
+      {
+        "index": "microApp/jfzt/course",
+        "name": "课程管理",
+        "icon": "tc-icons tc-play",
+        "key": "/api/v1/education/{token}/course/list"
+      },
+      {
+        "index": "microApp/jfzt/coupon",
+        "name": "优惠券管理",
+        "icon": "tc-icons tc-tianjiayouhuiquan",
+        "key": "/v1/order/{token}/coupon/list"
+      },
+      {
+        "index": "microApp/jfzt/permissionMgt",
+        "name": "权限管理",
+        "icon": "tc-icons tc-quanxian",
+        "key": "/api/v1/education/{token}/goods/list"
+      },
+      {
+        "index": "microApp/jfzt/priceCut",
+        "name": "降价管理",
+        "icon": "tc-icons tc-yidatong",
+        "key": "menu_order_discount_ql"
+      },
+      {
+        "index": "microApp/jfzt/courseSeries",
+        "name": "系列课",
+        "icon": "tc-icons tc-quanxian",
+        "key": "/api/v1/series/{token}/list"
+      },
+      {
+        "index": "microApp/jfzt/sameTypeCourse",
+        "name": "同类型课程",
+        "icon": "tc-icons tc-quanxian",
+        "key": "/api/v1/education/{token}/course/same/group/query/page"
+      }
+    ]
+  },
+  {
+    "name": "留痕管理-软件",
+    "index": "markLeftMange-jfzt",
+    "id": "markLeftMange-jfzt",
+    "icon": "tc-icons tc-liuhenguanli",
+    "subMenus": [
+      {
+        "index": "microApp/record/jfztAgreementMark",
+        "name": "协议留痕",
+        "icon": "tc-icons tc-liuhenguanli-xieyiliuhen",
+        "key": "/api/v1/{token}/agreement/query/page"
+      },
+      {
+        "index": "microApp/record/jfztRiskAssessment",
+        "name": "风险测评留痕",
+        "icon": "tc-icons tc-liuhen-xieyiliuhen",
+        "key": "/api/v1/aries/{token}/user/risk/list"
+      },
+      {
+        "index": "microApp/record/jfztRiskNotification",
+        "name": "风险测评告知函",
+        "icon": "tc-icons tc-liuhen-fengxiantongbaohan",
+        "key": "/api/v1/{token}/agreement/query/page"
+      },
+      {
+        "index": "microApp/record/jfztRiskRevelation",
+        "name": "风险揭示书",
+        "icon": "tc-icons tc-liuhenguanli-kechengfengxianjieshishu",
+        "key": "/api/v1/{token}/agreement/query/page"
+      }
+    ]
+  },
+  {
+    "name": "用户管理-软件",
+    "icon": "tc-icons tc-yonghuguanli",
+    "index": "userManagement-jfzt",
+    "id": "userManagement-jfzt",
+    "subMenus": [
+      {
+        "index": "microApp/jfzt/userManagement",
+        "name": "用户信息",
+        "icon": "tc-icons tc-bussiness-man",
+        "key": "/v1/account/{token}/list"
+      }
+    ]
+  }
+]

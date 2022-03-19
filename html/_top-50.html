@@ -1,0 +1,365 @@
+<html><head></head><body><div class="article-intro" id="content">
+			
+			<h1>HTML(5) 代码规范
+</h1>
+<hr>
+<h2>HTML 代码约定</h2>
+<p>很多 Web 开发人员对 HTML 的代码规范知之甚少。</p>
+<p>在2000年至2010年，许多Web开发人员从 HTML 转换到 XHTML。</p>
+<p>使用 XHTML 开发人员逐渐养成了比较好的 HTML 编写规范。</p>
+<p>而针对于 HTML5 ，我们应该形成比较好的代码规范，以下提供了几种规范的建议。</p>
+<hr>
+<h2>使用正确的文档类型</h2>
+<p>文档类型声明位于HTML文档的第一行：</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span class="highGT">&gt;</span></div>
+</div>
+<p>如果你想跟其他标签一样使用小写，可以使用以下代码：</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">!doctype</span> <span class="highATT">html</span><span class="highGT">&gt;</span></div>
+</div>
+<hr>
+<h2>使用小写元素名</h2>
+<p>HTML5 元素名可以使用大写和小写字母。</p>
+<p>推荐使用小写字母：</p>
+<ul>
+ <li>混合了大小写的风格是非常糟糕的。</li>
+ <li>开发人员通常使用小写 (类似 XHTML)。</li>
+ <li>小写风格看起来更加清爽。</li>
+ <li>小写字母容易编写。</li>
+</ul>
+<div class="example">
+<h3>不推荐:</h3>
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">SECTION</span><span class="highGT">&gt;</span> <br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/SECTION</span><span class="highGT">&gt;</span></div>
+</div>
+<div class="example">
+<h3>非常糟糕:</h3>
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">Section</span><span class="highGT">&gt;</span> <br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/SECTION</span><span class="highGT">&gt;</span></div>
+</div>
+<div class="example">
+<h3>推荐:</h3>
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">section</span><span class="highGT">&gt;</span> <br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/section</span><span class="highGT">&gt;</span></div>
+</div>
+ <hr>
+<h2>关闭所有 HTML 元素</h2>
+<p>在 HTML5 中, 你不一定要关闭所有元素 (例如 &lt;p&gt; 元素)，但我们建议每个元素都要添加关闭标签。 </p>
+
+<p>不推荐:</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">section</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<br>
+    <span class="highLT">&lt;</span><span class="highELE">/section</span><span class="highGT">&gt;</span></div>
+</div>
+<p>推荐:</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">section</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br>
+    <span class="highLT">&lt;</span><span class="highELE">/section</span><span class="highGT">&gt;</span></div>
+</div>
+<hr>
+<h2>关闭空的 HTML 元素</h2>
+<p>在 HTML5 中, 空的 HTML 元素也不一定要关闭：</p>
+<p>我们可以这么写：</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">meta</span> 
+    <span class="highATT">charset=</span><span class="highVAL">"utf-8"</span><span class="highGT">&gt;</span></div>
+</div>
+<p>也可以这么写：</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">meta</span> <span class="highATT">charset=</span><span class="highVAL">"utf-8"</span> <span class="highATT">/</span><span class="highGT">&gt;</span></div>
+</div>
+<p>在 XHTML 和 XML 中斜线 (/) 是必须的。</p>
+<p>如果你期望 XML 软件使用你的页面，使用这种风格是非常好的。 </p>
+<hr>
+<h2>使用小写属性名</h2>
+<p>HTML5 属性名允许使用大写和小写字母。</p>
+<p>我们推荐使用小写字母属性名:</p>
+<ul>
+ <li>同时使用大小写是非常不好的习惯。</li>
+
+ <li>开发人员通常使用小写 (类似 XHTML)。</li>
+ <li>小写风格看起来更加清爽。</li>
+ <li>小写字母容易编写。</li>
+</ul>
+<p>不推荐：</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">div</span> <span class="highATT">CLASS=</span><span class="highVAL">"menu"</span><span class="highGT">&gt;</span></div>
+</div>
+<p>推荐：</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">div</span> 
+    <span class="highATT">class=</span><span class="highVAL">"menu"</span><span class="highGT">&gt;</span></div>
+</div>
+<hr>
+<h2>属性值</h2>
+<p>HTML5 属性值可以不用引号。</p>
+<p>属性值我们推荐使用引号:</p>
+<ul>
+ <li>如果属性值含有空格需要使用引号。</li>
+ <li>混合风格不推荐的，建议统一风格。</li>
+ <li>属性值使用引号易于阅读。</li>
+</ul>
+<p>以下实例属性值包含空格，没有使用引号，所以不能起作用:</p>
+
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">table</span> <span class="highATT">class=</span><span class="highVAL">table striped&gt;</span></div>
+</div>
+<p>以下使用了双引号，是正确的：</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">table</span> 
+    <span class="highATT">class=</span><span class="highVAL">"table striped"</span><span class="highGT">&gt;</span></div>
+</div>
+<hr>
+<h2>图片属性</h2>
+<p>图片通常使用 <strong>alt</strong> 属性。 在图片不能显示时，它能替代图片显示。</p>
+<div class="example">
+<div class="example_code">
+<div class="hl-main"><span class="hl-brackets">&lt;</span><span class="hl-reserved">img</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">html5.gif</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-var">alt</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">HTML5</span><span class="hl-quotes">"</span><span class="hl-brackets">&gt;</span></div>
+</div>
+</div>
+<p>定义好图片的尺寸，在加载时可以预留指定空间，减少闪烁。</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">img</span> 
+    <span class="highATT">src=</span><span class="highVAL">"html5.gif"</span> <span class="highATT">alt=</span><span class="highVAL">"HTML5"</span> <span class="highATT"><strong>style=</strong></span><strong><span class="highVAL">"width:128px;height:128px</span></strong>"<span class="highGT">&gt;</span></div>
+</div>
+<hr>
+<h2>空格和等号</h2>
+<p>等号前后可以使用空格。</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">link</span> 
+    <span class="highATT">rel =</span><span class="highVAL"> "stylesheet"</span> <span class="highATT">href =</span><span class="highVAL"> "styles.css"</span><span class="highGT">&gt;</span></div>
+</div>
+<p>但我们推荐少用空格:</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">link</span> <span class="highATT">rel=</span><span class="highVAL">"stylesheet"</span> <span class="highATT">href=</span><span class="highVAL">"styles.css"</span><span class="highGT">&gt;</span></div>
+</div>
+<hr>
+<h2>避免一行代码过长</h2>
+<p>使用 HTML 编辑器，左右滚动代码是不方便的。</p>
+<p>每行代码尽量少于 80 个字符。</p>
+<hr>
+<h2>空行和缩进</h2>
+<p>不要无缘无故添加空行。</p>
+<p>为每个逻辑功能块添加空行，这样更易于阅读。</p>
+<p>缩进使用两个空格，不建议使用 TAB。</p>
+<p>比较短的代码间不要使用不必要的空行和缩进。</p>
+<div class="example">
+<h3>不必要的空行和缩进:</h3>
+<div class="example_code">
+<span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span><br><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>古元坤教程<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span><br><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">h2</span><span class="highGT">&gt;</span>HTML<span class="highLT">&lt;</span><span class="highELE">/h2</span><span class="highGT">&gt;</span><br>
+    <br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span><br>&nbsp;&nbsp;&nbsp; 菜鸟教程，学的不仅是技术，更是梦想。<br>&nbsp;&nbsp;&nbsp; 菜鸟教程，学的不仅是技术，更是梦想。<br>&nbsp;&nbsp;&nbsp;菜鸟教程，学的不仅是技术，更是梦想,<br>&nbsp;&nbsp;&nbsp; 
+    菜鸟教程，学的不仅是技术，更是梦想。<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span></div>
+</div>
+
+<div class="example">
+<h3>推荐:</h3>
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>菜鸟教程<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">h2</span><span class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">/h2</span><span class="highGT">&gt;</span><br>
+    <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>菜鸟教程，学的不仅是技术，更是梦想。<br>菜鸟教程，学的不仅是技术，更是梦想。<br>菜鸟教程，学的不仅是技术，更是梦想。<br>菜鸟教程，学的不仅是技术，更是梦想。<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span></div>
+</div>
+
+<div class="example">
+<h3>表格实例:</h3>
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">table</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span class="highGT">&gt;</span><br>&nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span class="highGT">&gt;</span>Name<span class="highLT">&lt;</span><span class="highELE">/th</span><span class="highGT">&gt;</span><br>
+&nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span class="highGT">&gt;</span>Description<span class="highLT">&lt;</span><span class="highELE">/th</span><span class="highGT">&gt;</span><br>
+    &nbsp;
+    <span class="highLT">&lt;</span><span class="highELE">/tr</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span class="highGT">&gt;</span><br>&nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span class="highGT">&gt;</span>A<span class="highLT">&lt;</span><span class="highELE">/td</span><span class="highGT">&gt;</span><br>
+&nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span class="highGT">&gt;</span>Description of A<span class="highLT">&lt;</span><span class="highELE">/td</span><span class="highGT">&gt;</span><br>
+    &nbsp;
+    <span class="highLT">&lt;</span><span class="highELE">/tr</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span class="highGT">&gt;</span><br>&nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span class="highGT">&gt;</span>B<span class="highLT">&lt;</span><span class="highELE">/td</span><span class="highGT">&gt;</span><br>
+&nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span class="highGT">&gt;</span>Description of B<span class="highLT">&lt;</span><span class="highELE">/td</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/table</span><span class="highGT">&gt;</span></div>
+</div>
+
+<div class="example">
+<h3>列表实例:</h3>
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">ol</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span class="highGT">&gt;</span>London<span class="highLT">&lt;</span><span class="highELE">/li</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span class="highGT">&gt;</span>Paris<span class="highLT">&lt;</span><span class="highELE">/li</span><span class="highGT">&gt;</span><br>
+    &nbsp; 
+    <span class="highLT">&lt;</span><span class="highELE">li</span><span class="highGT">&gt;</span>Tokyo<span class="highLT">&lt;</span><span class="highELE">/li</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/ol</span><span class="highGT">&gt;</span></div>
+</div>
+<hr>
+<h2>省略 &lt;html&gt; 和 &lt;body&gt;?</h2>
+<p>在标准 HTML5 中， &lt;html&gt; 和 &lt;body&gt; 标签是可以省略的。</p>
+<p>以下 HTML5 文档是正确的:</p>
+<div class="example">
+<h3>实例:</h3>
+<div class="example_code">
+    <span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">title</span><span class="highGT">&gt;</span>页面标题<span class="highLT">&lt;</span><span class="highELE">/title</span><span class="highGT">&gt;</span><br>
+    <span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span><br>
+    <br>
+	<span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>这是一个标题<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span></div><br>
+<a class="tryitbtn" href="/try/try.php?filename=tryhtml_syntax_nobody" target="_blank" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<p><strong>不推荐省略 &lt;html&gt; 和 &lt;body&gt; 标签。</strong></p>
+<p>&lt;html&gt; 元素是文档的根元素，用于描述页面的语言：</p>
+
+<div class="example">
+
+<div class="example_code">
+    <span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">html</span> <span class="highATT">lang=</span><span class="highVAL">"zh"</span><span class="highGT">&gt;</span></div>
+</div>
+<p>声明语言是为了方便屏幕阅读器及搜索引擎。</p>
+<p>省略 &lt;html&gt; 或 &lt;body&gt; 在 DOM 和 XML 软件中会崩溃。</p>
+<p>省略 &lt;body&gt; 在旧版浏览器 (IE9)会发生错误。</p>
+<hr>
+<h2>省略 &lt;head&gt;?</h2>
+<p>在标准 HTML5 中， &lt;head&gt;标签是可以省略的。</p>
+<p>默认情况下，浏览器会将 &lt;body&gt; 之前的内容添加到一个默认的 &lt;head&gt; 
+元素上。</p>
+<div class="example">
+<h3>实例</h3>
+<div class="example_code">
+    <span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">title</span><span class="highGT">&gt;</span>页面标题<span class="highLT">&lt;</span><span class="highELE">/title</span><span class="highGT">&gt;</span><br>
+	<br><span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>这是一个标题<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>这是一个段落。<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br>
+    <span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">/html</span><span class="highGT">&gt;</span></div><br>
+<a class="tryitbtn" href="/try/try.php?filename=tryhtml_syntax_nohead" target="_blank" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+
+<table class="lamp"><tbody><tr>
+<th style="width:34px">
+<img src="/images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>
+现在省略 head 标签还不推荐使用。</td>
+</tr></tbody></table>
+<hr>
+<h2>元数据</h2>
+<p>HTML5 中 &lt;title&gt; 元素是必须的，标题名描述了页面的主题:</p>
+<div class="example">
+
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">title</span><span class="highGT">&gt;</span>菜鸟教程<span class="highLT">&lt;</span><span class="highELE">/title</span><span class="highGT">&gt;</span></div>
+</div>
+<p>标题和语言可以让搜索引擎很快了解你页面的主题:</p>
+<div class="example">
+<div class="example_code">
+	<span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">html</span> 
+    <span class="highATT">lang=</span><span class="highVAL">"zh"</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">meta</span> <span class="highATT">charset=</span><span class="highVAL">"UTF-8"</span><span class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">title</span><span class="highGT">&gt;</span>菜鸟教程<span class="highLT">&lt;</span><span class="highELE">/title</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span></div>
+</div>
+<hr>
+<h2>HTML 注释</h2>
+<p>注释可以写在 <span class="marked">&lt;!--</span> 和 <span class="marked">--&gt;</span> 中:</p>
+<div class="example">
+<div class="example_code">
+<span class="highCOM">&lt;!-- 这是注释 --&gt;</span>
+</div>
+</div>
+<p>比较长的注释可以在 <span class="marked">&lt;!--</span> 和 <span class="marked">--&gt;</span> 中分行写：</p>
+<div class="example">
+<div class="example_code">
+<span class="highCOM">&lt;!-- <br>&nbsp; 这是一个较长注释。 这是
+  一个较长注释。这是一个较长注释。<br>&nbsp; 这是
+  一个较长注释 这是一个较长注释。 这是
+  一个较长注释。<br>--&gt;</span>
+</div>
+</div>
+<p>长注释第一个字符缩进两个空格，更易于阅读。</p>
+<hr>
+<h2>样式表</h2>
+<p>样式表使用简洁的语法格式 ( type 属性不是必须的):</p>
+<div class="example">
+<div class="example_code">
+<span class="highLT">&lt;</span><span class="highELE">link</span> <span class="highATT">rel=</span><span class="highVAL">"stylesheet"</span> <span class="highATT">href=</span><span class="highVAL">"styles.css"</span><span class="highGT">&gt;</span>
+</div>
+</div>
+<p>短的规则可以写成一行:</p>
+<div class="example">
+<div class="example_code">
+<span class="highELE">p.into </span>{<span class="highATT">font-family:</span><span class="highVAL"> Verdana;</span> <span class="highATT">font-size:</span><span class="highVAL"> 16em;</span>}</div>
+</div>
+<p>长的规则可以写成多行:</p>
+<div class="example">
+<div class="example_code">
+<span class="highELE">body </span>{<br>&nbsp; <span class="highATT">background-color:</span><span class="highVAL"> lightgrey;</span><br>&nbsp; <span class="highATT">font-family:</span><span class="highVAL"> "Arial 
+Black", Helvetica, sans-serif;</span><br>&nbsp; <span class="highATT">font-size:</span><span class="highVAL"> 16em;</span><br>&nbsp; <span class="highATT">color:</span><span class="highVAL"> 
+black;</span><br>}</div>
+</div>
+<ul>
+ <li>将左花括号与选择器放在同一行。</li>
+ <li>左花括号与选择器间添加一个空格。</li>
+ <li>使用两个空格来缩进。</li>
+ <li>冒号与属性值之间添加一个空格。</li>
+ <li>逗号和符号之后使用一个空格。</li>
+ <li>每个属性与值结尾都要使用分号。</li>
+ <li>只有属性值包含空格时才使用引号。</li>
+ <li>右花括号放在新的一行。</li>
+ <li>每行最多 80 个字符。</li>
+</ul>
+
+<table class="lamp"><tbody><tr>
+<th style="width:34px">
+<img src="/images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>
+在逗号和冒号后添加空格是常用的一个规则。</td>
+</tr></tbody></table>
+<hr>
+<h2>在 HTML 中载入 JavaScript</h2>
+<p>使用简洁的语法来载入外部的脚本文件 ( type 属性不是必须的 ):</p>
+<div class="example">
+<div class="example_code">
+<span class="highLT">&lt;</span><span class="highELE">script</span> <span class="highATT">src=</span><span class="highVAL">"myscript.js"</span><span class="highGT">&gt;</span>
+</div>
+</div>
+<hr>
+<h2>使用 JavaScript 访问 HTML 元素</h2>
+<p>一个糟糕的 HTML 格式可能会导致 JavaScript 执行错误。</p>
+<p>以下两个 JavaScript 语句会输出不同结果:</p>
+<div class="example"><h3>实例</h3>
+<div class="example_code">
+	<span class="highELE">var</span> obj =
+	getElementById(<span class="highVAL">"Demo"</span>)<br><br><span class="highELE">var</span> obj = getElementById(<span class="highVAL">"demo"</span>)
+</div><br>
+<a class="tryitbtn" href="/try/try.php?filename=tryhtml_syntax_javascript" target="_blank" rel="noopener noreferrer">尝试一下 »</a>
+</div>
+<p>HTML  中 JavaScript 尽量使用相同的命名规则。</p>
+<p><a href="/js/js-conventions.html">访问 JavaScript 代码规范</a>。</p>
+<hr>
+<h2>使用小写文件名</h2>
+<p>
+大多 Web 服务器 (Apache, Unix) 对大小写敏感：
+
+london.jpg 不能通过 London.jpg 访问。
+</p><p>
+其他 Web 服务器 (Microsoft, IIS) 对大小写不敏感：
+
+london.jpg 可以通过 London.jpg 或 london.jpg 访问。
+</p><p>
+你必须保持统一的风格，我们建议统一使用小写的文件名。</p>
+
+<hr>
+<h2>文件扩展名</h2>
+<p>HTML 文件后缀可以是 <strong>.html</strong>  (或 <strong>.htm</strong>)。</p>
+<p>CSS 文件后缀是 <strong>.css</strong> 。</p>
+<p>JavaScript 文件后缀是 <strong>.js</strong> 。</p>
+<hr>
+<h2>.htm 和 .html 的区别</h2>
+<p> .htm 和 .html 的扩展名文件本质上是没有区别的。浏览器和 Web 服务器都会把它们当作 HTML 文件来处理。</p>
+<p>区别在于：</p>
+<p>.htm 应用在早期 DOS 系统，系统现在或者只能有三个字符。</p>
+<p>在 Unix 系统中后缀没有特别限制，一般用 .html。</p>
+
+<h2>技术上区别</h2>
+<p>如果一个 URL 没有指定文件名 (如 http://www.runoob.com/css/), 
+服务器会返回默认的文件名。通常默认文件名为 index.html, 
+index.htm, default.html, 和 default.htm。</p>
+<p>如果服务器只配置了 "index.html" 作为默认文件，你必须将文件命名为 "index.html", 而不是 "index.htm"。</p>
+<p>但是，通常服务器可以设置多个默认文件，你可以根据需要设置默认文件名。</p>
+<p>不管怎样，HTML 完整的后缀是 ".html"。</p>			<!-- 其他扩展 -->
+						
+			</div>
+			
+		</body></html>
