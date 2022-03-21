@@ -16,6 +16,8 @@ const doutuJson = require('./json/doutu.json')
 const duirenJson = require('./json/duiren.json')
 const emojiJson = require('./json/emoji.json')
 
+const webHost = 'https://fabiaoqing.com'
+
 const getUrlList = (count, url, fileName) => {
   const list = []
   for (let index = 0; index < count; index++) {
@@ -36,7 +38,7 @@ const getUrlList = (count, url, fileName) => {
 // getUrlList(12, 'https://fabiaoqing.com/bqb/lists/type/emoji/page/', 'emoji')
 
 /**
- * 获取群聊
+ * 获取表情包url，title，count
  */
 const getListJson = ({jsonList = [], readFileName = '', startIndex = 0, endIndex = 0}) => {
   endIndex = endIndex ? endIndex : jsonList.length
@@ -67,11 +69,17 @@ const setListUrl = async ({ readFilePath, fileName, url, nodePath }) => {
     const $ = cheerio.load(html)
     const tempList = [] 
     $(nodePath).each((index, el) => {
-      const title = $(el).attr('title')
-      const href = $(el).attr('href')
+      const aTitle = $(el).attr('title')
+      const aHref = $(el).attr('href')
+      const headerDom = $(el).find('.header')
+      const countDom = $(el).find('header span')
+      const headerTitle = headerDom.html()
+      const headerCount = countDom.text()
       tempList.push({
-        title,
-        href
+        aTitle,
+        aHref: `${webHost}${aHref}`,
+        headerTitle,
+        headerCount: headerCount.replace(/\s*/g, '')
       })
     })
     fs.readFile(readFilePath, (err, data) => {
@@ -86,16 +94,16 @@ const setListUrl = async ({ readFilePath, fileName, url, nodePath }) => {
     })
     return tempList
   } catch (error) {
-    console.log('-----err', error)
+    console.log('-----err----', url, error)
   }
 }
-// getLoversJson({startIndex: 0, endIndex: 33})
-// getQunliaoJson({startIndex: 0})
-// getDoutuJson({startIndex: 0})
-// getDuirenJson({startIndex: 0})
-// getEmojiJson({startIndex: 0})
 
-// // 获取群聊
+// 获取热门
+// getListJson({
+//   jsonList: hotJson,
+//   readFileName: 'hotAll',
+// })
+// 获取群聊
 // getListJson({
 //   jsonList: qunliaoJson,
 //   readFileName: 'qunliaoAll',
@@ -105,13 +113,13 @@ const setListUrl = async ({ readFilePath, fileName, url, nodePath }) => {
 //   jsonList: doutuJson,
 //   readFileName: 'doutuAll',
 // })
-// // 获取怼人
+// 获取怼人
 // getListJson({
 //   jsonList: duirenJson,
 //   readFileName: 'duirenAll',
 // })
-// // 获取emoji
-getListJson({
-  jsonList: emojiJson,
-  readFileName: 'emojiAll',
-})
+// 获取emoji
+// getListJson({
+//   jsonList: emojiJson,
+//   readFileName: 'emojiAll',
+// })

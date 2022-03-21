@@ -9,7 +9,7 @@ const request = require('request')
 
 const reGet = async url => {
   return new Promise((resolve, reject) => {
-    request.get(url, { timeout: 20000 }, (err, res, html) => {
+    request.get(url, { timeout: 200000 }, (err, res, html) => {
       if (err) {
         reject(err)
       }
