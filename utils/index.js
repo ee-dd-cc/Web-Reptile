@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 const dateFormat = (val) => {
   const ddd = new Date(+val)
   let fullYear = ddd.getFullYear()
@@ -9,6 +11,14 @@ const dateFormat = (val) => {
   return `${fullYear}-${month}-${date} ${hours}:${minutes}`
 }
 
+const writeFile = ({path, fileType, fileName, json}) => {
+  fs.writeFile(`${path}/${fileName}.${fileType}`, JSON.stringify(json), 'utf-8', err => {
+    if(err) throw err
+    console.log('-----成功')
+  })
+}
+
 module.exports = {
-  dateFormat
+  dateFormat,
+  writeFile
 }
