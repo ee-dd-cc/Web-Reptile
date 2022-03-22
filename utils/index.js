@@ -11,8 +11,8 @@ const dateFormat = (val) => {
   return `${fullYear}-${month}-${date} ${hours}:${minutes}`
 }
 
-const writeFile = ({path, fileType, fileName, json}) => {
-  fs.writeFile(`${path}/${fileName}.${fileType}`, JSON.stringify(json), 'utf-8', err => {
+const writeFile = ({path, fileType = 'json', fileName, content}) => {
+  fs.writeFile(`${path}/${fileName}.${fileType}`, content, 'utf-8', err => {
     if(err) throw err
     console.log('-----成功')
   })

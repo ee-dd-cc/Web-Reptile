@@ -63,7 +63,7 @@ const getListJson = ({jsonList = [], readFileName = '', startIndex = 0, endIndex
  * 请求爬取地址，读取本地文件并更新
  */
 const setListUrl = async ({ readFilePath, fileName, url, nodePath }) => {
-  console.log('-----爬取地址', url, )
+  console.log('-----爬取地址', url)
   try {
     const html = await RqApi.get(url)
     const $ = cheerio.load(html)
@@ -89,10 +89,9 @@ const setListUrl = async ({ readFilePath, fileName, url, nodePath }) => {
         path: './json',
         fileType: 'json',
         fileName,
-        json: readFileList
+        content: JSON.stringify(readFileList)
       })
     })
-    return tempList
   } catch (error) {
     console.log('-----err----', url, error)
   }
@@ -103,6 +102,11 @@ const setListUrl = async ({ readFilePath, fileName, url, nodePath }) => {
 //   jsonList: hotJson,
 //   readFileName: 'hotAll',
 // })
+// 获取情侣
+getListJson({
+  jsonList: loversJson,
+  readFileName: 'loversAll',
+})
 // 获取群聊
 // getListJson({
 //   jsonList: qunliaoJson,
