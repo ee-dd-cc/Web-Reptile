@@ -135,11 +135,11 @@ const setListUrl = async({pageInfo, readFilePath, fileName, nodePath}) => {
 }
 
 // 获取热门
-// getListJson({
-//   jsonList: hotAllJson,
-//   readFileName: 'hotImg-2',
-//   startIndex: 8684
-// })
+getListJson({
+  jsonList: hotAllJson,
+  readFileName: 'hotImg-2',
+  startIndex: 8684
+})
 
 // 获取情侣
 // getListJson({
