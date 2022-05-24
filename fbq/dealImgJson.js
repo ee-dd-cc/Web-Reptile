@@ -8,7 +8,18 @@ const duirenJson = require('./json/img/duirenImg.json')
 const emojiJson = require('./json/img/emojiImg.json')
 const { writeFile, distinctList } = require('../utils/index.js')
 
-// let hotJson = [...hotJson1, ...hotJson2, ...hotJson3]
+let hotJson = [...hotJson1, ...hotJson2, ...hotJson3]
+hotJson.forEach(item => {
+  item.type = 'popular'
+})
+const aj = {
+  "RECORDS": hotJson
+}
+// writeFile({
+//   path: './json/dealImg/hot',
+//   fileName: `hotJson`,
+//   content: JSON.stringify(aj)
+// })
 // hotJson = distinctList({
 //   list: hotJson,
 //   key: 'aHref'
@@ -88,9 +99,9 @@ const dealImgList = ({jsonList = [], count, fileName, path}) => {
 // })
 
 // // 处理emoji
-dealImgList({
-  jsonList: emojiJson,
-  count: 200,
-  path: './json/dealImg/emoji',
-  fileName: ''
-})
+// dealImgList({
+//   jsonList: emojiJson,
+//   count: 200,
+//   path: './json/dealImg/emoji',
+//   fileName: ''
+// })
