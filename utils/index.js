@@ -27,26 +27,69 @@ const distinctList = ({list, key}) => {
   return tempList
 }
 
-const writeFile = ({path, fileType = 'json', fileName, content}) => {
+const writeFile = async ({path, fileType = 'json', fileName, content}) => {
   const filePath = `${path}/${fileName}.${fileType}`
-  fs.writeFile(filePath, content, 'utf-8', err => {
-    if(err) {
-      console.log('----err.errno == -4058', err.errno == -4058)
-      if (err.errno == -4058) { // 没有读取到就存一个
-        fs.appendFile(``, content, error => {
-          if (error) throw error
-          console.log(`----新增文件成功----`, filePath)
-        })
+  let status = false // 是否成功写入
+  await new Promise((resolve, reject) => {
+    fs.writeFile(filePath, content, 'utf-8', (err, data) => {
+      if(err) {
+        reject(err)
       }
-    }
-    if(err) throw err
-    console.log('----写入文件成功', filePath)
+      resolve(data)
+      status = true
+      console.log('----写入文件成功', filePath)
+    })
   })
+  return status
 }
 
+const readFile = async ({path, fileType = 'json', fileName, contentType = 'array'}) => {
+  const filePath = `${path}/${fileName}.${fileType}`
+  let readData = await new Promise((resolve, reject) => {
+    fs.readFile(filePath, async (err, data) => {
+      if(err) {
+        console.log('----没有文件，重新写入')
+        if (err.errno == -4058) {
+          const status = await writeFile({
+            path,
+            fileName,
+            content: contentType === 'array' ? '[]' : '{}'
+          })
+          if(!status) {
+            reject(err)
+          } else {
+            const res = await readFile({path, fileName})
+            resolve(res)
+          }
+        }
+        // throw err
+      }
+      resolve(data)
+    })
+  })
+  return readData
+}
+
+const writeLog = async ({path, fileName, log}) => {
+  const content = {
+    time: new Date().getTime(),
+    ...log,
+  }
+  const readRes = await readFile({ path, fileName }) || '[]'
+  const logList = JSON.parse(readRes)
+  console.log('----readRes', logList)
+  logList.push(content)
+  writeFile({
+    path,
+    fileName,
+    content: JSON.stringify(logList)
+  })
+}
 
 module.exports = {
   dateFormat,
   writeFile,
-  distinctList
+  readFile,
+  distinctList,
+  writeLog
 }
