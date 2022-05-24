@@ -6,10 +6,10 @@
  * @LastEditTime: 2022-03-21 12:59:12
  */
 const cheerio = require('cheerio')
-const fs = require('fs')
 const { RqApi } = require('../api/index.js')
-const { writeFile, readFile, writeLog } = require('../utils/index.js')
+const { writeFile, readFile, writeLog, distinctList } = require('../utils/index.js')
 const popularJson = require('./json/emoticon/web_url_popular.json')
+const popularAllUrlJson = require('./json/emoticon/web_url_popular_all_yes.json')
 // const hotJson = require('./json/hotJson.json')
 // const loversJson = require('./json/lovers.json')
 // const qunliaoJson = require('./json/qunliao.json')
@@ -18,6 +18,12 @@ const popularJson = require('./json/emoticon/web_url_popular.json')
 // const emojiJson = require('./json/emoji.json')
 
 const webHost = 'https://fabiaoqing.com'
+console.log('----popularAllUrlJson', popularAllUrlJson.length)
+// let dealList = distinctList({
+//   list: popularAllUrlJson,
+//   key: 'aHref'
+// })
+// console.log('----dealList', dealList.length)
 
 /**
  * 生成爬取网站url
@@ -41,21 +47,42 @@ const getWebUrlList = ({count, url, fileName}) => {
  */
 const getEmoticonWebUrl = async ({jsonList = [], fileName = '', startIndex = 0, endIndex = 0}) => {
   endIndex = endIndex ? endIndex : jsonList.length
-  for( let i = startIndex + 1; i < jsonList.length; i ++ ) {
-    if(i < endIndex) {
-      await setListUrl({
+  for( let index = startIndex; index < jsonList.length; index ++ ) {
+    if(index < endIndex) {
+      await setEmoticonUrl({
         fileName,
-        url: jsonList[i],
-        index: i,
+        url: jsonList[index],
+        index,
         nodePath: '#container .left .bqba'
       })
     }
   }
 }
+
+/**
+ * 获取表情包url的所有表情
+ */
+const getEmoticonList = async ({jsonList = [], fileName, startIndex = 0, endIndex = 0}) => {
+  console.log('----爬取数量----', jsonList.length)
+  endIndex = endIndex ? endIndex : jsonList.length
+  for (let index = startIndex; index < jsonList.length; index++) {
+    if(index < endIndex) {
+      await setEmoticonList({
+        fileName,
+        url: jsonList[index].aHref,
+        index,
+        nodePath: '#container .ui.imghover'
+      })
+    }
+  }
+
+}
+
+
 /**
  * 请求爬取地址，读取本地文件并更新
  */
-const setListUrl = async ({ fileName, url, nodePath, index }) => {
+const setEmoticonUrl = async ({fileName, url, nodePath, index}) => {
   console.log('---爬取地址----', url, index)
   const tempList = [] 
   try {
@@ -95,6 +122,73 @@ const setListUrl = async ({ fileName, url, nodePath, index }) => {
   }
 }
 
+const setEmoticonList = async({fileName, url, nodePath, index}) => {
+  console.log('---爬取地址----', url, index)
+  try {
+    const html = await RqApi.get(url)
+    const $ = cheerio.load(html)
+    const picDom = $(nodePath)[0]
+    const tagDom = $(picDom).find('.ui.ignored.message a')
+    const headTitleDom = $(picDom).find('.ui.header')
+    const picContentDom = $(picDom).find('.pic-content .swiper-wrapper a')
+    const imgList = []
+    const tagList = []
+    let emoticonObj = {}
+    // 获取tag信息
+    $(tagDom).each((index, el) => {
+      const aTitle = $(el).attr('title')
+      const aHref = $(el).attr('href')
+      tagList.push({
+        aTitle,
+        aHref: `${webHost}${aHref}`,
+        tagDes: $(el).text().replace('、', '')
+      })
+    })
+    // 获取图片相关信息
+    $(picContentDom).each((index, el) => {
+      const imgTitle = $(el).attr('title')
+      const imgHref = $(el).attr('href')
+      const imgDom = $(el).find('.bqppdiv1 img')
+      const imgDes = $(el).find('.bqppdiv1 p').text()
+      const imgSrc = $(imgDom).attr('src')
+      const dataOriginal = $(imgDom).attr('data-original')
+      const imgAlt = $(imgDom).attr('alt')
+      imgList.push({
+        imgIndex: index,
+        imgTitle,
+        imgHref: `${webHost}${imgHref}`,
+        imgSrc:`${webHost}${imgSrc}`,
+        imgDataOriginal: dataOriginal,
+        imgAlt, 
+        imgDes
+      })
+    })
+    emoticonObj = {
+      title: $(headTitleDom).text(),
+      count: picContentDom.length,
+      aHref: url,
+      tagList,
+      imgList
+    }
+    const data = await readFile({
+      path: './json/emoticon',
+      fileName,
+    })
+    const readFileList = JSON.parse(data)
+    readFileList.push(emoticonObj)
+    writeFile({
+      path: './json/emoticon',
+      fileName,
+      content: JSON.stringify(readFileList)
+    })
+    
+  } catch (error) {
+    console.log('----错误啦----url', url, error)
+  }
+}
+
+
+// 获取所有表情包的url
 const getAllWebList = () => {
   // 获取表情包-当下流行
   getWebUrlList({
@@ -133,37 +227,54 @@ const getAllWebList = () => {
     fileName: 'web_url_emoji'
   })
 }
+
+// 获取表情包url下的详细表情url
+const getAllEmoticonWebUrl = () => {
+  // 获取热门
+  getEmoticonWebUrl({
+    jsonList: popularJson,
+    fileName: 'web_url_popular_all',
+    startIndex: 488,
+    endIndex: 489
+  })
+  // 获取情侣
+  // getEmoticonWebUrl({
+  //   jsonList: loversJson,
+  //   readFileName: 'loversAll',
+  // })
+  // 获取群聊
+  // getEmoticonWebUrl({
+  //   jsonList: qunliaoJson,
+  //   readFileName: 'qunliaoAll',
+  // })
+  // 获取斗图
+  // getEmoticonWebUrl({
+  //   jsonList: doutuJson,
+  //   readFileName: 'doutuAll',
+  // })
+  // 获取怼人
+  // getEmoticonWebUrl({
+  //   jsonList: duirenJson,
+  //   readFileName: 'duirenAll',
+  // })
+  // 获取emoji
+  // getEmoticonWebUrl({
+  //   jsonList: emojiJson,
+  //   readFileName: 'emojiAll',
+  // })
+}
+
+// 获取表情包url下的所有表情
+const getAllEmoticonList = () => {
+  getEmoticonList({
+    jsonList: popularAllUrlJson,
+    fileName: 'emoticon_all_list',
+    startIndex: 0,
+    endIndex: 1
+  })
+}
+// getAllEmoticonWebUrl()
 // getAllWebList()
-// 获取热门
-getEmoticonWebUrl({
-  jsonList: popularJson,
-  fileName: 'web_url_popular_all',
-  // startIndex: 177,
-  // endIndex: 4
-})
-// 获取情侣
-// getEmoticonWebUrl({
-//   jsonList: loversJson,
-//   readFileName: 'loversAll',
-// })
-// 获取群聊
-// getEmoticonWebUrl({
-//   jsonList: qunliaoJson,
-//   readFileName: 'qunliaoAll',
-// })
-// 获取斗图
-// getEmoticonWebUrl({
-//   jsonList: doutuJson,
-//   readFileName: 'doutuAll',
-// })
-// 获取怼人
-// getEmoticonWebUrl({
-//   jsonList: duirenJson,
-//   readFileName: 'duirenAll',
-// })
-// 获取emoji
-// getEmoticonWebUrl({
-//   jsonList: emojiJson,
-//   readFileName: 'emojiAll',
-// })
+getAllEmoticonList()
+
 
