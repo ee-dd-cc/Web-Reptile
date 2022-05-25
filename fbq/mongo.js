@@ -1,39 +1,12 @@
-// const pJson = require('./json/mongo/ddd.json')
-// const cJson = require('./json/mongo/emoji_list_gyk.json')
 /**
  * 处理mongo数据
  */
-// const emojiJson = require('./json/mongo/emoji_list.json')
-const hotJson = require('./json/dealImg/hot/hotJson.json')
+const emoticonJson = require('./json/emoticon/emoticon_all_list_yes.json')
 const { writeFile, distinctList } = require('../utils/index.js')
 let emoticonId = 999 // 表情包默认id
 let emojiId  = 999 // 表情默认id
+let tagId  = 999 // tag默认id
 
-let hotList = hotJson.RECORDS
-// child的表的_id赋值parent的imglist下
-const bindId = ({parentList, childList, fileName = 'mongoJson'}) => {
-  parentList.forEach((pItem, pIndex) => {
-    if (pIndex < 10) {
-      const imgList = JSON.parse(pItem.imgList)
-      imgList.forEach(imgItem => {
-        childList.forEach(cItem => {
-          if(pItem._id == cItem.p_id && imgItem.imgIndex == cItem.imgIndex) {
-            imgItem._id = cItem._id
-          }
-        })
-      })
-      pItem.imgList = imgList
-    }
-  })
-  const mongoJson = {
-    RECORDS: parentList.splice(0, 10)
-  }
-  writeFile({
-    path: './json/mongo',
-    fileName,
-    content: JSON.stringify(mongoJson)
-  })
-}
 // 根据传入json的imgList字段，生成新数组
 const saveImgChild = ({parentList, fileName}) => {
   const childJson = { RECORDS: [] }
@@ -68,34 +41,52 @@ const saveImgChild = ({parentList, fileName}) => {
 const dealEmoticon = ({ dealList, fileName }) => {
   console.log('----hotJson', dealList.length)
   const tempEmojiList = []
+  const tagList = []
   dealList = distinctList({
     list: dealList,
     key: 'aHref'
   })
-  dealList.forEach((item, index) => {
-    delete item.conut
+  dealList = dealList.map((item) => {
+    delete item.count
     delete item.neighbor
     delete item._id
-    item.count = item.imgList.length ? item.imgList.length : 0
+    delete item.id
+    delete item.type
     emoticonId += 1
-    item.id = emoticonId
-    if(!item.type) {
-      console.log('----没有type')
-      item.type = 'popular'
-    }
-    item.imgList.forEach((el, elIndex) => {
+    item.imgList = item.imgList.map(el => {
       emojiId += 1
       el = {
         id: emojiId,
-        pId: item.id,
-        ...el
+        pId: emoticonId,
+        imgIndex: el.imgIndex,
+        imgTitle: el.imgTitle,
+        imgAlt: el.imgAlt,
+        imgDes: el.imgDes,
+        imgDataOriginal: el.imgDataOriginal,
+        imgSrc: el.imgSrc || ''
       }
       tempEmojiList.push(el)
+      return el
     })
+    item.tagList = item.tagList.map(el => {
+      tagId += 1
+      el = {
+        id: tagId,
+        pId: emoticonId,
+        ...el
+      }
+      tagList.push(el)
+      return el
+    })
+    return {
+      id: emoticonId,
+      count:  item.imgList.length ? item.imgList.length : 0,
+      type: 'popular',
+      ...item
+    }
   })
   console.log(`处理后的数据----${fileName}`, dealList.length)
   console.log(`得到的emoji的数据----tempEmojiList`, tempEmojiList.length)
-  const delList = 
   writeFile({
     path: './json/mongo',
     fileName: `${fileName}_0-10`,
@@ -124,11 +115,25 @@ const dealEmoticon = ({ dealList, fileName }) => {
       RECORDS: tempEmojiList
     })
   })
+  writeFile({
+    path: './json/mongo',
+    fileName: `${fileName}_tag_0-10`,
+    content: JSON.stringify({
+      RECORDS: tagList.filter((item, index) => index < 10)
+    })
+  })
+  writeFile({
+    path: './json/mongo',
+    fileName: `${fileName}_tag`,
+    content: JSON.stringify({
+      RECORDS: tagList
+    })
+  })
 }
 
 dealEmoticon({
-  dealList: hotList,
-  fileName: 'hot_list_deal'
+  dealList: emoticonJson,
+  fileName: 'emoticon_list_deal'
 })
 
 
