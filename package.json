@@ -9,6 +9,7 @@
     "dateformat": "^5.0.1",
     "fs": "^0.0.1-security",
     "node-xlsx": "^0.17.2",
+    "puppeteer": "^14.1.0",
     "request": "^2.88.2"
   }
 }
