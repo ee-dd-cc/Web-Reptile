@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-07 16:29:55
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-09 11:52:19
+ * @LastEditTime: 2022-08-09 19:20:56
  * @Descripttion: 爬取视频
  */
 const cheerio = require('cheerio')
@@ -11,8 +11,10 @@ const { writeFile, readFile, writeLog, distinctList } = require('../utils/index.
 const { MOVIE_TYPE, TRANS_NAME } =  require('../constants/movieType')
 const movieMenu = require('./json/menu/movieMenu.json')
 const tab_tv_all = require('./json/tab/tab_tv_all.json')
+const movie_tv_all = require('./json/tab/movie_tv_all.json')
 
 // const tabMovie = movieMenu[1] // 电影菜单
+const menuMovie = movieMenu[1] // 电视剧菜单
 const menuTv = movieMenu[2] // 电视剧菜单
 const domain = 'http://104.149.175.67'
 
@@ -267,7 +269,7 @@ const getTabAllData = async ({url, fileName, log}) => {
     console.log('----getTabAllData', error)
     writeLog({
       path: './json/logs',
-      fileName: 'menu_tv',
+      fileName: 'movie_tv',
       log: { ...log, error: JSON.stringify(error) }
     })
   }
@@ -324,7 +326,7 @@ const handleVideoInfo = async ({url, fileName, log}) => {
     }
     const htmlName = url.match(/bo(\S*).html/)[1]
     await writeFile({
-      path: './html/tab/tv',
+      path: './html/tab/movie',
       fileName: htmlName,
       fileType: 'html',
       content: $.html()
@@ -345,7 +347,7 @@ const handleVideoInfo = async ({url, fileName, log}) => {
     console.log('----error', error)
     writeLog({
       path: './json/logs',
-      fileName: 'menu_tv',
+      fileName,
       log: { ...log, error: JSON.stringify(error) }
     })
   }
@@ -361,16 +363,17 @@ const handleVideoInfo = async ({url, fileName, log}) => {
 // })
 
 // getTabAll({
-//   menu: menuTv,
-//   fileName: 'tab_tv_all',
+//   menu: menuMovie,
+//   fileName: 'movie_tv_all',
 //   // endInex: 1
 // })
 
+// 记得修改html文件
 getVideoInfoList({
-  jsonList: tab_tv_all,
-  fileName: 'tab_tv_all',
-  startIndex: 4000,
-  // endInex: 4000
+  jsonList: movie_tv_all,
+  fileName: 'movie_tv_all',
+  startIndex: 8000,
+  endInex: 10000
 })
 
 
