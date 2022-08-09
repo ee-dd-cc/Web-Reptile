@@ -1,3 +1,10 @@
+/*
+ * @Author: EdisonGu
+ * @Date: 2022-07-11 19:12:53
+ * @LastEditors: EdisonGu
+ * @LastEditTime: 2022-08-08 16:53:48
+ * @Descripttion: 
+ */
 const fs = require('fs')
 
 const dateFormat = (val) => {
@@ -77,7 +84,6 @@ const writeLog = async ({path, fileName, log}) => {
   }
   const readRes = await readFile({ path, fileName }) || '[]'
   const logList = JSON.parse(readRes)
-  console.log('----readRes', logList)
   logList.push(content)
   writeFile({
     path,
