@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-07 16:29:55
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-08 22:58:02
+ * @LastEditTime: 2022-08-09 11:52:19
  * @Descripttion: 爬取视频
  */
 const cheerio = require('cheerio')
@@ -366,11 +366,11 @@ const handleVideoInfo = async ({url, fileName, log}) => {
 //   // endInex: 1
 // })
 
-// getVideoInfoList({
-//   jsonList: tab_tv_all,
-//   fileName: 'tab_tv_all',
-//   // startIndex: 3000,
-//   // endInex: 4000
-// })
+getVideoInfoList({
+  jsonList: tab_tv_all,
+  fileName: 'tab_tv_all',
+  startIndex: 4000,
+  // endInex: 4000
+})
 
 
