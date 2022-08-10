@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-07 16:29:55
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-10 09:28:43
+ * @LastEditTime: 2022-08-10 11:48:27
  * @Descripttion: 爬取视频
  */
 const cheerio = require('cheerio')
@@ -12,10 +12,16 @@ const { MOVIE_TYPE, TRANS_NAME } =  require('../constants/movieType')
 const movieMenu = require('./json/menu/movieMenu.json')
 const tab_tv_all = require('./json/tab/tab_tv_all.json')
 const movie_tv_all = require('./json/tab/movie_tv_all.json')
+const tab_variety_all = require('./json/tab/tab_variety_all.json')
+const tab_cartoon_all = require('./json/tab/tab_cartoon_all.json')
+const tab_god_all = require('./json/tab/tab_god_all.json')
 
 // const tabMovie = movieMenu[1] // 电影菜单
-const menuMovie = movieMenu[1] // 电视剧菜单
+const menuMovie = movieMenu[1] // 电影菜单
 const menuTv = movieMenu[2] // 电视剧菜单
+const menuVariety = movieMenu[3] // 综艺菜单
+const menuCartoon = movieMenu[4] // 动漫菜单
+const menuGod = movieMenu[5] // 神片菜单
 const domain = 'http://104.149.175.67'
 
 /**
@@ -269,8 +275,8 @@ const getTabAllData = async ({url, fileName, log}) => {
     console.log('----getTabAllData', error)
     writeLog({
       path: './json/logs',
-      fileName: 'movie_tv',
-      log: { ...log, error: JSON.stringify(error) }
+      fileName,
+      log: { ...log, fn: 'getTabAllData', error: JSON.stringify(error) },
     })
   }
 }
@@ -324,14 +330,14 @@ const handleVideoInfo = async ({url, fileName, log}) => {
         source_list: sourceList
       })
     }
-    const htmlName = url.match(/bo(\S*).html/)[1]
-    await writeFile({
-      path: './html/tab/movie',
-      fileName: htmlName,
-      fileType: 'html',
-      content: $.html()
-      // content: JSON.stringify(readFileList)
-    })
+    // const htmlName = url.match(/bo(\S*).html/)[1]
+    // await writeFile({
+    //   path: './html/tab/movie',
+    //   fileName: htmlName,
+    //   fileType: 'html',
+    //   content: $.html()
+    //   // content: JSON.stringify(readFileList)
+    // })
     const data = await readFile({
       path: './json/tab',
       fileName,
@@ -363,17 +369,17 @@ const handleVideoInfo = async ({url, fileName, log}) => {
 // })
 
 // getTabAll({
-//   menu: menuMovie,
-//   fileName: 'movie_tv_all',
+//   menu: menuGod,
+//   fileName: 'tab_god_all',
 //   // endInex: 1
 // })
 
 // 记得修改html文件
 getVideoInfoList({
-  jsonList: movie_tv_all,
-  fileName: 'movie_tv_all',
-  // startIndex: 20000,
-  // endInex: 30000
+  jsonList: tab_god_all,
+  fileName: 'tab_god_all',
+  // startIndex: 1320,
+  // endInex: 1321
 })
 
 
