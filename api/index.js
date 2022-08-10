@@ -2,14 +2,15 @@
  * @Descripttion: 
  * @Author: yuankun.gu
  * @Date: 2022-03-20 22:24:21
- * @LastEditors: yuankun.gu
- * @LastEditTime: 2022-03-20 22:43:24
+ * @LastEditors: EdisonGu
+ * @LastEditTime: 2022-08-10 23:52:45
  */
 const request = require('request')
 
-const reGet = async url => {
+const reGet = async (url, headers = {}) => {
   return new Promise((resolve, reject) => {
-    request.get(url, { timeout: 300000 }, (err, res, html) => {
+    console.log('----headers', headers)
+    request.get(url, { timeout: 300000, headers }, (err, res, html) => {
       if (err) {
         reject(err)
       }
