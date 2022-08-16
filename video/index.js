@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-07 16:29:55
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-10 11:48:27
+ * @LastEditTime: 2022-08-16 18:37:07
  * @Descripttion: 爬取视频
  */
 const cheerio = require('cheerio')
@@ -11,7 +11,7 @@ const { writeFile, readFile, writeLog, distinctList } = require('../utils/index.
 const { MOVIE_TYPE, TRANS_NAME } =  require('../constants/movieType')
 const movieMenu = require('./json/menu/movieMenu.json')
 const tab_tv_all = require('./json/tab/tab_tv_all.json')
-const movie_tv_all = require('./json/tab/movie_tv_all.json')
+const movie_tv_all = require('./json/tab/tab_movie_all.json')
 const tab_variety_all = require('./json/tab/tab_variety_all.json')
 const tab_cartoon_all = require('./json/tab/tab_cartoon_all.json')
 const tab_god_all = require('./json/tab/tab_god_all.json')
