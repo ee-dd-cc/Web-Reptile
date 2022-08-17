@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-08 14:00:23
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-08 20:03:02
+ * @LastEditTime: 2022-08-17 14:57:53
  * @Descripttion: 
  */
 const MOVIE_TYPE = name => {
@@ -49,6 +49,42 @@ const MOVIE_TYPE = name => {
       break;
     case '海外剧':
       type = 'OATV' // oversea
+      break;
+    case '动作片':
+      type = 'action'
+      break;
+    case '喜剧片':
+      type = 'comedy'
+      break;
+    case '爱情片':
+      type = 'romance'
+      break;
+    case '科幻片':
+      type = 'scienceFiction'
+      break;
+    case '恐怖片':
+      type = 'HorrorFilm'
+      break;
+    case '剧情片':
+      type = 'drama'
+      break;
+    case '战争片':
+      type = 'WarFilm'
+      break;
+    case '犯罪片':
+      type = 'crimeFilm'
+      break;
+    case '记录片':
+      type = 'documentaryFilm'
+      break;
+    case '动漫电影':
+      type = 'animationFilm'
+      break;
+    case '奇幻片':
+      type = 'fantasyFilm'
+      break;
+    case '伦理片':
+      type = 'ethicsFilm'
       break;
     default:
       break;
