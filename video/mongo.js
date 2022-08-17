@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-16 16:55:30
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-17 17:17:40
+ * @LastEditTime: 2022-08-17 17:25:10
  * @Descripttion: 
  */
 const tab_tv_all = require('./json/tab/tab_tv_all.json')
@@ -86,6 +86,6 @@ writeFile({
   path: './json/mongo',
   fileName: 'tab_movie_all' ,
   content: JSON.stringify({
-    RECORDS: movieMongo.filter((item, index) => index < 10)
+    RECORDS: movieMongo
   })
 })
