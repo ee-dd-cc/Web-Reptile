@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-08 14:00:23
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-17 14:57:53
+ * @LastEditTime: 2022-08-22 17:56:44
  * @Descripttion: 
  */
 const MOVIE_TYPE = name => {
@@ -63,13 +63,13 @@ const MOVIE_TYPE = name => {
       type = 'scienceFiction'
       break;
     case '恐怖片':
-      type = 'HorrorFilm'
+      type = 'horrorFilm'
       break;
     case '剧情片':
       type = 'drama'
       break;
     case '战争片':
-      type = 'WarFilm'
+      type = 'warFilm'
       break;
     case '犯罪片':
       type = 'crimeFilm'

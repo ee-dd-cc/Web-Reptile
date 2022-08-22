@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-16 16:55:30
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-18 13:51:24
+ * @LastEditTime: 2022-08-22 18:04:08
  * @Descripttion: 
  */
 const tab_tv_all = require('./json/tab/tab_tv_all.json')
@@ -35,7 +35,7 @@ tab_movie_all.forEach((el, index) => {
     author: [], // 编剧
     // actor: main_actor.split(','), // 主演
     actor: actor.filter(item => item), // 主演
-    type, // 电影/电视剧类型
+    type: type.filter(item => item), // 电影/电视剧类型
     video_type: 'movie', // 视频类型 - 电影/电视剧/综艺/动漫
     area, // 制片国家/地区
     // language: language.split(','),
@@ -52,6 +52,7 @@ tab_movie_all.forEach((el, index) => {
     lines
   }
   movieMongo.push(info)
+  // el.type = el.type.split(',')
   if (lines && lines.length && lines[0].source_list.length > 1) {
     movieTv.push(el)
   } else {
@@ -59,11 +60,11 @@ tab_movie_all.forEach((el, index) => {
   }
 })
 
-// writeFile({
-//   path: './json/tab',
-//   fileName: 'tab_movie_all' ,
-//   content: JSON.stringify(tab_movie_all)
-// })
+writeFile({
+  path: './json/tab',
+  fileName: 'tab_movie_all' ,
+  content: JSON.stringify(tab_movie_all)
+})
 
 writeFile({
   path: './json/tab',
