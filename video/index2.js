@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-10 20:53:53
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-08-11 00:16:38
+ * @LastEditTime: 2022-09-08 00:16:05
  * @Descripttion: 
  */
 // 引入superagent
@@ -50,43 +50,35 @@ var find_url = async (url) => {
   });
   console.log('----url', url)
   const page = await browser.newPage();
-  // await page.setRequestInterception(true);
-  // page.on('request', interceptedRequest => {
-  //   if (interceptedRequest.url().indexOf('super.php') > -1) {
-  //     console.log('------哈哈哈哈', interceptedRequest.url())
-  //   }
-  //   if (interceptedRequest.url().endsWith('.png') || interceptedRequest.url().endsWith('.jpg'))
-  //     interceptedRequest.abort();
-  //   else
-  //     interceptedRequest.continue();
-  // });
-  // page.on('response', async response => {
-
-  // if( response.url().indexOf('super.php') > -1) {
-  //   // const res = await response.json()
-  //   console.log('-----ok', response.ok())
-  //   const headers = response.headers()
-  //   try {
-  //     const html = await RqApi.get(response.url(), headers)
-  //     console.log('----html', html)
-  //   } catch (error) {
-  //     console.log('----error', error)
-  //   }
-  //   // console.log('-----res',await response.json())
-  //   // console.log('-----res', await response)
-  // }
-  // })
+  await page.setRequestInterception(true);
+  page.on('request', req => {
+    if (req.url().indexOf('m3u8') > -1) {
+      console.log('------哈哈哈哈', req.url())
+    }
+    req.continue();
+  });
+  page.on('response', async res => {
+    if(res.url().indexOf('super.php') > -1) {
+      // const res = await response.json()
+      console.log('-----ok', res.ok())
+      const headers = res.headers()
+      try {
+        const html = await RqApi.get(res.url(), headers)
+        console.log('----html', html)
+      } catch (error) {
+        console.log('----error', error)
+      }
+    }
+  })
   await page.goto(url, {
     timeout: 0
   });
   const frames = page.frames()
-  // const body = await page.evaluate(() => document.body.innerHTML)
-  console.log('----frames', frames.length)
   frames.forEach(async (frame, index) => {
     if (index === 3) {
-      // console.log('----item', index, await frame.content())
+      console.log('----item', index, await frame.url())
       // const text = await frame.$eval('.video-wrapper', element => element.textContent)
-      console.log('----frame', await frame.$eval('video', el => el.src))
+      // console.log('----frame', await frame.$eval('video', el => el.src))
     }
   })
   await browser.close();
@@ -99,5 +91,8 @@ var find_url = async (url) => {
 //   console.log(url);
 // });
 
-find_url('https://www.mjwo.cc/play/13955-1-1/')
+// find_url('https://www.recer.cn/vodplay/122578-1-1.html')
+// find_url('https://www.xcjggz.com/sakura-10172-2-1781.html')
 // find_url('https://www.douyin.com/video/7124069551167343903')
+find_url('https://www.6080x.cc/play/69819-1-1.html')
+// find_url('https://player.6080kan.cc/player/play.php?url=pRoo00oE5lRo000oo000oijkVkkVIx56G4lvcm6r3SRSHdjeFIJDvkkBBJjCmTxyV6dlACq5kIo000o0qOO8dlxMJo000oX8WXy1oo00oCe4fIKvo000o5w2gB1wQZBL6UikOBsZjkqiCze0iMTCf6lYXbdc')
