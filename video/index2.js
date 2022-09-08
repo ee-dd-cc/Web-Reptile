@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-10 20:53:53
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-09-08 00:38:57
+ * @LastEditTime: 2022-09-08 18:25:01
  * @Descripttion: 
  */
 // 引入superagent
@@ -41,7 +41,7 @@ var find_link = async function (link) {
 
 var find_url = async (url) => {
   const browser = await puppeteer.launch({
-    // headless: false,
+    headless: false,
     // args: [
     //   '--no-sandbox',
     //   '--disable-setuid-sandbox',
@@ -73,15 +73,23 @@ var find_url = async (url) => {
   await page.goto(url, {
     timeout: 0
   });
+  // console.log('----page', await page.$eval('body', e => e.outerHTML))
   const frames = page.frames()
   frames.forEach(async (frame, index) => {
     if (index === 3) {
       console.log('----item', index, await frame.url())
+      console.log('----item', index, await frame.content())
       // const text = await frame.$eval('.video-wrapper', element => element.textContent)
+      // console.log('----text', text)
       // console.log('----frame', await frame.$eval('video', el => el.src))
     }
   })
-  await browser.close();
+  const html = await RqApi.get('https://m3u8.cache.shtpin.com/Ddcache/20220908/498a66fb0135ebca50aa34068cb2acb5.m3u8?st=bOU46gRet_bUBbgAFofA_A&e=1662632620', {})
+  console.log('---html', html)
+  setTimeout(async () => {
+    await browser.close();
+  }, 5000)
+  // await browser.close();
 };
 
 // NRf8PQD
