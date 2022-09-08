@@ -7,10 +7,12 @@
     "async": "^3.2.3",
     "cheerio": "^1.0.0-rc.10",
     "dateformat": "^5.0.1",
+    "fluent-ffmpeg": "^2.1.2",
     "fs": "^0.0.1-security",
     "node-xlsx": "^0.17.2",
     "puppeteer": "^14.1.0",
     "request": "^2.88.2",
+    "single-line-log": "^1.1.2",
     "superagent": "^8.0.0",
     "superagent-proxy": "^3.0.0"
   }

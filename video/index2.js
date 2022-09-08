@@ -2,7 +2,7 @@
  * @Author: EdisonGu
  * @Date: 2022-08-10 20:53:53
  * @LastEditors: EdisonGu
- * @LastEditTime: 2022-09-08 00:16:05
+ * @LastEditTime: 2022-09-08 00:38:57
  * @Descripttion: 
  */
 // 引入superagent
@@ -41,7 +41,7 @@ var find_link = async function (link) {
 
 var find_url = async (url) => {
   const browser = await puppeteer.launch({
-    headless: false,
+    // headless: false,
     // args: [
     //   '--no-sandbox',
     //   '--disable-setuid-sandbox',
@@ -94,5 +94,5 @@ var find_url = async (url) => {
 // find_url('https://www.recer.cn/vodplay/122578-1-1.html')
 // find_url('https://www.xcjggz.com/sakura-10172-2-1781.html')
 // find_url('https://www.douyin.com/video/7124069551167343903')
-find_url('https://www.6080x.cc/play/69819-1-1.html')
-// find_url('https://player.6080kan.cc/player/play.php?url=pRoo00oE5lRo000oo000oijkVkkVIx56G4lvcm6r3SRSHdjeFIJDvkkBBJjCmTxyV6dlACq5kIo000o0qOO8dlxMJo000oX8WXy1oo00oCe4fIKvo000o5w2gB1wQZBL6UikOBsZjkqiCze0iMTCf6lYXbdc')
+// find_url('https://www.6080x.cc/play/69819-1-1.html')
+find_url('https://player.6080kan.cc/player/play.php?url=pRoo00oE5lRo000oo000oijkVkkVIx56G4lvcm6r3SRSHdjeFIJDvkkBBJjCmTxyV6dlACq5kIo000o0qOO8dlxMJo000oX8WXy1oo00oCe4fIKvo000o5w2gB1wQZBL6UikOBsZjkqiCze0iMTCf6lYXbdc')
